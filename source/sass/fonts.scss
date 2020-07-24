@@ -1,0 +1,58 @@
+@mixin big-header {
+  font: {
+    size: 36px;
+    weight: regular;
+  }
+  line-height: 36px;
+}
+
+@mixin subtitle {
+  font: {
+    size: 14px;
+    weight: regular;
+  }
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin small-header {
+  font: {
+    size: 24px;
+    weight: regular;
+  }
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin product-header {
+  font: {
+    size: 16px;
+    weight: regular;
+  }
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+@mixin main-text {
+  font: {
+    family: Arial, sans-serif;
+    size: 14px;
+    weight: regular;
+  }
+  line-height: 18px;
+  color: $basic-dark-grey;
+}
+
+@mixin small-text {
+  font: {
+    family: Arial, sans-serif;
+    size: 12px;
+    weight: regular;
+  }
+  line-height: 12px;
+  color: $basic-dark-grey;
+  text-align: center;
+}

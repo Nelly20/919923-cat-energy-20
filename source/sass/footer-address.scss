@@ -1,0 +1,14 @@
+@import "colors", "fonts";
+
+.footer-adress__title {
+	font-family: 'Oswald', Arial, sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 18px;
+	color: $special-black;
+}
+
+.page-footer__address {
+	@include main-text;
+	font-style: normal;
+}

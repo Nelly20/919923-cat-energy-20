@@ -1,0 +1,13 @@
+@import "colors", "fonts";
+
+.advantages__title {
+	@include big-header;
+}
+
+.advantages__list {
+	list-style: none;
+}
+
+.advantages__description {
+	@include main-text;
+}

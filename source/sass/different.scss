@@ -1,0 +1,29 @@
+@import "colors";
+
+@mixin button-green {
+	width: 280px;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	@include subtitle;
+	color: $basic-white;
+
+	cursor: pointer;
+	border: none;
+  	background-color: $basic-green;
+}
+
+@mixin button-grey {
+	width: 279px;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	@include subtitle;
+	color: $basic-dark-grey;
+
+	cursor: pointer;
+	border: none;
+  	background-color: $special-light-grey;
+}

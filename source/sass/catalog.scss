@@ -1,0 +1,27 @@
+@import "colors", "fonts";
+
+.catalog__title {
+	@include big-header;
+}
+
+.catalog__list {
+	list-style: none;
+}
+
+.catalog__item-header {
+	@include product-header;
+	color: $special-dark-grey;
+}
+
+.catalog__item-description {
+	@include main-text;
+}
+
+.catalog__more-products-title {
+	@include product-header;
+	text-align: center;
+}
+
+.catalog__more-products-subtitle {
+	@include small-text;
+}

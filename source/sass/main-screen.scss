@@ -1,0 +1,20 @@
+@import "colors", "fonts", "different";
+
+.main-screen {
+	padding-top: 27px;
+	padding-bottom: 22px;
+
+	background-image: url("../img/index-background-mobile@1x.jpg");
+	background-repeat: no-repeat;
+}
+
+.main-screen__title {
+	@include big-header;
+	color: $basic-white;
+	text-align: center;
+}
+
+.main-screen__subtitle {
+	@include subtitle;
+	color: $basic-white;
+}

@@ -1,2 +1,47 @@
-// Начните писать стили здесь
-body { background: red; }
+@import "header", "colors", "main-screen", "fonts", "different", "main-services", "advantages", "example", "footer-address", "catalog",
+"more-products", "footer";
+
+body {
+	min-width: 320px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page {
+	height: 100%;
+	font-size: 14px;
+	font-family: 'Oswald', Arial, sans-serif;
+}
+.page__body {
+	min-height: 100%;
+	margin: 0;
+	color: $basic-black;
+}
+.container {
+	width: 280px;
+	padding: 0 20px;
+	margin: auto;
+}
+.button--green {
+	@include button-green;
+	@include product-header;
+	text-align: center;
+}
+.button--grey {
+	@include button-grey;
+	@include product-header;
+	text-align: center;
+}

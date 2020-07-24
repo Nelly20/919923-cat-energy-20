@@ -3,14 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Cat Energy</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     </head>
     <body class="page__body">
-        <header class="page-header">
+        <header class="page-header container">
             <a class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
-	            <img class="page-header__logo" src="https://via.placeholder.com/150x150" width="34" height="38" alt="Cat Energy">
-            </a>
-            <a class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
-	            <img class="page-header__logo" src="https://via.placeholder.com/150x150" width="101" height="18" alt="Cat Energy">
+	            <img class="page-header__logo" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
             </a>
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button">
@@ -19,26 +18,30 @@
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item site-list__item--active">
-                            <a>Главная</a>
+                            <a class="site-list__link">Главная</a>
                         </li>
-                        <li class="site-list__item site-list__item">
-                            <a href="catalog.html">Каталог продукции</a>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
                         </li>
-                        <li class="site-list__item site-list__item">
-                            <a href="form.html">Выбор программы</a>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="form.html">Выбор программы</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
         <main class="page-main">
-            <h1 class="page-main__title">Функциональное<br>
+
+            <section class="main-screen container">
+                <h1 class="main-screen__title">Функциональное<br>
                 питание для котов
-            </h1>
-            <p class="page-main__subtitle">Занялся собой? Займись котом!</p>
-            <img src="https://via.placeholder.com/150x150" width="280" height="270" alt="Cat Energy">
-            <button type="button" class="">Подобрать программу</button>
-            <section class="main-services">
+                </h1>
+                <p class="main-screen__subtitle">Занялся собой? Займись котом!</p>
+                <img src="img/index-can-mobile@1x.png" width="280" height="270" alt="Cat Energy">
+                <button type="button" class="button--green">Подобрать программу</button>
+            </section>
+            
+            <section class="main-services container">
                 <h2 class="visually-hidden">Список услуг</h2>
                 <ul class="main-services__list services-list">
                     <li class="services-list__item">
@@ -53,7 +56,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="advantages">
+            <section class="advantages container">
                 <h2 class="advantages__title">Как это работает</h2>
                 <ul class="advantages__list">
                     <li class="advantages__item">
@@ -82,49 +85,58 @@
                     </li>
                 </ul>
             </section>
-            <section class="example">
-                <h2 class="example__title">Живой пример</h2>
-                <p class="example__describtion">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-                <ul class="example__list">
-                    <li class="example__item">
-                        <h3 class="example__title">5 КГ</h3>
-                        <p class="example__subtitle">снижение веса</p>
-                    </li>
-                    <li class="example__item">
-                        <h3 class="example__title">60 ДНЕЙ</h3>
-                        <p class="example__subtitle">затрачено времени</p>
-                    </li>
-                </ul>
-                <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
-                <img src="https://via.placeholder.com/150x150" width="311" height="232" alt="Кот Борис">
-                <button type="button" class="button example__button">Было</button>
-                <button type="button" class="button example__button">Стало</button>
+
+            <section class="example container">
+                <div class="">
+                    <h2 class="example__title">Живой пример</h2>
+                    <p class="example__describtion">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+                    <ul class="example__list">
+                        <li class="example__item">
+                            <h3 class="example__header">5 КГ</h3>
+                            <p class="example__subtitle">снижение<br>веса</p>
+                        </li>
+                        <li class="example__item">
+                            <h3 class="example__header">60 ДНЕЙ</h3>
+                            <p class="example__subtitle">затрачено<br>времени</p>
+                        </li>
+                    </ul>
+                    <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
+                    <img src="img/before-mobile@1x.png" height="232" alt="Кот Борис">
+                    <button type="button" class="button example__button">Было</button>
+                    <button type="button" class="button example__button">Стало</button>
+                </div>
             </section>
         </main>
-        <footer class="page-footer">
-            <h2 class="page-footer__title">приглашаем 
+
+        <footer class="page-footer container">
+            <div class="footer-adress">
+                <h2 class="footer-adress__title">приглашаем 
                 к сотрудничеству дилеров!
-            </h2>
-            <address class="page-footer__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-            <img src="https://via.placeholder.com/150x150" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-            <a href="index.html">
-            	<img src="https://via.placeholder.com/150x150" width="128" height="24" alt="Cat Energy">
-            </a>
-            <ul class="footer-icons">
-                <li class="footer-icons__item">
-                    <a href="#" aria-label="Вконтакте">VK</a>
-                </li>
-                <li class="footer-icons__item">
-                    <a href="#" aria-label="Инстаграм">Insta</a>
-                </li>
-                <li class="footer-icons__item">
-                    <a href="#" aria-label="Фейсбук">FB</a>
-                </li>
-            </ul>
-            <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
-            	<p class="copyright__text">HTML Academy</p>
-            	<img class="copyright__logo" src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
-            </a>
+                </h2>
+                <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+                <img src="img/bg-map-mobile@1x.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            </div>
+            
+            <div class="footer">
+                <a href="index.html">
+                <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+                </a>
+                <ul class="footer-icons footer-icons__list">
+                    <li class="footer-icons__item">
+                        <a class="footer-icons__link" href="#" aria-label="Вконтакте">VK</a>
+                    </li>
+                    <li class="footer-icons__item">
+                        <a class="footer-icons__link" href="#" aria-label="Инстаграм">Insta</a>
+                    </li>
+                    <li class="footer-icons__item">
+                        <a class="footer-icons__link" href="#" aria-label="Фейсбук">FB</a>
+                    </li>
+                </ul>
+                <a class="copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                    <p class="copyright__text">HTML Academy</p>
+                    <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+                </a>
+            </div>
         </footer>
     </body>
 </html>

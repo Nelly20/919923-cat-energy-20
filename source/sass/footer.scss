@@ -1,0 +1,22 @@
+@import "colors", "fonts";
+
+.footer {
+	background-color: $special-light-grey;
+}
+
+.footer-icons__list {
+	list-style: none;
+}
+
+.footer-icons__link {
+	text-decoration: none;
+}
+
+.copyright__link{
+	text-decoration: none;
+	color: $basic-dark-grey;
+}
+
+.copyright__text {
+	font-family: Arial, sans-serif;
+}

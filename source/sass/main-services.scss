@@ -1,0 +1,30 @@
+@import "colors", "fonts";
+
+.main-services__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.services-list__item {
+	margin-top: 20px;
+	padding: 21px 33px 18px 19px;
+	background-color: $basic-grey;
+}
+
+.services-list__title {
+	@include small-header;
+}
+
+.services-list__subtitle {
+	@include main-text;
+}
+
+.services-list__link {
+	font-family: 'Oswald', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: regular;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $basic-black;
+}

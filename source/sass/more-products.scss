@@ -1,0 +1,36 @@
+@import "colors", "fonts";
+
+.more-products__title {
+	@include small-header;
+	text-transform: none;
+}
+
+.more-products__list {
+	list-style: none;
+}
+
+.more-products__header {
+	@include product-header;
+	color: $special-dark-grey;
+}
+
+.more-products__item-describtion {
+	@include main-text;
+}
+
+.sale {
+	width: 280px;
+	height: 289px;
+
+	background-color: $basic-green;
+	background-image: url(../img/gift-photo-mobile@1x.jpg);
+	background-repeat: no-repeat;
+}
+
+.sale__describtion {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: $basic-white;
+	line-height: 20px;
+}
