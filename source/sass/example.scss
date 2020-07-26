@@ -1,5 +1,3 @@
-@import "colors", "fonts";
-
 .example {
 	background-color: $basic-light-grey;
 }
@@ -13,7 +11,7 @@
 }
 
 .example__list {
-	list-style: none;
+	@include reset-list;
 }
 
 .example__header {

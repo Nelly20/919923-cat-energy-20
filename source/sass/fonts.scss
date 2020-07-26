@@ -1,3 +1,22 @@
+/* oswald-regular - latin_cyrillic */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+       url("../fonts/oswald-v35-latin_cyrillic-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url("../fonts/oswald-v35-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* oswald-600 - latin_cyrillic */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+       url("../fonts/oswald-v35-latin_cyrillic-600.woff2") format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url("../fonts/oswald-v35-latin_cyrillic-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 @mixin big-header {
   font: {
     size: 36px;
@@ -38,7 +57,7 @@
 
 @mixin main-text {
   font: {
-    family: Arial, sans-serif;
+    family: "Arial", "Helvetica", sans-serif;
     size: 14px;
     weight: regular;
   }
@@ -48,7 +67,7 @@
 
 @mixin small-text {
   font: {
-    family: Arial, sans-serif;
+    family: "Arial", "Helvetica", sans-serif;
     size: 12px;
     weight: regular;
   }

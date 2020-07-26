@@ -1,11 +1,9 @@
-@import "colors", "fonts";
-
 .advantages__title {
 	@include big-header;
 }
 
 .advantages__list {
-	list-style: none;
+	@include reset-list;
 }
 
 .advantages__description {

@@ -1,0 +1,30 @@
+.more-products__button,
+.catalog__button,
+.main-screen__button {
+	@include button-green;
+	@include button;
+}
+.catalog__more-products-button {
+	@include button-grey;
+	@include button;
+}
+
+@mixin button {
+	width: 280px;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	cursor: pointer;
+	border: none;
+}
+
+@mixin button-green {
+	color: $basic-white;
+  	background-color: $basic-green;
+}
+
+@mixin button-grey {
+	color: $basic-dark-grey;
+  	background-color: $special-light-grey;
+}

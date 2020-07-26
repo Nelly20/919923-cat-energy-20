@@ -1,0 +1,8 @@
+.form__title {
+	@include big-header;
+	color: $basic-green;
+}
+
+.personal-info {
+	border: none;
+}

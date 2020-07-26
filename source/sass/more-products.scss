@@ -1,12 +1,10 @@
-@import "colors", "fonts";
-
 .more-products__title {
 	@include small-header;
 	text-transform: none;
 }
 
 .more-products__list {
-	list-style: none;
+	@include reset-list;
 }
 
 .more-products__header {
@@ -28,7 +26,7 @@
 }
 
 .sale__describtion {
-	font-family: Arial, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	text-align: center;
 	color: $basic-white;

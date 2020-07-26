@@ -3,14 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Cat Energy Выбор программы</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="page__body">
-        <header class="page-header">
-            <a href="index.html" class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
-	            <img class="page-header__logo" src="https://via.placeholder.com/150x150" width="34" height="38" alt="Cat Energy">
-            </a>
-            <a href="index.html" class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
-	            <img class="page-header__logo" src="https://via.placeholder.com/150x150" width="101" height="18" alt="Cat Energy">
+        <header class="page-header container">
+            <a class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
+            <img class="page-header__logo" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
             </a>
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button">
@@ -18,24 +16,24 @@
                 </button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
-                        <li class="site-list__item site-list__item">
-                            <a href="index.html">Главная</a>
-                        </li>
-                        <li class="site-list__item site-list__item">
-                            <a href="catalog.html">Каталог продукции</a>
-                        </li>
                         <li class="site-list__item site-list__item--active">
-                            <a>Выбор программы</a>
+                            <a class="site-list__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__link">Выбор программы</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
         <main class="page-main">
-            <h1 class="page-main__title">Подбор программы</h1>
             
-            <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            	<p class="form__title">Заполните анкету, и мы подберем
+            <form class="form container" action="https://echo.htmlacademy.ru" method="post">
+                <h1 class="form__title">Подбор программы</h1>
+            	<p class="form__subtitle">Заполните анкету, и мы подберем
                 программу питания для вашего кота
             	</p>
                 <fieldset class="personal-info">

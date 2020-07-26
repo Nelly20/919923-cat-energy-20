@@ -1,11 +1,9 @@
-@import "colors", "fonts";
-
 .catalog__title {
 	@include big-header;
 }
 
 .catalog__list {
-	list-style: none;
+	@include reset-list;
 }
 
 .catalog__item-header {

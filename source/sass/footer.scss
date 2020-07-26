@@ -1,11 +1,9 @@
-@import "colors", "fonts";
-
 .footer {
 	background-color: $special-light-grey;
 }
 
 .footer-icons__list {
-	list-style: none;
+	@include reset-list;
 }
 
 .footer-icons__link {
