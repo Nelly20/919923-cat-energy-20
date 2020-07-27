@@ -1,0 +1,29 @@
+.personal-info {
+  border: none;
+}
+.personal-info__list {
+  @include reset-list;
+}
+.personal-info__label {
+  color: $basic-dark-grey;
+
+  @include subtitle;
+}
+.personal-info__input {
+  width: 100%;
+  padding: 14px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: left;
+  color: $basic-dark-grey;
+
+  border: 1px solid $special-grey;
+
+  @include subtitle;
+}
+.personal-info__input::placeholder {
+  text-align: left;
+  color: $basic-dark-grey;
+
+  @include subtitle;
+}

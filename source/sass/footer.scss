@@ -1,20 +1,20 @@
 .footer {
-	background-color: $special-light-grey;
+  background-color: $special-light-grey;
 }
 
 .footer-icons__list {
-	@include reset-list;
+  @include reset-list;
 }
 
 .footer-icons__link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
-.copyright__link{
-	text-decoration: none;
-	color: $basic-dark-grey;
+.copyright__link {
+  color: $basic-dark-grey;
+  text-decoration: none;
 }
 
 .copyright__text {
-	font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }

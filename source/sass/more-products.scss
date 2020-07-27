@@ -1,34 +1,36 @@
 .more-products__title {
-	@include small-header;
-	text-transform: none;
+  text-transform: none;
+
+  @include small-header;
 }
 
 .more-products__list {
-	@include reset-list;
+  @include reset-list;
 }
 
 .more-products__header {
-	@include product-header;
-	color: $special-dark-grey;
+  color: $special-dark-grey;
+
+  @include product-header;
 }
 
 .more-products__item-describtion {
-	@include main-text;
+  @include main-text;
 }
 
 .sale {
-	width: 280px;
-	height: 289px;
+  width: 280px;
+  height: 289px;
 
-	background-color: $basic-green;
-	background-image: url(../img/gift-photo-mobile@1x.jpg);
-	background-repeat: no-repeat;
+  background-color: $basic-green;
+  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-repeat: no-repeat;
 }
 
 .sale__describtion {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	text-align: center;
-	color: $basic-white;
-	line-height: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: $basic-white;
 }

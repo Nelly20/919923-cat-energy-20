@@ -1,0 +1,88 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin button {
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  text-align: center;
+
+  border: none;
+  cursor: pointer;
+}
+
+@mixin button-green {
+  font-size: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-white;
+  text-transform: uppercase;
+
+  background-color: $basic-green;
+}
+
+@mixin button-grey {
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-dark-grey;
+  text-transform: uppercase;
+
+  background-color: $special-light-grey;
+}
+
+@mixin big-header {
+  font: {
+    size: 36px;
+    weight: regular;
+  } ; line-height: 36px;
+}
+
+@mixin subtitle {
+  font: {
+    size: 14px;
+    weight: regular;
+  } ; line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin small-header {
+  font: {
+    size: 24px;
+    weight: regular;
+  } ; line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin product-header {
+  font: {
+    size: 16px;
+    weight: regular;
+  } ; line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+@mixin main-text {
+  font: {
+    family: "Arial", "Helvetica", sans-serif;
+    size: 14px;
+    weight: regular;
+  } ; line-height: 18px;
+  color: $basic-dark-grey;
+}
+
+@mixin small-text {
+  font: {
+    family: "Arial", "Helvetica", sans-serif;
+    size: 12px;
+    weight: regular;
+  } ; line-height: 12px;
+  text-align: center;
+  color: $basic-dark-grey;
+}

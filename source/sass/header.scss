@@ -1,20 +1,20 @@
 .page-header {
-	padding: 11px 20px 18px 20px;
+  padding: 11px 20px 18px 20px;
 }
 
 .main-nav__list {
-	@include reset-list;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
 
-	font-size: 20px;
-	text-transform: uppercase;
-	text-align: center;
+  @include reset-list;
 }
 
 .site-list__item {
-	border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
 }
 
 .site-list__link {
-	text-decoration: none;
-	color: $basic-black;
+  color: $basic-black;
+  text-decoration: none;
 }

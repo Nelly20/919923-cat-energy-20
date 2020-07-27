@@ -1,0 +1,18 @@
+.additionally {
+  border: none;
+}
+
+.additionally__title {
+  text-align: left;
+  text-transform: none;
+
+  @include small-header;
+}
+
+.additionally__list {
+  @include reset-list;
+}
+
+.additionally__label {
+  @include product-header;
+}

@@ -1,77 +1,24 @@
 /* oswald-regular - latin_cyrillic */
+
 @font-face {
-  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: local(""),
-       url("../fonts/oswald-v35-latin_cyrillic-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../fonts/oswald-v35-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* oswald-600 - latin_cyrillic */
-@font-face {
   font-family: "Oswald";
+
+  src: local(""), url("../fonts/oswald-v35-latin_cyrillic-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("../fonts/oswald-v35-latin_cyrillic-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* oswald-600 - latin_cyrillic */
+
+@font-face {
   font-style: normal;
   font-weight: 600;
-  src: local(""),
-       url("../fonts/oswald-v35-latin_cyrillic-600.woff2") format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../fonts/oswald-v35-latin_cyrillic-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+  font-family: "Oswald";
 
-@mixin big-header {
-  font: {
-    size: 36px;
-    weight: regular;
-  }
-  line-height: 36px;
-}
-
-@mixin subtitle {
-  font: {
-    size: 14px;
-    weight: regular;
-  }
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-@mixin small-header {
-  font: {
-    size: 24px;
-    weight: regular;
-  }
-  line-height: 24px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-@mixin product-header {
-  font: {
-    size: 16px;
-    weight: regular;
-  }
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-@mixin main-text {
-  font: {
-    family: "Arial", "Helvetica", sans-serif;
-    size: 14px;
-    weight: regular;
-  }
-  line-height: 18px;
-  color: $basic-dark-grey;
-}
-
-@mixin small-text {
-  font: {
-    family: "Arial", "Helvetica", sans-serif;
-    size: 12px;
-    weight: regular;
-  }
-  line-height: 12px;
-  color: $basic-dark-grey;
-  text-align: center;
+  src: local(""), url("../fonts/oswald-v35-latin_cyrillic-600.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("../fonts/oswald-v35-latin_cyrillic-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

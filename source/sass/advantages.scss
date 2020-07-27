@@ -1,11 +1,11 @@
 .advantages__title {
-	@include big-header;
+  @include big-header;
 }
 
 .advantages__list {
-	@include reset-list;
+  @include reset-list;
 }
 
 .advantages__description {
-	@include main-text;
+  @include main-text;
 }

@@ -1,27 +1,27 @@
 .example {
-	background-color: $basic-light-grey;
+  background-color: $basic-light-grey;
 }
 
 .example__title {
-	@include big-header;
+  @include big-header;
 }
 
 .example__describtion {
-	@include main-text;
+  @include main-text;
 }
 
 .example__list {
-	@include reset-list;
+  @include reset-list;
 }
 
 .example__header {
-	@include small-header;
+  @include small-header;
 }
 
 .example__subtitle {
-	@include small-text;
+  @include small-text;
 }
 
 .example__price {
-	@include subtitle;
+  @include subtitle;
 }
