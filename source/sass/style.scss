@@ -1,3 +1,19 @@
-@import "mixins", "colors", "fonts", "buttons", "global", "header", "main-screen","main-services", "advantages", "example",
-"footer-address", "catalog", "more-products", "footer", "form", "personal-info",
-"radio", "contacts", "comment", "additionally";
+@import "mixins";
+@import "fonts";
+@import "buttons";
+@import "global";
+@import "header";
+@import "main-screen";
+@import "main-services";
+@import "advantages";
+@import "example";
+@import "footer-address";
+@import "catalog";
+@import "more-products";
+@import "footer";
+@import "form";
+@import "personal-info";
+@import "radio";
+@import "contacts";
+@import "comment";
+@import "utils";

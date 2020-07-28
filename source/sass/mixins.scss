@@ -38,14 +38,16 @@
   font: {
     size: 36px;
     weight: regular;
-  } ; line-height: 36px;
+  }
+  line-height: 36px;
 }
 
 @mixin subtitle {
   font: {
     size: 14px;
     weight: regular;
-  } ; line-height: 18px;
+  }
+  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -54,7 +56,8 @@
   font: {
     size: 24px;
     weight: regular;
-  } ; line-height: 24px;
+  }
+  line-height: 24px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -63,7 +66,8 @@
   font: {
     size: 16px;
     weight: regular;
-  } ; line-height: 20px;
+  }
+  line-height: 20px;
   text-align: left;
   text-transform: uppercase;
 }
@@ -73,7 +77,8 @@
     family: "Arial", "Helvetica", sans-serif;
     size: 14px;
     weight: regular;
-  } ; line-height: 18px;
+  }
+  line-height: 18px;
   color: $basic-dark-grey;
 }
 
@@ -82,7 +87,8 @@
     family: "Arial", "Helvetica", sans-serif;
     size: 12px;
     weight: regular;
-  } ; line-height: 12px;
+  }
+  line-height: 12px;
   text-align: center;
   color: $basic-dark-grey;
 }

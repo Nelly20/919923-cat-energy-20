@@ -1,18 +1,18 @@
-.additionally {
+.utils {
   border: none;
 }
 
-.additionally__title {
+.utils__title {
   text-align: left;
   text-transform: none;
 
   @include small-header;
 }
 
-.additionally__list {
+.utils__list {
   @include reset-list;
 }
 
-.additionally__label {
+.utils__label {
   @include product-header;
 }

@@ -23,14 +23,14 @@
   height: 289px;
 
   background-color: $basic-green;
-  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
 .sale__describtion {
   font-size: 16px;
   line-height: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   text-align: center;
   color: $basic-white;
 }
