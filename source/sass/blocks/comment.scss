@@ -1,0 +1,17 @@
+.comment {
+  border: none;
+}
+
+.comment__title {
+  text-align: left;
+  text-transform: none;
+
+  @include small-header;
+}
+
+.comment__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $special-dark-grey;
+
+  @include product-header;
+}

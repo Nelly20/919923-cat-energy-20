@@ -1,0 +1,33 @@
+.contacts {
+  border: none;
+}
+
+.contacts__title {
+  text-align: left;
+  text-transform: none;
+
+  @include small-header;
+}
+
+.contacts__list {
+  @include reset-list;
+}
+
+.contacts__label {
+  color: $basic-dark-grey;
+
+  @include subtitle;
+}
+
+.contacts__input {
+  width: 100%;
+  padding: 14px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: left;
+  color: $basic-dark-grey;
+
+  border: 1px solid $special-grey;
+
+  @include subtitle;
+}

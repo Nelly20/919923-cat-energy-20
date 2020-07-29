@@ -1,0 +1,18 @@
+.utils {
+  border: none;
+}
+
+.utils__title {
+  text-align: left;
+  text-transform: none;
+
+  @include small-header;
+}
+
+.utils__list {
+  @include reset-list;
+}
+
+.utils__label {
+  @include product-header;
+}

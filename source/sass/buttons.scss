@@ -1,0 +1,12 @@
+.more-products__button,
+.catalog__button,
+.main-screen__button,
+.form__button {
+  @include button-green;
+  @include button;
+}
+
+.catalog__more-products-button {
+  @include button-grey;
+  @include button;
+}

@@ -1,0 +1,11 @@
+.advantages__title {
+  @include big-header;
+}
+
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__description {
+  @include main-text;
+}

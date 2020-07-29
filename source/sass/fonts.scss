@@ -1,0 +1,23 @@
+/* oswald-regular - latin_cyrillic */
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Oswald";
+
+  src: local(""),
+    url("../fonts/oswald-v35-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/oswald-v35-latin_cyrillic-regular.woff") format("woff");
+}
+
+/* oswald-600 - latin_cyrillic */
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Oswald";
+
+  src: local(""),
+    url("../fonts/oswald-v35-latin_cyrillic-600.woff2") format("woff2"),
+    url("../fonts/oswald-v35-latin_cyrillic-600.woff") format("woff");
+}
