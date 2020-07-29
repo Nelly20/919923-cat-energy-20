@@ -1,0 +1,20 @@
+.main-screen {
+  padding-top: 27px;
+  padding-bottom: 22px;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-screen__title {
+  text-align: center;
+  color: $basic-white;
+
+  @include big-header;
+}
+
+.main-screen__subtitle {
+  color: $basic-white;
+
+  @include subtitle;
+}

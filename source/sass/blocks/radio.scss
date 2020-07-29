@@ -1,0 +1,14 @@
+.radio {
+  border: none;
+}
+
+.radio__list {
+  @include reset-list;
+}
+
+.radio__label {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $special-dark-grey;
+
+  @include product-header;
+}

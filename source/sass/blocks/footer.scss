@@ -1,0 +1,20 @@
+.footer {
+  background-color: $special-light-grey;
+}
+
+.footer-icons__list {
+  @include reset-list;
+}
+
+.footer-icons__link {
+  text-decoration: none;
+}
+
+.copyright__link {
+  color: $basic-dark-grey;
+  text-decoration: none;
+}
+
+.copyright__text {
+  family: "Arial", "Helvetica", sans-serif;
+}
