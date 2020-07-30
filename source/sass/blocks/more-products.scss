@@ -1,3 +1,9 @@
+.more-products {
+  display: grid;
+
+  grid-template-columns: 1fr;
+}
+
 .more-products__title {
   text-transform: none;
 
@@ -15,12 +21,16 @@
 }
 
 .more-products__item-describtion {
+  display: flex;
+  justify-content: space-between;
+
   @include main-text;
 }
 
 .sale {
   width: 280px;
   height: 289px;
+  margin-top: 39px;
 
   background-color: $basic-green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -28,9 +38,77 @@
 }
 
 .sale__describtion {
+  padding-top: 186px;
+
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   font-family: "Arial", "Helvetica", sans-serif;
   text-align: center;
   color: $basic-white;
+}
+
+@media (min-width: $tablet-width) {
+  .more-products__title {
+    @include big-header;
+  }
+
+  .more-products__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .more-products__text {
+    margin-right: 51px;
+  }
+
+  .more-products__button {
+    width: 100%;
+  }
+
+  .sale {
+    width: 708px;
+    height: 200px;
+  }
+
+  .sale__describtion {
+    padding-top: 71px;
+    padding-left: 423px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more-products {
+    column-gap: 80px;
+    grid-template-columns: 895px 245px;
+  }
+
+  .more-products__button {
+    width: 244px;
+    height: 40px;
+  }
+
+  .sale {
+    width: 280px;
+    height: 289px;
+    margin-top: 39px;
+
+    background-color: $basic-green;
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .sale__describtion {
+    padding-top: 106px;
+    padding-left: 0;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Arial", "Helvetica", sans-serif;
+    text-align: center;
+    color: $basic-white;
+  }
 }

@@ -1,5 +1,9 @@
 .example {
+  display: grid;
+
   background-color: $basic-light-grey;
+
+  grid-template-columns: 1fr;
 }
 
 .example__title {
@@ -11,7 +15,15 @@
 }
 
 .example__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
   @include reset-list;
+}
+
+.example__item {
+  width: 124px;
 }
 
 .example__header {
@@ -26,4 +38,73 @@
 
 .example__price {
   @include subtitle;
+}
+
+.example__price br {
+  display: none;
+}
+
+.example__img-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: $basic-white;
+  }
+
+  .example__title {
+    @include big-tablet-header;
+  }
+
+  .example__describtion {
+    @include tablet-main-text;
+  }
+
+  .example__list {
+    justify-content: space-between;
+  }
+
+  .example__item {
+    width: 162px;
+  }
+
+  .example__subtitle {
+    @include subtitle;
+  }
+
+  .example__subtitle br {
+    display: none;
+  }
+
+  .example__price {
+    text-align: right;
+  }
+
+  .example__price br {
+    display: block;
+  }
+
+  .example__img-section {
+    background-color: $basic-light-grey;
+  }
+
+  .example__img {
+    width: 708px;
+    height: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .example__wrapper {
+    background-color: $basic-light-grey;
+  }
 }

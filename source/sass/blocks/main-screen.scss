@@ -1,4 +1,6 @@
 .main-screen {
+  display: flex;
+  flex-direction: column;
   padding-top: 27px;
   padding-bottom: 22px;
 
@@ -17,4 +19,30 @@
   color: $basic-white;
 
   @include subtitle;
+}
+
+@media (min-width: $tablet-width) {
+  .main-screen__title {
+    @include big-tablet-header;
+    text-align: left;
+    color: $basic-black;
+  }
+
+  .main-screen__subtitle {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $basic-black;
+  }
+
+  .main-screen__button {
+    width: 244px;
+    height: 54px;
+
+    font-size: 20px;
+  }
+
+  .main-screen__button-wrapper {
+    text-align: left;
+  }
 }

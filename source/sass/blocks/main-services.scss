@@ -1,8 +1,13 @@
 .main-services__list {
+  display: grid;
+  grid-template-columns: 1fr;
+
   @include reset-list;
 }
 
 .services-list__item {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
   padding: 21px 33px 18px 19px;
 
@@ -24,4 +29,31 @@
   color: $basic-black;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .services-list__item {
+    padding: 77px 62px 80px 52px;
+  }
+
+  .services-list__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .services-list__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-services__list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  .services-list__item {
+    padding: 41px 52px 55px 52px;
+  }
 }
