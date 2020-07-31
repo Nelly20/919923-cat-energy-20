@@ -12,7 +12,7 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">Открыть меню</span>М
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -30,13 +30,17 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="main-screen container">
-        <h1 class="main-screen__title">Функциональное<br>
-          питание для котов
-        </h1>
-        <p class="main-screen__subtitle">Занялся собой? Займись котом!</p>
-        <img src="img/index-can-mobile@1x.png" width="280" height="270" alt="Cat Energy">
-        <button type="button" class="main-screen__button">Подобрать программу</button>
+      <section class="main-screen">
+        <div class="container">
+          <h1 class="main-screen__title">Функциональное<br>
+            питание для котов
+          </h1>
+          <p class="main-screen__subtitle">Занялся собой? Займись котом!</p>
+          <img src="img/index-can-mobile@1x.png" width="280" height="270" alt="Cat Energy">
+          <p class="main-screen__button-wrapper">
+            <button type="button" class="main-screen__button">Подобрать программу</button>
+          </p>
+        </div>
       </section>
       <section class="main-services container">
         <h2 class="visually-hidden">Список услуг</h2>
@@ -63,41 +67,45 @@
             </p>
           </li>
           <li class="advantages__item">
-            <p class="advantages__description">Функциональное питание
-              содержит только полезные
-              питательные вещества.
+            <p class="advantages__description">Выпускается в виде порошка,
+              который нужно лишь залить
+              кипятком и готово.
             </p>
           </li>
           <li class="advantages__item">
-            <p class="advantages__description">Функциональное питание
-              содержит только полезные
-              питательные вещества.
+            <p class="advantages__description">Замените один-два приема
+              обычной еды на наше
+              функциональное питание.
             </p>
           </li>
           <li class="advantages__item">
-            <p class="advantages__description">Функциональное питание
-              содержит только полезные
-              питательные вещества.
+            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </p>
           </li>
         </ul>
       </section>
       <section class="example container">
-        <div class="">
+        <div>
           <h2 class="example__title">Живой пример</h2>
-          <p class="example__describtion">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <ul class="example__list">
-            <li class="example__item">
-              <h3 class="example__header">5 КГ</h3>
-              <p class="example__subtitle">снижение<br>веса</p>
-            </li>
-            <li class="example__item">
-              <h3 class="example__header">60 ДНЕЙ</h3>
-              <p class="example__subtitle">затрачено<br>времени</p>
-            </li>
-          </ul>
-          <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
-          <img src="img/before-mobile@1x.png" height="232" alt="Кот Борис">
+          <div class="example__wrapper">
+            <p class="example__describtion">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <ul class="example__list">
+              <li class="example__item">
+                <h3 class="example__header">5 КГ</h3>
+                <p class="example__subtitle">снижение<br> веса</p>
+              </li>
+              <li class="example__item">
+                <h3 class="example__header">60 ДНЕЙ</h3>
+                <p class="example__subtitle">затрачено<br> времени</p>
+              </li>
+              <li>
+                <p class="example__price">Затраты на питание:<br> 15 000 РУБ.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="example__img-section">
+          <img class="example__img" src="img/before-mobile@1x.png" height="232" alt="Кот Борис">
           <button type="button" class="button example__button">Было</button>
           <button type="button" class="button example__button">Стало</button>
         </div>
@@ -105,14 +113,19 @@
     </main>
     <footer class="page-footer">
       <div class="footer-adress">
-        <div class="container">
-          <h2 class="footer-adress__title">приглашаем к сотрудничеству дилеров!</h2>
-          <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          <img src="img/bg-map-mobile@1x.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <div class="container footer-adress">
+          <div class="footer-adress__wrapper">
+            <h2 class="footer-adress__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+            <div>
+              <address class="page-footer__address">ул. Большая<br> Конюшенная, д. 19/8</address>
+              <address class="page-footer__address">Санкт-Петербург</address>
+            </div>
+          </div>
+          <img class="footer-adress__img" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>
       </div>
-      <div class="footer">
-        <div class="container">
+      <div class="">
+        <div class="container footer">
           <a href="index.html">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
           </a>
@@ -127,12 +140,14 @@
               <a class="footer-icons__link" href="#" aria-label="Фейсбук">FB</a>
             </li>
           </ul>
-          <a class="copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="copyright__text">HTML Academy</p>
-          </a>
-          <a class="copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-          </a>
+          <div class="copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <p class="copyright__text">HTML Academy</p>
+            </a>
+            <a class="copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>

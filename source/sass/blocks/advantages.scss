@@ -3,9 +3,38 @@
 }
 
 .advantages__list {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
   @include reset-list;
 }
 
 .advantages__description {
   @include main-text;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    column-gap: 130px;
+
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+  }
+
+  .advantages__title {
+    @include big-tablet-header;
+  }
+
+  .advantages__description {
+    @include tablet-main-text;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    column-gap: 77px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

@@ -1,13 +1,70 @@
+.footer-adress__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer-adress__title {
-  font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
-  color: $special-black;
-  text-transform: uppercase;
+
+  @include product-header;
 }
 
 .page-footer__address {
   font-style: normal;
+  line-height: 20px;
 
   @include main-text;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-adress__img {
+    width: 768px;
+    height: 400px;
+  }
+
+  .page-footer__address {
+    font-size: 16px;
+    text-align: right;
+
+    &:first-child {
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer-adress__title {
+    font-size: 20px;
+    line-height: 21px;
+
+    @include product-header;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-adress {
+    position: relative;
+  }
+
+  .footer-adress__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    padding-top: 66px;
+    padding-right: 89px;
+    padding-bottom: 55px;
+    padding-left: 75px;
+
+    background-color: $basic-white;
+  }
+
+  .footer-adress__title {
+    margin-right: 87px;
+  }
+
+  .footer-adress__img {
+    width: 1440px;
+    height: 400px;
+  }
 }
