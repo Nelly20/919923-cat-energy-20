@@ -60,7 +60,7 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    width: 324px;
+    max-width: 324px;
     padding-bottom: 40px;
 
     background-color: $special-light-grey;
@@ -81,7 +81,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 324px;
+    max-width: 324px;
 
     border: 2px solid $special-light-grey;
   }

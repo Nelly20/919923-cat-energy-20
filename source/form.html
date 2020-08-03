@@ -7,7 +7,7 @@
   </head>
   <body class="page__body">
     <header class="page-header container">
-      <a class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
+      <a href="index.html" class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
       <img class="page-header__logo" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
       </a>
       <nav class="main-nav">
@@ -32,43 +32,45 @@
     <main class="page-main">
       <form class="form container" action="https://echo.htmlacademy.ru" method="post">
         <h1 class="form__title">Подбор программы</h1>
-        <p class="form__subtitle">Заполните анкету, и мы подберем
+        <p class="form__subtitle">Заполните анкету, и мы подберем<br>
           программу питания для вашего кота
         </p>
-        <fieldset class="personal-info">
-          <legend class="visually-hidden">Персональные данные</legend>
-          <ul class="personal-info__list">
-            <li class="personal-info__item">
-              <label class="personal-info__label" for="name">Имя:*</label>
-              <input class="personal-info__input" type="text" id="name" placeholder="барсик">
-            </li>
-            <li class="personal-info__item">
-              <label class="personal-info__label" for="weight">Вес (кг):*</label>
-              <input class="personal-info__input" type="number" id="weight" placeholder="7">
-            </li>
-            <li class="personal-info__item">
-              <label class="personal-info__label" for="age">Возраст (лет):</label>
-              <input class="personal-info__input" type="number" id="age" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="radio">
-          <legend class="visually-hidden">Выбрать программу</legend>
-          <ul class="radio__list">
-            <li class="radio__item">
-              <input class="radio__input" type="radio" name="supply-type" id="first-program" checked>
-              <label for="first-program" class="radio__label" tabindex="0">похудение</label>
-            </li>
-            <li class="radio__item">
-              <input class="radio__input" type="radio" name="supply-type" id="second-program">
-              <label for="second-program" class="radio__label" tabindex="0">Набор массы</label>
-            </li>
-            <li class="radio__item">
-              <input class="radio__input" type="radio" name="supply-type" id="third-program">
-              <label for="third-program" class="radio__label" tabindex="0">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__wrapper">
+          <fieldset class="personal-info">
+            <legend class="visually-hidden">Персональные данные</legend>
+            <ul class="personal-info__list">
+              <li class="personal-info__item">
+                <label class="personal-info__label" for="name">Имя:*</label>
+                <input class="personal-info__input" type="text" id="name" placeholder="барсик">
+              </li>
+              <li class="personal-info__item">
+                <label class="personal-info__label" for="weight">Вес (кг):*</label>
+                <input class="personal-info__input" type="number" id="weight" placeholder="7">
+              </li>
+              <li class="personal-info__item">
+                <label class="personal-info__label" for="age">Возраст (лет):</label>
+                <input class="personal-info__input" type="number" id="age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="radio">
+            <legend class="visually-hidden">Выбрать программу</legend>
+            <ul class="radio__list">
+              <li class="radio__item">
+                <input class="radio__input" type="radio" name="supply-type" id="first-program" checked>
+                <label for="first-program" class="radio__label" tabindex="0">похудение</label>
+              </li>
+              <li class="radio__item">
+                <input class="radio__input" type="radio" name="supply-type" id="second-program">
+                <label for="second-program" class="radio__label" tabindex="0">Набор массы</label>
+              </li>
+              <li class="radio__item">
+                <input class="radio__input" type="radio" name="supply-type" id="third-program">
+                <label for="third-program" class="radio__label" tabindex="0">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="contacts">
           <legend class="contacts__title">Контактные данные (владельца кота)</legend>
           <ul class="contacts__list">
@@ -107,20 +109,27 @@
             </li>
           </ul>
         </fieldset>
-        <button class="form__button" type="button">отправить заявку</button>
-        <small class="form__small-text">* — Обязательные поля</small>
+        <div class="form__button-wrapper">
+          <button class="form__button" type="button">отправить заявку</button>
+          <small class="form__small-text">* — Обязательные поля</small>
+        </div>
       </form>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="footer-adress">
-        <div class="container">
-          <h2 class="footer-adress__title">приглашаем к сотрудничеству дилеров!</h2>
-          <address class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          <img src="img/bg-map-mobile@1x.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <div class="footer-adress">
+          <div class="footer-adress__wrapper">
+            <h2 class="footer-adress__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+            <div>
+              <address class="page-footer__address">ул. Большая<br> Конюшенная, д. 19/8</address>
+              <address class="page-footer__address">Санкт-Петербург</address>
+            </div>
+          </div>
+          <img class="footer-adress__img" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>
       </div>
-      <div class="footer">
-        <div class="container">
+      <div>
+        <div class="footer">
           <a href="index.html">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
           </a>
@@ -135,12 +144,14 @@
               <a class="footer-icons__link" href="#" aria-label="Фейсбук">FB</a>
             </li>
           </ul>
-          <a class="copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="copyright__text">HTML Academy</p>
-          </a>
-          <a class="copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-          </a>
+          <div class="copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <p class="copyright__text">HTML Academy</p>
+            </a>
+            <a class="copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -6,9 +6,22 @@
   @include reset-list;
 }
 
+.radio__item {
+  margin-bottom: 13px;
+}
+
 .radio__label {
-  font-family: "Oswald", "Arial", sans-serif;
   color: $special-dark-grey;
 
   @include product-header;
+}
+
+@media (min-width: $tablet-width) {
+  .radio__list {
+    border: 1px solid $special-grey;
+  }
+
+  .radio__label {
+    @include product-tablet-header;
+  }
 }

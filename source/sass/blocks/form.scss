@@ -1,3 +1,9 @@
+.form__wrapper {
+  display: grid;
+
+  grid-template-columns: 1fr;
+}
+
 .form__title {
   @include big-header;
 }
@@ -9,10 +15,25 @@
 }
 
 .form__small-text {
-  font-weight: regular;
-  font-size: 14px;
-  line-height: 16px;
-  font-family: "Arial", "Helvetica", sans-serif;
+  @include main-text;
   text-align: center;
   color: $basic-black;
+}
+
+@media (min-width: $tablet-width) {
+  .form__title {
+    @include big-tablet-header;
+  }
+
+  .form__subtitle {
+    line-height: 30px;
+
+    @include product-tablet-header;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }

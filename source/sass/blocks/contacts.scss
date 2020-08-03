@@ -3,6 +3,8 @@
 }
 
 .contacts__title {
+  margin-bottom: 32px;
+
   text-align: left;
   text-transform: none;
 
@@ -10,13 +12,24 @@
 }
 
 .contacts__list {
+  display: flex;
+  flex-direction: column;
+
   @include reset-list;
 }
 
+.contacts__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
 .contacts__label {
+  margin-right: 12px;
+
   color: $basic-dark-grey;
 
-  @include subtitle;
+  @include product-header;
 }
 
 .contacts__input {
@@ -29,5 +42,23 @@
 
   border: 1px solid $special-grey;
 
-  @include subtitle;
+  @include product-header;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    @include big-header;
+  }
+
+  .contacts__label,
+  .contacts__input {
+    @include product-tablet-header;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

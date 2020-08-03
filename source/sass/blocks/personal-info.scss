@@ -6,10 +6,18 @@
   @include reset-list;
 }
 
+.personal-info__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 .personal-info__label {
+  margin-right: 24px;
+
   color: $basic-dark-grey;
 
-  @include subtitle;
+  @include product-header;
 }
 
 .personal-info__input {
@@ -22,12 +30,22 @@
 
   border: 1px solid $special-grey;
 
-  @include subtitle;
+  @include product-header;
 }
 
 .personal-info__input::placeholder {
   text-align: left;
   color: $basic-dark-grey;
 
-  @include subtitle;
+  @include product-header;
+}
+
+@media (min-width: $tablet-width) {
+  .personal-info__label,
+  .personal-info__input,
+  .personal-info__input::placeholder {
+    color: $basic-dark-grey;
+
+    @include product-tablet-header;
+  }
 }
