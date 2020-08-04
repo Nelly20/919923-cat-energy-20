@@ -14,6 +14,12 @@
   @include subtitle;
 }
 
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form__small-text {
   @include main-text;
   text-align: center;
@@ -30,10 +36,33 @@
 
     @include product-tablet-header;
   }
+
+  .form__button-wrapper {
+    flex-direction: row;
+  }
+
+  .form__button {
+    width: 282px;
+    height: 52px;
+    margin-right: 61px;
+
+    @include product-tablet-header;
+  }
+
+  .form__small-text {
+    text-transform: none;
+
+    @include product-header;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .form__wrapper {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .form__button {
+    width: 568px;
+    height: 52px;
   }
 }

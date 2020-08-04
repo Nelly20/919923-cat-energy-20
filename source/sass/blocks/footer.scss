@@ -50,13 +50,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 55px 30px 61px 30px;
   }
 
   .copyright__link {
     &:first-child {
       margin-right: 22px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 57px 110px 58px 110px;
   }
 }
