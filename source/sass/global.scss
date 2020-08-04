@@ -30,6 +30,11 @@ img {
 .page__body {
   min-height: 100%;
   margin: 0;
-
+  display: flex;
+  flex-direction: column;
   color: $basic-black;
+}
+
+.content {
+  flex: 1 0 auto;
 }

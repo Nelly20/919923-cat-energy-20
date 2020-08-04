@@ -20,7 +20,7 @@
 
 @media (min-width: $tablet-width) {
   .footer-adress__img {
-    width: 768px;
+    width: 100%;
     height: 400px;
   }
 
@@ -36,8 +36,6 @@
   .footer-adress__title {
     font-size: 20px;
     line-height: 21px;
-
-    @include product-header;
   }
 }
 
@@ -51,6 +49,7 @@
     top: 95px;
     left: 110px;
 
+    width: 570px;
     padding-top: 66px;
     padding-right: 89px;
     padding-bottom: 55px;
@@ -64,7 +63,7 @@
   }
 
   .footer-adress__img {
-    width: 1440px;
+    width: 100%;
     height: 400px;
   }
 }

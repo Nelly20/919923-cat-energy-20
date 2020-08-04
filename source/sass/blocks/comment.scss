@@ -10,8 +10,27 @@
 }
 
 .comment__text {
+  width: 100%;
+  margin-top: 34px;
+  padding-top: 13px;
+  padding-left: 5px;
+
   font-family: "Oswald", "Arial", sans-serif;
   color: $special-dark-grey;
 
+  border: 1px solid $special-grey;
+
   @include product-header;
+}
+
+@media (min-width: $tablet-width) {
+  .comment__title {
+    @include big-header;
+  }
+
+  .comment__text {
+    @include product-tablet-header;
+    line-height: 30px;
+    padding-left: 19px;
+  }
 }

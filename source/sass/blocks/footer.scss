@@ -4,6 +4,7 @@
 
 .footer {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   align-items: center;
 }
@@ -49,11 +50,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 55px 30px 61px 30px;
   }
 
   .copyright__link {
     &:first-child {
       margin-right: 22px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 57px 110px 58px 110px;
   }
 }
