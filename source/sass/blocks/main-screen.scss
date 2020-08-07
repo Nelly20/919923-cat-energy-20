@@ -6,9 +6,13 @@
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 320px;
 }
 
 .main-screen__title {
+  margin: 0;
+
   text-align: center;
   color: $basic-white;
 
@@ -16,33 +20,102 @@
 }
 
 .main-screen__subtitle {
+  margin-top: 25px;
+
+  text-align: center;
   color: $basic-white;
 
   @include subtitle;
 }
 
+.main-screen__img {
+  margin-top: 10px;
+}
+
+.main-screen__button-wrapper {
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
+  .main-screen {
+    position: relative;
+
+    background-image: none;
+  }
+
   .main-screen__title {
-    @include big-tablet-header;
+    margin-top: 24px;
+    margin-left: 86px;
+
     text-align: left;
     color: $basic-black;
+
+    @include big-tablet-header;
   }
 
   .main-screen__subtitle {
+    margin-top: 40px;
+    margin-left: 88px;
+
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     color: $basic-black;
   }
 
+  .main-screen__img {
+    position: absolute;
+    top: 240px;
+    left: 380px;
+    z-index: -1;
+
+    width: 709px;
+    height: 609px;
+  }
+
   .main-screen__button {
     width: 244px;
     height: 54px;
+    margin-top: 30px;
+    margin-left: 82px;
 
     font-size: 20px;
   }
 
   .main-screen__button-wrapper {
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-screen {
+    position: relative;
+
+    background-image: none;
+  }
+
+  .main-screen__title {
+    margin-top: 61px;
+    margin-left: 125px;
+  }
+
+  .main-screen__subtitle {
+    margin-top: 40px;
+    margin-left: 125px;
+  }
+
+  .main-screen__img {
+    position: absolute;
+    top: 143px;
+    right: 330px;
+    z-index: 2;
+
+    width: 552px;
+    height: 499px;
+  }
+
+  .main-screen__button {
+    margin-top: 32px;
+    margin-left: 125px;
   }
 }
