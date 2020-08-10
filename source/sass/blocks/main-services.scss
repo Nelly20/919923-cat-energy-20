@@ -33,7 +33,7 @@
   margin: 0;
   margin-top: 20px;
   margin-bottom: 8px;
-  padding-top: 14px;
+  padding-top: 18px;
   padding-bottom: 15px;
   padding-left: 26px;
 
@@ -41,18 +41,18 @@
   text-transform: uppercase;
 
   @include small-header;
-
-  &:last-child {
-    margin-left: 25px;
-  }
 }
 
 .services-list__subtitle {
-  padding-bottom: 22px;
+  padding-bottom: 24px;
 
   border-bottom: 1px solid $basic-grey;
 
   @include main-text;
+
+  br {
+    display: none;
+  }
 }
 
 .services-list__link {
@@ -137,10 +137,6 @@
 
     &:last-child {
       background-position: 33px 47px;
-
-      .services-list__title {
-        margin-left: 64px;
-      }
     }
   }
 
@@ -148,6 +144,10 @@
     text-align: center;
     margin-top: 37px;
     margin-left: 26px;
+
+    &:last-child {
+      margin-left: 64px;
+    }
   }
 
   .services-list__subtitle {

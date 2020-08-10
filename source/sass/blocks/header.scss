@@ -10,13 +10,24 @@
   margin-bottom: 12px;
 }
 
-.main-nav__toggle {
+.main-nav__toggle--open {
   position: absolute;
-  top: 23px;
-  right: 14px;
+  top: 21px;
+  right: 12px;
 
   padding: 15px;
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  border: none;
+}
 
+.main-nav__toggle--close {
+  position: absolute;
+  top: 23px;
+  right: 12px;
+
+  padding: 15px;
   background-color: transparent;
   background-image: url("../img/menu-mobile.svg");
   background-repeat: no-repeat;
@@ -30,6 +41,7 @@
 
   font-size: 20px;
   text-align: center;
+  //word-spacing: -2px;
   text-transform: uppercase;
 
   @include reset-list;
@@ -39,7 +51,7 @@
   position: relative;
 
   padding-top: 18px;
-  padding-bottom: 17px;
+  padding-bottom: 18px;
 
   border-top: 1px solid $special-border-color;
 
@@ -67,7 +79,7 @@
     margin-top: 22px;
   }
 
-  .main-nav__toggle {
+  .main-nav__toggle--open {
     position: absolute;
 
     opacity: 0;

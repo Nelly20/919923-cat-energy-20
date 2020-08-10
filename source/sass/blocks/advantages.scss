@@ -13,7 +13,7 @@
 }
 
 .advantages__item {
-  margin-top: 10px;
+  margin-top: 11px;
 
   &::before {
     content: "";
@@ -25,25 +25,25 @@
     background-color: $basic-green;
   }
 
-  &:first-child::before {
+  &.advantages__icon--leaf::before {
     background-image: url("../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &:nth-child(2)::before {
+  &.advantages__icon--powder::before {
     background-image: url("../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &:nth-child(3)::before {
+  &.advantages__icon--dinning::before {
     background-image: url("../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
     background-position: 3px center;
   }
 
-  &:last-child::before {
+  &.advantages__icon--clock::before {
     background-image: url("../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -51,15 +51,21 @@
 }
 
 .advantages__description {
-  margin-top: 2px;
+  margin-top: 3px;
   margin-left: 80px;
 
   @include main-text;
+
+  & br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
     margin-top: 18px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid $special-border-color;
   }
 
   .advantages__title {
@@ -91,25 +97,25 @@
       background-color: $basic-green;
     }
 
-    &:first-child {
+    &.advantages__icon--leaf {
       background-image: url("../img/icon-one.svg");
       background-repeat: no-repeat;
       background-position: 127px top;
     }
 
-    &:nth-child(2) {
+    &.advantages__icon--powder {
       background-image: url("../img/icon-two.svg");
       background-repeat: no-repeat;
       background-position: 124px top;
     }
 
-    &:nth-child(3) {
+    &.advantages__icon--dinning {
       background-image: url("../img/icon-three.svg");
       background-repeat: no-repeat;
       background-position: 124px top;
     }
 
-    &:nth-child(3)::before {
+    &.advantages__icon--clock {
       background-position: center;
     }
 
@@ -126,10 +132,18 @@
     margin-top: 13px;
 
     @include tablet-main-text;
+
+    & br {
+      display: block;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    border: none;
+  }
+
   .advantages__title {
     margin-top: 74px;
     margin-left: 1px;

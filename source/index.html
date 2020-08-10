@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
+    <div>
     <header class="page-header container">
       <a class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
       <img class="page-header__logo" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle--open visually-hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -42,6 +43,7 @@
           </p>
         </div>
       </section>
+    </div>
       <section class="main-services container">
         <h2 class="visually-hidden">Список услуг</h2>
         <ul class="main-services__list services-list">
@@ -60,34 +62,34 @@
       <section class="advantages container">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__icon--leaf">
             <p class="advantages__description">Функциональное питание
               содержит только полезные
               питательные вещества.
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__icon--powder">
             <p class="advantages__description">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__icon--dinning">
             <p class="advantages__description">Замените один-два приема
               обычной еды на наше
               функциональное питание.
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__icon--clock">
             <p class="advantages__description">Уже через месяц наслаждайтесь
-              изменениями к лучшему<br>
-              вашего питомца!
+изменениями к лучшему <br>
+вашего питомца!
             </p>
           </li>
         </ul>
       </section>
       <section class="example">
-        <div class="">
+        <div class="example__mobile-wrapper">
           <h2 class="example__title">Живой пример</h2>
           <div class="example__wrapper">
             <p class="example__describtion">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat<br>Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -107,16 +109,16 @@
             </ul>
           </div>
         </div>
-        <div class="example__first-slide visually-hidden">
+        <div class="example__first-slide">
           <img class="example__first-slide-img" src="img/before-mobile@1x.png" height="232" width="311" alt="Кот Борис">
           <div>
             <button type="button" class="button example__button">Было</button>
             <button type="button" class="button example__button">Стало</button>
           </div>
         </div>
-        <div class="example__second-slide">
+        <div class="example__second-slide visually-hidden">
           <img class="example__second-slide-img" src="img/after-mobile@1x.png" height="240" width="251" alt="Кот Борис">
-          <div>
+          <div class="example__buttons-wrapper">
             <button type="button" class="button example__button">Было</button>
             <button type="button" class="button example__button">Стало</button>
           </div>
