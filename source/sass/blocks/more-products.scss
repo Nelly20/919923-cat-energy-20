@@ -1,7 +1,19 @@
 .more-products {
+  position: relative;
+  margin-top: 8px;
   display: grid;
 
   grid-template-columns: 1fr;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 2px;
+    background-color: $basic-green;
+    top: 35px;
+    right: 0;
+  }
 }
 
 .more-products__title {
@@ -12,9 +24,22 @@
 
 .more-products__list {
   @include reset-list;
+  margin-top: 34px;
+}
+
+.more-products__item {
+  padding-bottom: 17px;
+  border-top: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: 1px solid $border-color;
+  }
 }
 
 .more-products__header {
+  margin-top: 11px;
+  margin-left: 2px;
+  margin-bottom: 0;
   color: $special-dark-grey;
 
   @include product-header;
@@ -23,22 +48,29 @@
 .more-products__item-describtion {
   display: flex;
   justify-content: space-between;
+  margin-top: -6px;
 
   @include main-text;
+}
+
+.more-products__button {
+  margin-top: -1px;
 }
 
 .sale {
   width: 280px;
   height: 289px;
   margin-top: 39px;
+  margin-bottom: 35px;
 
   background-color: $basic-green;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/icon_gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center 58px, center center;
 }
 
 .sale__describtion {
-  padding-top: 186px;
+  margin-top: 187px;
 
   font-weight: 400;
   font-size: 16px;

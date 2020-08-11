@@ -4,16 +4,17 @@
 .form__button {
   @include button-green;
   @include button;
+  text-decoration: none;
 
-  // &:hover {
-  //   background-color: $basic-dark-green;
-  // }
-  //
-  // &:focus {
-  //   color: $special-white;
-  //
-  //   background-color: $basic-dark-green;
-  // }
+  &:hover {
+    background-color: $basic-dark-green;
+  }
+
+  &:focus {
+    color: $special-white;
+
+    background-color: $basic-dark-green;
+  }
 }
 
 .catalog__more-products-button {

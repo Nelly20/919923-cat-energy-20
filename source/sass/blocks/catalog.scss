@@ -1,18 +1,50 @@
 .catalog__title {
+  margin: 0;
+  margin-top: 27px;
+
   @include big-header;
 }
 
 .catalog__list {
+  @include reset-list;
   display: grid;
+  margin-top: 40px;
 
   grid-template-columns: 1fr;
+}
 
+.catalog__item-list {
   @include reset-list;
 }
 
+.catalog__item-info {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+
+  @include small-text;
+}
+
+.catalog__item-data {
+  margin: 0;
+  margin-top: 3px;
+  padding: 0;
+}
+
 .catalog__item {
+  padding-top: 8px;
+  padding-bottom: 23px;
   display: flex;
   flex-wrap: wrap;
+  border-bottom: 1px solid $special-border-color;
+
+  &:first-child {
+    border-top: 1px solid $special-border-color;
+  }
+}
+
+.catalog__img {
+  margin: auto;
 }
 
 .catalog__item-header {
@@ -22,10 +54,28 @@
 }
 
 .catalog__item-description {
-  @include main-text;
+  @include small-text;
+  display: flex;
+}
+
+.catalog__table {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__more-products {
+  padding-bottom: 21px;
+  border-bottom: 1px solid $special-border-color;
+  margin-top: 26px;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .catalog__more-products-title {
+  margin-top: 53px;
+  margin-left: 1px;
+  margin-bottom: 0;
   text-align: center;
 
   @include product-header;
@@ -36,6 +86,8 @@
 }
 
 .catalog__more-products-subtitle {
+  margin-top: 10px;
+
   @include small-text;
 }
 
@@ -43,37 +95,91 @@
   display: none;
 }
 
+.catalog__more-products-button {
+  margin-top: 10px;
+}
+
+.catalog__button {
+  margin-top: -8px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog__title {
+    margin-top: 51px;
+
     @include big-tablet-header;
   }
 
   .catalog__list {
+    @include reset-list;
     column-gap: 60px;
+    margin-top: 167px;
 
     grid-template-columns: 1fr 1fr;
-    row-gap: 60px;
+    row-gap: 141px;
+  }
+
+  .catalog__item-list {
+    width: 252px;
+    margin-top: 20px;
+    padding: 0;
   }
 
   .catalog__item {
+    min-height: 430px;
+    padding-bottom: 34px;
+    padding-left: 39px;
+    padding-right: 37px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
     max-width: 324px;
-    padding-bottom: 40px;
 
     background-color: $special-light-grey;
   }
 
+  .catalog__img {
+    position: absolute;
+    top: -73px;
+  }
+
   .catalog__item-header {
+    max-width: 150px;
+    margin: 0 auto;
     text-align: center;
+    margin-top: 154px;
+    margin-bottom: 8px;
+    line-height: 24px;
 
     @include product-tablet-header;
+
+    br {
+      display: none;
+    }
+  }
+
+  .catalog__item-info {
+    width: 248px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 9px;
+    margin-top: 7px;
+    border-bottom: 1px solid $border-color;
+
+    @include catalog__item-text;
   }
 
   .catalog__button {
-    width: 240px;
+    width: 248px;
+    height: 29px;
+    margin-top: 33px;
+    padding-bottom: 0;
+
+    @include product-header;
   }
 
   .catalog__more-products {
@@ -81,12 +187,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 324px;
+    width: 324px;
+    margin-top: 0;
 
+    background-position: 132px 52px;
     border: 2px solid $special-light-grey;
   }
 
   .catalog__more-products-title {
+    line-height: 22px;
+    margin-top: 70px;
+
     @include product-tablet-header;
   }
 
@@ -95,9 +206,10 @@
   }
 
   .catalog__more-products-subtitle {
-    font-size: 16px;
+    margin-top: 20px;
+    line-height: 18px;
 
-    @include main-text;
+    @include catalog__item-text ;
   }
 
   .catalog__more-products-subtitle br {
@@ -114,11 +226,20 @@
     column-gap: 80px;
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 63px;
+    row-gap: 144px;
+  }
+
+  .catalog__item-list {
+    width: 173px;
   }
 
   .catalog__item {
     width: 245px;
+    min-height: 431px;
+  }
+
+  .catalog__item-info {
+    width: 173px;
   }
 
   .catalog__button {
