@@ -1,8 +1,27 @@
 .comment {
+  position: relative;
+
+  margin-top: 15px;
+  padding: 0;
+
   border: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: -22px;
+
+    width: 158px;
+    height: 2px;
+
+    background-color: $basic-green;
+  }
 }
 
 .comment__title {
+  margin-left: -4px;
+
   text-align: left;
   text-transform: none;
 
@@ -10,27 +29,97 @@
 }
 
 .comment__text {
-  width: 100%;
+  width: 262px;
+  min-height: 135px;
   margin-top: 34px;
-  padding-top: 13px;
-  padding-left: 5px;
+  padding-top: 11px;
+  padding-left: 12px;
 
   font-family: "Oswald", "Arial", sans-serif;
   color: $special-dark-grey;
 
   border: 1px solid $special-grey;
 
+  resize: none;
+
   @include product-header;
 }
 
 @media (min-width: $tablet-width) {
+  .comment {
+    @include container-form;
+
+    margin-top: 45px;
+
+    &::after {
+      top: 22px;
+      right: -64px;
+
+      width: 478px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: -64px;
+
+      width: 30px;
+      height: 2px;
+
+      background-color: $basic-green;
+    }
+  }
+
   .comment__title {
+    margin-left: 6px;
+
     @include big-header;
   }
 
   .comment__text {
-    @include product-tablet-header;
-    line-height: 30px;
+    width: 616px;
+    min-height: 160px;
+    margin-top: 72px;
+    margin-left: 8px;
     padding-left: 19px;
+
+    line-height: 30px;
+
+    @include product-tablet-header;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    width: auto;
+    margin-top: 50px;
+
+    &::after {
+      top: 23px;
+      right: -110px;
+
+      width: 1108px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: -112px;
+
+      width: 70px;
+      height: 2px;
+
+      background-color: $basic-green;
+    }
+  }
+
+  .comment__text {
+    width: 100%;
+    min-height: 161px;
+    margin-top: 80px;
+    padding-top: 4px;
+    padding-left: 15px;
   }
 }

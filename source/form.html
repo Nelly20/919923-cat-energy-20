@@ -2,28 +2,29 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy Выбор программы</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header container">
-      <a href="index.html" class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
+      <a class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
       <img class="page-header__logo" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="index.html">Главная</a>
+              <a href="index.html" class="site-list__link site-list__link--dark">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link site-list__link--dark" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Выбор программы</a>
+              <a class="site-list__link site-list__link--dark">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -57,15 +58,15 @@
             <legend class="visually-hidden">Выбрать программу</legend>
             <ul class="radio__list">
               <li class="radio__item">
-                <input class="radio__input" type="radio" name="supply-type" id="first-program" checked>
+                <input class="radio__input visually-hidden" type="radio" name="supply-type" id="first-program" checked>
                 <label for="first-program" class="radio__label" tabindex="0">похудение</label>
               </li>
               <li class="radio__item">
-                <input class="radio__input" type="radio" name="supply-type" id="second-program">
+                <input class="radio__input visually-hidden" type="radio" name="supply-type" id="second-program">
                 <label for="second-program" class="radio__label" tabindex="0">Набор массы</label>
               </li>
               <li class="radio__item">
-                <input class="radio__input" type="radio" name="supply-type" id="third-program">
+                <input class="radio__input visually-hidden" type="radio" name="supply-type" id="third-program" disabled checked>
                 <label for="third-program" class="radio__label" tabindex="0">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
@@ -76,35 +77,35 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <label class="contacts__label" for="email">E-mail:*</label>
-              <input class="contacts__input" type="email" id="email" placeholder="kuklachev@gmail.com">
+              <input class="contacts__input contacts__input--email" type="email" id="email" placeholder="kuklachev@gmail.com">
             </li>
             <li class="contacts__item">
               <label class="contacts__label" for="phone-number">Телефон:*</label>
-              <input class="contacts__input" type="tel" id="phone-number" placeholder="8 (960) 900-60-90">
+              <input class="contacts__input contacts__input--phone-number" type="tel" id="phone-number" placeholder="8 (960) 900-60-90">
             </li>
           </ul>
         </fieldset>
         <fieldset class="comment">
           <legend class="comment__title">Комментарий</legend>
-          <textarea class="comment__text" placeholder="Расскажите обо всех повАдках кота" rows="7"></textarea>
+          <textarea class="comment__text" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </fieldset>
         <fieldset class="additional">
           <legend class="additional__title">Дополнительно</legend>
           <ul class="additional__list">
             <li class="additional__item">
-              <input class="additional__input" type="checkbox" id="sugar">
+              <input class="additional__input visually-hidden" type="checkbox" id="sugar" checked>
               <label for="sugar" class="additional__label" tabindex="0">сахарозаменитель</label>
             </li>
             <li class="additional__item">
-              <input class="additional__input" type="checkbox" id="water">
+              <input class="additional__input visually-hidden" type="checkbox" id="water">
               <label for="water" class="additional__label" tabindex="0">питьевая вода</label>
             </li>
             <li class="additional__item">
-              <input class="additional__input" type="checkbox" id="milk">
+              <input class="additional__input visually-hidden" type="checkbox" id="milk">
               <label for="milk" class="additional__label" tabindex="0">молоко</label>
             </li>
             <li class="additional__item">
-              <input class="additional__input" type="checkbox" id="vitamins">
+              <input class="additional__input visually-hidden" type="checkbox" id="vitamins" disabled checked>
               <label for="vitamins" class="additional__label" tabindex="0">витамины</label>
             </li>
           </ul>
@@ -115,33 +116,39 @@
         </div>
       </form>
     </main>
-    <footer class="page-footer ">
-      <div class="footer-adress">
-        <div class="footer-adress">
-          <div class="footer-adress__wrapper container">
-            <h2 class="footer-adress__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+    <footer class="page-footer">
+      <div>
+        <div class="footer-address">
+          <div class="footer-address__wrapper container">
+            <h2 class="footer-address__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
             <div>
               <address class="page-footer__address">ул. Большая<br> Конюшенная, д. 19/8</address>
               <address class="page-footer__address">Санкт-Петербург</address>
             </div>
           </div>
-          <img class="footer-adress__img" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="footer-address__img" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>
       </div>
       <div>
-        <div class="footer">
+        <div class="footer container">
           <a href="index.html">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
           </a>
           <ul class="footer-icons footer-icons__list">
             <li class="footer-icons__item">
-              <a class="footer-icons__link" href="#" aria-label="Вконтакте">VK</a>
+              <a class="footer-icons__link" href="#" aria-label="Вконтакте">
+              <img src="img/icon_vk.svg" alt="Вконтакте" width="23" height="16">
+              </a>
             </li>
             <li class="footer-icons__item">
-              <a class="footer-icons__link" href="#" aria-label="Инстаграм">Insta</a>
+              <a class="footer-icons__link" href="#" aria-label="Инстаграм">
+              <img src="img/icon_instagram.svg" alt="Инстаграм" width="16" height="16">
+              </a>
             </li>
             <li class="footer-icons__item">
-              <a class="footer-icons__link" href="#" aria-label="Фейсбук">FB</a>
+              <a class="footer-icons__link" href="#" aria-label="Фейсбук">
+              <img src="img/icon_facebook.svg" alt="Фейсбук" width="22" height="22">
+              </a>
             </li>
           </ul>
           <div class="copyright">

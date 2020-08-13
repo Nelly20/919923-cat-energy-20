@@ -41,7 +41,6 @@
 
   font-size: 20px;
   text-align: center;
-  //word-spacing: -2px;
   text-transform: uppercase;
 
   @include reset-list;
@@ -60,7 +59,8 @@
   }
 }
 
-.site-list__link {
+.site-list__link,
+.site-list__link--dark {
   font-weight: 600;
   color: $basic-black;
   text-decoration: none;
@@ -104,12 +104,14 @@
       border: none;
     }
 
-    .site-list__link {
+    .site-list__link,
+    .site-list__link--dark {
       font-weight: 400;
     }
   }
 
-  .site-list__link {
+  .site-list__link,
+  .site-list__link--dark {
     padding-bottom: 8px;
 
     &:hover {
@@ -129,12 +131,30 @@
 }
 
 @media (min-width: $desktop-width) {
-  .background-wrapper {
-    height: 705px;
-    background-image: url("../img/index-background-mobile@1x.jpg");
+  .page__body--index {
+    background-image: url("../img/index-background-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 700px;
-    background-position: right top;
+    background-position: top right;
+  }
+
+  .site-list__link--dark {
+    text-decoration: none;
+    color: $basic-black;
+    padding-bottom: 8px;
+
+    &:hover {
+      color: $special-black;
+    }
+
+    &:active {
+      color: $special-light-black;
+    }
+
+    &:focus {
+      color: $basic-black;
+
+      border-bottom: 2px solid $basic-green;
+    }
   }
 
   .page-header__logo {

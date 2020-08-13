@@ -187,7 +187,7 @@
   .example {
     padding-bottom: 0;
 
-    background-color: $basic-white;
+    background-image: linear-gradient(to top, #eaeaea 40%, #ffffff 40%);
   }
 
   .example__mobile-wrapper {
@@ -281,20 +281,20 @@
   }
 
   .example__first-slide {
-    background-color: $basic-light-grey;
+    // background-color: $basic-light-grey;
   }
 
   .example__first-slide-img {
-    position: absolute;
-    top: -100px;
+    // position: absolute;
+    // top: -100px;
 
     margin-top: 43px;
     margin-left: -7px;
   }
 
   .example__second-slide-img {
-    position: absolute;
-    top: -100px;
+    // position: absolute;
+    // top: -100px;
 
     margin-top: 45px;
     margin-bottom: -10px;
@@ -303,16 +303,14 @@
 
   .example__first-slide,
   .example__second-slide {
-    position: relative;
+    // position: relative;
 
-    margin-top: 116px;
+    // margin-top: 116px;
     padding-bottom: 64px;
-
-    background-color: $basic-light-grey;
   }
 
   .example__button {
-    margin-top: 360px;
+    margin-top: 60px;
 
     background-color: transparent;
     border-bottom: 1px dotted $special-border-color;
@@ -328,47 +326,6 @@
       display: none;
     }
   }
-
-  // .example__first-slide .example__button:last-child {
-  //   margin-left: 3px;
-  //   padding-left: 460px;
-  //
-  //   cursor: auto;
-  //
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     top: -4px;
-  //     left: 180px;
-  //     z-index: 2;
-  //
-  //     box-sizing: border-box;
-  //     width: 34px;
-  //     height: 34px;
-  //
-  //     background-color: $basic-white;
-  //     background-image: url("../img/slider-control.svg");
-  //     background-repeat: no-repeat;
-  //     background-position: center;
-  //     border: 1px solid $border-color;
-  //     border-radius: 100%;
-  //   }
-  //
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     top: 9px;
-  //     left: 10px;
-  //     z-index: 1;
-  //
-  //     box-sizing: border-box;
-  //     width: 428px;
-  //     height: 6px;
-  //
-  //     background-color: $border-color;
-  //     border-radius: 6px;
-  //   }
-  // }
 
   .example__second-slide .example__button:last-child,
   .example__first-slide .example__button:last-child {
@@ -420,6 +377,9 @@
 @media (min-width: $desktop-width) {
   .example {
     display: flex;
+    justify-content: center;
+
+    background-image: linear-gradient(to top, $basic-light-grey 70%, $basic-white 30%);
   }
 
   .example__mobile-wrapper {
@@ -433,13 +393,11 @@
     padding-top: 56px;
     padding-bottom: 75px;
     padding-left: 66px;
-
-    background-color: $basic-light-grey;
   }
 
   .example__title {
-    margin-top: 35px;
     margin-left: 67px;
+    padding-top: 35px;
   }
 
   .example__header {
@@ -502,8 +460,13 @@
       margin-right: 60px;
     }
   }
-}
 
-.example__first-slide {
-  margin-top: 170px;
+  .example__first-slide {
+    margin-top: 170px;
+  }
+
+  .example__first-slide,
+  .example__second-slide {
+    background-color: transparent;
+  }
 }

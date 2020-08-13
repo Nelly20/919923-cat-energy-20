@@ -1,5 +1,9 @@
 .radio {
+  margin-top: 15px;
+  padding-bottom: 1px;
+
   border: none;
+  border-bottom: 1px solid $basic-grey;
 }
 
 .radio__list {
@@ -7,21 +11,133 @@
 }
 
 .radio__item {
-  margin-bottom: 13px;
+  margin-bottom: 23px;
+  margin-left: 30px;
 }
 
 .radio__label {
+  position: relative;
+
+  display: block;
+  margin-top: 5px;
+  margin-left: 2px;
+
   color: $special-dark-grey;
+
+  cursor: pointer;
+
+  user-select: none;
 
   @include product-header;
 }
 
+.radio__input + .radio__label::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -45px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid $border-color;
+  border-radius: 100%;
+}
+
+.radio__input:hover + .radio__label::before {
+  border: 1px solid $radio-button-grey;
+}
+
+.radio__input:checked + .radio__label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -35px;
+
+  width: 13px;
+  height: 13px;
+
+  background-color: $basic-green;
+  border-radius: 100%;
+}
+
+.radio__input:disabled + .radio__label {
+  cursor: auto;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
+  .radio {
+    margin-top: 40px;
+    margin-left: 30px;
+
+    border: none;
+  }
+
   .radio__list {
+    padding-top: 36px;
+
     border: 1px solid $special-grey;
   }
 
+  .radio__item {
+    margin-bottom: 34px;
+  }
+
   .radio__label {
+    margin-left: 58px;
+
     @include product-tablet-header;
+  }
+
+  .radio__input + .radio__label::before {
+    top: -11px;
+    left: -63px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .radio__input:checked + .radio__label::after {
+    top: 2px;
+    left: -50px;
+
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio {
+    border: none;
+  }
+
+  .radio__list {
+    margin-top: 30px;
+    padding-top: 22px;
+    padding-bottom: 4px;
+    padding-left: 37px;
+  }
+
+  .radio__label {
+    margin-top: 10px;
+    margin-bottom: 32px;
+    margin-left: 20px;
+  }
+
+  .radio__input + .radio__label::before {
+    top: -11px;
+    left: -63px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .radio__input:checked + .radio__label::after {
+    top: 2px;
+    left: -50px;
+
+    width: 18px;
+    height: 18px;
   }
 }

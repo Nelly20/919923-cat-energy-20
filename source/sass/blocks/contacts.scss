@@ -1,9 +1,29 @@
 .contacts {
+  position: relative;
+
+  margin-top: 30px;
+  padding: 0;
+
   border: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: -22px;
+
+    width: 99px;
+    height: 2px;
+
+    background-color: $basic-green;
+  }
 }
 
 .contacts__title {
+  margin: 0;
   margin-bottom: 32px;
+  margin-left: -2px;
+  padding: 0;
 
   text-align: left;
   text-transform: none;
@@ -20,12 +40,16 @@
 
 .contacts__item {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   margin-bottom: 14px;
 }
 
 .contacts__label {
-  margin-right: 12px;
+  display: inline;
+  flex-grow: 0;
+  margin-top: 14px;
+  margin-right: 10px;
+  margin-left: 0;
 
   color: $basic-dark-grey;
 
@@ -33,8 +57,12 @@
 }
 
 .contacts__input {
-  width: 100%;
-  padding: 14px;
+  display: inline;
+  flex-grow: 1;
+  width: auto;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 15px;
 
   font-family: "Oswald", "Arial", sans-serif;
   text-align: left;
@@ -45,20 +73,131 @@
   @include product-header;
 }
 
+.contacts__input--email {
+  background-image: url("../img/email.svg");
+  background-repeat: no-repeat;
+  background-position: 184px center;
+}
+
+.contacts__input--phone-number {
+  background-image: url("../img/phone-number.svg");
+  background-repeat: no-repeat;
+  background-position: 171px center;
+}
+
 @media (min-width: $tablet-width) {
+  .contacts {
+    @include container-form;
+
+    margin-top: 72px;
+
+    &::after {
+      top: 21px;
+      right: -70px;
+
+      width: 145px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: -70px;
+
+      width: 30px;
+      height: 2px;
+
+      background-color: $basic-green;
+    }
+  }
+
   .contacts__title {
+    margin-left: 1px;
+
     @include big-header;
+  }
+
+  .contacts__list {
+    margin-top: 44px;
+  }
+
+  .contacts__item {
+    margin-bottom: 20px;
+  }
+
+  .contacts__label {
+    margin-right: 20px;
+  }
+
+  .contacts__input {
+    padding-bottom: 9px;
   }
 
   .contacts__label,
   .contacts__input {
     @include product-tablet-header;
   }
+
+  .contacts__input--email {
+    background-position: 514px center;
+  }
+
+  .contacts__input--phone-number {
+    background-position: 498px center;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+
+    width: auto;
+    margin-top: 55px;
+
+    &::after {
+      top: 23px;
+      right: -110px;
+
+      width: 778px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: -112px;
+
+      width: 70px;
+      height: 2px;
+
+      background-color: $basic-green;
+    }
+  }
+
   .contacts__list {
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 44px;
+  }
+
+  .contacts__item {
+    flex-grow: 1;
+
+    &:first-child {
+      margin-right: 95px;
+    }
+  }
+
+  .contacts__label {
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+
+  .contacts__input--email {
+    background-position: 438px center;
+  }
+
+  .contacts__input--phone-number {
+    background-position: 435px center;
   }
 }
