@@ -1,11 +1,10 @@
 .footer-address {
-  padding-top: 12px;
-
   background-color: $basic-white;
 }
 
 .footer-address--grey {
   padding-top: 15px;
+
   background-color: $special-light-grey;
 }
 
@@ -18,6 +17,9 @@
 
 .footer-address__title {
   margin-bottom: 27px;
+
+  line-height: 18px;
+  text-transform: uppercase;
 
   @include product-header;
 }
@@ -43,6 +45,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer-address--grey {
+    & .footer-address__title {
+      margin-bottom: 67px;
+      margin-left: 40px;
+    }
+
+    & .page-footer__address {
+      margin-top: 1px;
+      margin-right: 40px;
+    }
+  }
+
   .footer-address__img {
     width: 100%;
     height: 400px;
@@ -59,31 +73,39 @@
 
   .footer-address__title {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 22px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .footer-address {
+  .footer-address,
+  .footer__address--grey {
     position: relative;
   }
 
   .footer-address__wrapper {
     position: absolute;
-    top: 95px;
-    left: 110px;
+    top: 104px;
+    left: 95px;
 
+    box-sizing: border-box;
     width: 570px;
-    padding-top: 66px;
+    padding-top: 50px;
     padding-right: 89px;
     padding-bottom: 55px;
-    padding-left: 75px;
+    padding-left: 76px;
 
     background-color: $basic-white;
   }
 
   .footer-address__title {
     margin-right: 87px;
+  }
+
+  .page-footer__address {
+    margin-top: 2px;
+
+    text-align: left;
   }
 
   .footer-address__img {

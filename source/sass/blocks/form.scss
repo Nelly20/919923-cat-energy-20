@@ -1,3 +1,7 @@
+.form {
+  margin-bottom: 33px;
+}
+
 .form__wrapper {
   display: grid;
 
@@ -5,10 +9,14 @@
 }
 
 .form__title {
+  margin-top: 28px;
+
   @include big-header;
 }
 
 .form__subtitle {
+  margin-top: 37px;
+
   text-align: left;
 
   @include subtitle;
@@ -18,20 +26,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 15px;
 }
 
 .form__small-text {
-  @include main-text;
+  margin-top: 20px;
+
   text-align: center;
   color: $basic-black;
+
+  @include main-text;
 }
 
 @media (min-width: $tablet-width) {
+  .form {
+    margin-top: 50px;
+  }
+
   .form__title {
+    margin-bottom: 55px;
+
     @include big-tablet-header;
   }
 
   .form__subtitle {
+    margin-left: 40px;
+
     line-height: 30px;
 
     @include product-tablet-header;
@@ -39,6 +59,7 @@
 
   .form__button-wrapper {
     flex-direction: row;
+    margin-left: 40px;
   }
 
   .form__button {
@@ -50,19 +71,41 @@
   }
 
   .form__small-text {
+    margin-top: 0;
+    margin-left: 2px;
     text-transform: none;
 
-    @include product-header;
+    @include catalog__item-text;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form__title {
+    margin-top: 51px;
+  }
+
+  .form__subtitle {
+    margin-left: 0;
+    margin-top: 56px;
+  }
+
   .form__wrapper {
-    grid-template-columns: 1fr 1fr;
+    column-gap: 67px;
+
+    grid-template-columns: 572px 568px;
+  }
+
+  .form__button-wrapper {
+    margin-top: 48px;
   }
 
   .form__button {
     width: 568px;
     height: 52px;
+  }
+
+  .form__small-text {
+    margin-top: 3px;
+    margin-left: 22px;
   }
 }

@@ -5,6 +5,11 @@
   list-style: none;
 }
 
+@mixin container-form {
+  width: 630px;
+  margin: 0 auto;
+}
+
 @mixin button {
   width: 280px;
   padding-top: 10px;

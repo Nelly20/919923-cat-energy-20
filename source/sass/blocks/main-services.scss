@@ -69,6 +69,10 @@
   background-image: url("../img/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: 100px 5px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

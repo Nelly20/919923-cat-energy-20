@@ -14,8 +14,8 @@
   @include reset-list;
 
   display: flex;
-  width: 280px;
   justify-content: center;
+  width: 280px;
   margin-top: 23px;
   padding: 20px 0 10px;
 
@@ -63,7 +63,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 45px 30px 61px 30px;
+    padding: 45px 30px 31px 30px;
   }
 
   .footer-icons__list {
@@ -81,6 +81,10 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 57px 110px 58px 110px;
+    padding: 47px 110px 20px 110px;
+  }
+
+  .copyright {
+    padding-bottom: 0;
   }
 }

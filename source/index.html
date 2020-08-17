@@ -2,29 +2,29 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
-    <div>
+  <body class="page__body page__body--index">
     <header class="page-header container">
       <a class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
       <img class="page-header__logo" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle--open visually-hidden" type="button">
+        <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
+              <a class="site-list__link site-list__link--white">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link site-list__link--white" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">подбор программы</a>
+              <a class="site-list__link site-list__link--white" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -43,7 +43,6 @@
           </p>
         </div>
       </section>
-    </div>
       <section class="main-services container">
         <h2 class="visually-hidden">Список услуг</h2>
         <ul class="main-services__list services-list">
@@ -82,8 +81,8 @@
           </li>
           <li class="advantages__item advantages__icon--clock">
             <p class="advantages__description">Уже через месяц наслаждайтесь
-изменениями к лучшему <br>
-вашего питомца!
+              изменениями к лучшему <br>
+              вашего питомца!
             </p>
           </li>
         </ul>
@@ -111,9 +110,14 @@
         </div>
         <div class="example__first-slide">
           <img class="example__first-slide-img" src="img/before-mobile@1x.png" height="232" width="311" alt="Кот Борис">
-          <div>
+          <div class="example__buttons-wrapper">
             <button type="button" class="button example__button">Было</button>
             <button type="button" class="button example__button">Стало</button>
+            <div class="example__range-filter">
+              <div class="example__range-toggle--before" tabindex="0">
+                <label tabindex="0" aria-label="Было"></label>
+              </div>
+            </div>
           </div>
         </div>
         <div class="example__second-slide visually-hidden">
@@ -121,6 +125,11 @@
           <div class="example__buttons-wrapper">
             <button type="button" class="button example__button">Было</button>
             <button type="button" class="button example__button">Стало</button>
+            <div class="example__range-filter">
+              <div class="example__range-toggle--after" tabindex="0">
+                <label tabindex="0" aria-label="Стало"></label>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -130,7 +139,7 @@
         <div class="footer-address">
           <div class="footer-address__wrapper container">
             <h2 class="footer-address__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
-            <div class="page-footer__address-wrapper">
+            <div>
               <address class="page-footer__address">ул. Большая<br> Конюшенная, д. 19/8</address>
               <address class="page-footer__address">Санкт-Петербург</address>
             </div>

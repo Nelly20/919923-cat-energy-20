@@ -1,19 +1,28 @@
 .personal-info {
+  margin-top: 26px;
+  padding: 0;
+
   border: none;
 }
 
 .personal-info__list {
   @include reset-list;
+
+  position: relative;
+  padding-bottom: 9px;
 }
 
 .personal-info__item {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .personal-info__label {
-  margin-right: 24px;
+  display: inline;
+  flex-grow: 0;
+  margin-right: 12px;
 
   color: $basic-dark-grey;
 
@@ -21,8 +30,12 @@
 }
 
 .personal-info__input {
-  width: 100%;
-  padding: 14px;
+  display: inline;
+  flex-grow: 1;
+  width: auto;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 15px;
 
   font-family: "Oswald", "Arial", sans-serif;
   text-align: left;
@@ -31,6 +44,18 @@
   border: 1px solid $special-grey;
 
   @include product-header;
+
+  &:hover {
+    border: 1px solid $border-color;
+  }
+
+  &:focus {
+    border: 1px solid $basic-dark-grey;
+  }
+
+  &:required:invalid {
+    border: 1px solid $basic-red;
+  }
 }
 
 .personal-info__input::placeholder {
@@ -41,11 +66,49 @@
 }
 
 @media (min-width: $tablet-width) {
+  .personal-info {
+    @include container-form;
+  }
+
+  .personal-info__list {
+    margin-top: 45px;
+
+    border: none;
+  }
+
+  .personal-info__item {
+    margin-bottom: 19px;
+  }
+
+  .personal-info__label {
+    margin-right: 18px;
+  }
+
   .personal-info__label,
   .personal-info__input,
   .personal-info__input::placeholder {
     color: $basic-dark-grey;
 
     @include product-tablet-header;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal-info {
+    margin-top: 45px;
+  }
+
+  .personal-info__list {
+    border-bottom: none;
+  }
+
+  .personal-info__label {
+    margin-right: 14px;
+  }
+
+  .personal-info__input {
+    padding-top: 11px;
+    padding-bottom: 13px;
+    padding-left: 21px;
   }
 }
