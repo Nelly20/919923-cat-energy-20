@@ -33,10 +33,14 @@
 }
 
 .radio__list {
+  display: flex;
+  flex-direction: column;
+
   @include reset-list;
 }
 
 .radio__item {
+  align-self: flex-start;
   margin-bottom: 23px;
   margin-left: 30px;
 }

@@ -37,13 +37,14 @@
 }
 
 .additional__item {
+  align-self: flex-start;
   margin-bottom: 22px;
   margin-left: 43px;
 }
 
 .additional__label {
   position: relative;
-
+  display: block;
   margin-left: 2px;
 
   @include product-header;
@@ -120,8 +121,8 @@
   .additional__list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 41px;
   }
 

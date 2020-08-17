@@ -75,10 +75,6 @@
   &:focus {
     border: 1px solid $basic-dark-grey;
   }
-
-  &:required:invalid {
-    border: 1px solid $basic-red;
-  }
 }
 
 .contacts__input--email {
@@ -88,10 +84,6 @@
 
   &:focus {
     background-image: url("../img/email-hover.svg");
-  }
-
-  &:required:invalid {
-    background-image: url("../img/email-error.svg");
   }
 }
 

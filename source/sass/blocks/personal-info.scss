@@ -52,10 +52,6 @@
   &:focus {
     border: 1px solid $basic-dark-grey;
   }
-
-  &:required:invalid {
-    border: 1px solid $basic-red;
-  }
 }
 
 .personal-info__input::placeholder {
