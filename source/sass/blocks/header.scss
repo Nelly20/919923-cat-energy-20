@@ -8,6 +8,14 @@
 .page-header__logo {
   margin-top: 11px;
   margin-bottom: 12px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-nav__toggle--open {
@@ -16,6 +24,7 @@
   right: 12px;
 
   padding: 15px;
+
   background-color: transparent;
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
@@ -28,6 +37,7 @@
   right: 12px;
 
   padding: 15px;
+
   background-color: transparent;
   background-image: url("../img/menu-mobile.svg");
   background-repeat: no-repeat;
@@ -52,15 +62,44 @@
   padding-top: 18px;
   padding-bottom: 18px;
 
-  border-top: 1px solid $special-border-color;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
-  &:last-child {
-    border-bottom: 1px solid $special-border-color;
+    width: 100%;
+    height: 1px;
+    margin-right: -3000px;
+    margin-left: -3000px;
+    padding-right: 3000px;
+    padding-left: 3000px;
+
+    background-color: $special-border-color;
+  }
+
+  &:first-child {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+
+      width: auto;
+      height: 1px;
+      margin-right: -3000px;
+      margin-left: -3000px;
+      padding-right: 3000px;
+      padding-left: 3000px;
+
+      background-color: $special-border-color;
+    }
   }
 }
 
-.site-list__link,
-.site-list__link--dark {
+.site-list__link {
   font-weight: 600;
   color: $basic-black;
   text-decoration: none;
@@ -74,8 +113,8 @@
   }
 
   .page-header__logo {
-    height: 52px;
     width: 174px;
+    height: 52px;
     margin-top: 22px;
   }
 
@@ -87,8 +126,8 @@
 
   .main-nav__list {
     flex-direction: row;
-
     margin-top: 23px;
+
     font-size: 18px;
     text-align: left;
   }
@@ -98,20 +137,26 @@
 
     border-top: none;
 
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+
     &:last-child {
       margin-right: 0;
 
       border: none;
     }
 
-    .site-list__link,
-    .site-list__link--dark {
+    .site-list__link {
       font-weight: 400;
     }
   }
 
-  .site-list__link,
-  .site-list__link--dark {
+  .site-list__link {
     padding-bottom: 8px;
 
     &:hover {
@@ -132,15 +177,17 @@
 
 @media (min-width: $desktop-width) {
   .page__body--index {
-    background-image: url("../img/index-background-desktop.svg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top right;
+    border-bottom: none;
   }
 
-  .site-list__link--dark {
-    text-decoration: none;
-    color: $basic-black;
+  .site-list__link {
     padding-bottom: 8px;
+
+    color: $basic-black;
+    text-decoration: none;
 
     &:hover {
       color: $special-black;
@@ -164,14 +211,16 @@
   }
 
   .main-nav__list {
-    padding-bottom: 20px;
-    font-size: 20px;
     margin-top: 50px;
     margin-right: -46px;
+    padding-bottom: 20px;
+
+    font-size: 20px;
   }
 
-  .site-list__link {
+  .site-list__link--white {
     padding-bottom: 8px;
+
     color: $basic-white;
 
     &:hover {

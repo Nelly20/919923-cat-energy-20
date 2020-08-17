@@ -4,9 +4,9 @@ $desktop-width: 1440px;
 $mobile-width-only: 767px;
 $container-padding: 0 30px;
 
-
 // Colors
 $basic-black: #000000;
+$basic-red: #ff8282;
 $basic-white: #ffffff;
 $basic-green: #68b738;
 $basic-dark-green: #5eaa2f;
@@ -24,3 +24,5 @@ $special-white: rgba(255, 255, 255, 0.3);
 $special-light-white: rgba(255, 255, 255, 0.6);
 $special-black: rgba(0, 0, 0, 0.6);
 $special-light-black: rgba(0, 0, 0, 0.3);
+$special-box-shaddow-color: rgba(0, 0, 0, 0.19);
+$basic-box-shaddow-color: rgba(0, 0, 0, 0.16);

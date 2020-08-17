@@ -6,11 +6,10 @@
 }
 
 .personal-info__list {
-  padding-bottom: 9px;
-
-  border-bottom: 1px solid $basic-grey;
-
   @include reset-list;
+
+  position: relative;
+  padding-bottom: 9px;
 }
 
 .personal-info__item {
@@ -45,6 +44,18 @@
   border: 1px solid $special-grey;
 
   @include product-header;
+
+  &:hover {
+    border: 1px solid $border-color;
+  }
+
+  &:focus {
+    border: 1px solid $basic-dark-grey;
+  }
+
+  &:required:invalid {
+    border: 1px solid $basic-red;
+  }
 }
 
 .personal-info__input::placeholder {

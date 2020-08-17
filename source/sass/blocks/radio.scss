@@ -1,9 +1,35 @@
 .radio {
+  position: relative;
+
   margin-top: 15px;
+  padding-top: 20px;
   padding-bottom: 1px;
 
   border: none;
-  border-bottom: 1px solid $basic-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+
+    width: 320px;
+    height: 1px;
+
+    background-color: $basic-grey;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+
+    width: 320px;
+    height: 1px;
+
+    background-color: $basic-grey;
+  }
 }
 
 .radio__list {
@@ -72,6 +98,14 @@
     margin-left: 30px;
 
     border: none;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .radio__list {

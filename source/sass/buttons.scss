@@ -20,4 +20,12 @@
 .catalog__more-products-button {
   @include button-grey;
   @include button;
+
+  &:hover {
+    background-color: $special-border-color;
+  }
+
+  &:active {
+    color: $border-color;
+  }
 }

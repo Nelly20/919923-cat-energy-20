@@ -71,12 +71,28 @@
   border: 1px solid $special-grey;
 
   @include product-header;
+
+  &:focus {
+    border: 1px solid $basic-dark-grey;
+  }
+
+  &:required:invalid {
+    border: 1px solid $basic-red;
+  }
 }
 
 .contacts__input--email {
   background-image: url("../img/email.svg");
   background-repeat: no-repeat;
   background-position: 184px center;
+
+  &:focus {
+    background-image: url("../img/email-hover.svg");
+  }
+
+  &:required:invalid {
+    background-image: url("../img/email-error.svg");
+  }
 }
 
 .contacts__input--phone-number {

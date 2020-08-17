@@ -11,8 +11,9 @@
     position: absolute;
     top: 35px;
     right: 0;
+    left: 0;
 
-    width: 53px;
+    width: auto;
     height: 2px;
 
     background-color: $basic-green;
@@ -26,18 +27,20 @@
 }
 
 .more-products__list {
-  @include reset-list;
-
   margin-top: 34px;
+
+  @include reset-list;
 }
 
 .more-products__item {
+  position: relative;
+
   padding-bottom: 17px;
 
-  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 
-  &:last-child {
-    border-bottom: 1px solid $border-color;
+  &:first-child {
+    border-top: 1px solid $border-color;
   }
 }
 
