@@ -5,18 +5,6 @@
   padding: 0;
 
   border: none;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 13px;
-    right: -22px;
-
-    width: 158px;
-    height: 2px;
-
-    background-color: $basic-green;
-  }
 }
 
 .comment__title {
@@ -26,6 +14,11 @@
   text-transform: none;
 
   @include small-header;
+  @include underline-green-mobile;
+
+  &::after {
+    left: 162px;
+  }
 }
 
 .comment__text {
@@ -50,31 +43,21 @@
     @include container-form;
 
     margin-top: 45px;
-
-    &::after {
-      top: 22px;
-      right: -64px;
-
-      width: 478px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: -64px;
-
-      width: 30px;
-      height: 2px;
-
-      background-color: $basic-green;
-    }
   }
 
   .comment__title {
     margin-left: 6px;
 
     @include big-header;
+    @include underline-green;
+
+    &::after {
+      left: 289px;
+    }
+
+    &::before {
+      right: 700px;
+    }
   }
 
   .comment__text {
@@ -94,24 +77,15 @@
   .comment {
     width: auto;
     margin-top: 50px;
+  }
 
+  .comment__title {
     &::after {
-      top: 23px;
-      right: -110px;
-
-      width: 1108px;
+      left: 332px;
     }
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 23px;
-      left: -112px;
-
-      width: 70px;
-      height: 2px;
-
-      background-color: $basic-green;
+      right: 1300px;
     }
   }
 

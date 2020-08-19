@@ -3,6 +3,8 @@
   padding: 0;
 
   border: none;
+
+  @include underline-grey;
 }
 
 .personal-info__list {
@@ -52,10 +54,6 @@
   &:focus {
     border: 1px solid $basic-dark-grey;
   }
-
-  &:required:invalid {
-    border: 1px solid $basic-red;
-  }
 }
 
 .personal-info__input::placeholder {
@@ -68,6 +66,7 @@
 @media (min-width: $tablet-width) {
   .personal-info {
     @include container-form;
+    @include underline-none;
   }
 
   .personal-info__list {

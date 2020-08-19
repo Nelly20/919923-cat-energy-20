@@ -1,15 +1,17 @@
 .catalog__title {
+  position: relative;
   margin: 0;
   margin-top: 27px;
+  padding-bottom: 40px;
 
   @include big-header;
+  @include underline-grey;
 }
 
 .catalog__list {
   @include reset-list;
 
   display: grid;
-  margin-top: 40px;
 
   grid-template-columns: 1fr;
 }
@@ -40,31 +42,7 @@
   padding-top: 8px;
   padding-bottom: 23px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-
-    width: 320px;
-    height: 1px;
-
-    background-color: $special-border-color;
-  }
-
-  &:first-child {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -20px;
-
-      width: 320px;
-      height: 1px;
-
-      background-color: $special-border-color;
-    }
-  }
+  @include underline-grey;
 }
 
 .catalog__img {
@@ -94,19 +72,27 @@
   margin-top: 26px;
   padding-bottom: 21px;
 
-  background-image: url("../img/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-
   &::before {
     content: "";
     position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 26px;
+    left: 125px;
 
-    width: auto;
-    height: 1px;
+    width: 30px;
+    height: 2px;
+
+    background-color: $basic-grey;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 125px;
+
+    width: 30px;
+    height: 2px;
+    transform: rotate(90deg);
 
     background-color: $basic-grey;
   }
@@ -138,6 +124,8 @@
 
 .catalog__more-products-button {
   margin-top: 10px;
+
+  @include underline-grey;
 }
 
 .catalog__button {
@@ -146,9 +134,10 @@
 
 @media (min-width: $tablet-width) {
   .catalog__title {
-    margin-top: 51px;
+    margin-top: 55px;
 
     @include big-tablet-header;
+    @include underline-none;
   }
 
   .catalog__list {
@@ -183,20 +172,15 @@
 
     background-color: $special-light-grey;
 
-    &::before {
-      display: none;
-    }
-
-    &:first-child {
-      &::after {
-        display: none;
-      }
-    }
+    @include underline-none;
   }
 
   .catalog__img {
     position: absolute;
-    top: -73px;
+    bottom: 303px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   .catalog__item-header {
@@ -246,8 +230,19 @@
     margin-top: 0;
     padding-bottom: 0;
 
-    background-position: 132px 52px;
     border: 2px solid $special-light-grey;
+
+    &::before {
+      top: 62px;
+
+      width: 60px;
+    }
+
+    &::after {
+      top: 62px;
+
+      width: 60px;
+    }
   }
 
   .catalog__more-products-title {
@@ -277,6 +272,8 @@
   .catalog__more-products-button {
     width: 249px;
     margin-top: 68px;
+
+    @include underline-none;
   }
 }
 
@@ -307,6 +304,16 @@
 
   .catalog__more-products {
     width: 245px;
+
+    &::before {
+      top: 51px;
+      left: 92px;
+    }
+
+    &::after {
+      top: 51px;
+      left: 92px;
+    }
   }
 
   .catalog__more-products-button {

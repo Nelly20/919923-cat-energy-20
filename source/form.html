@@ -9,7 +9,11 @@
   <body class="page__body">
     <header class="page-header container">
       <a class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
-      <img class="page-header__logo" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo" src="img/logo-mobile.svg" alt="Cat Energy">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">
@@ -18,13 +22,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html" class="site-list__link site-list__link--dark">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--dark" href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--dark">подбор программы</a>
+              <a class="site-list__link">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -94,19 +98,19 @@
           <ul class="additional__list">
             <li class="additional__item" tabindex="0">
               <input class="additional__input visually-hidden" type="checkbox" id="sugar" checked>
-              <label for="sugar" class="additional__label" tabindex="0">сахарозаменитель</label>
+              <label for="sugar" class="additional__label">сахарозаменитель</label>
             </li>
             <li class="additional__item" tabindex="0">
               <input class="additional__input visually-hidden" type="checkbox" id="water">
-              <label for="water" class="additional__label" tabindex="0">питьевая вода</label>
+              <label for="water" class="additional__label">питьевая вода</label>
             </li>
             <li class="additional__item" tabindex="0">
               <input class="additional__input visually-hidden" type="checkbox" id="milk">
-              <label for="milk" class="additional__label" tabindex="0">молоко</label>
+              <label for="milk" class="additional__label">молоко</label>
             </li>
             <li class="additional__item" tabindex="0">
               <input class="additional__input visually-hidden" type="checkbox" id="vitamins" disabled checked>
-              <label for="vitamins" class="additional__label" tabindex="0">витамины</label>
+              <label for="vitamins" class="additional__label">витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -126,7 +130,13 @@
               <address class="page-footer__address">Санкт-Петербург</address>
             </div>
           </div>
-          <img class="footer-address__img" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <div>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="footer-address__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            </picture>
+          </div>
         </div>
       </div>
       <div>
@@ -137,17 +147,29 @@
           <ul class="footer-icons footer-icons__list">
             <li class="footer-icons__item">
               <a class="footer-icons__link" href="#" aria-label="Вконтакте">
-              <img src="img/icon_vk.svg" alt="Вконтакте" width="23" height="16">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/icon_vk-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icon_vk-tablet.svg">
+                  <img src="img/icon_vk.svg" alt="Вконтакте">
+                </picture>
               </a>
             </li>
             <li class="footer-icons__item">
               <a class="footer-icons__link" href="#" aria-label="Инстаграм">
-              <img src="img/icon_instagram.svg" alt="Инстаграм" width="16" height="16">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/icon_instagram-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icon_instagram-tablet.svg">
+                  <img src="img/icon_instagram.svg" alt="Инстаграм">
+                </picture>
               </a>
             </li>
             <li class="footer-icons__item">
               <a class="footer-icons__link" href="#" aria-label="Фейсбук">
-              <img src="img/icon_facebook.svg" alt="Фейсбук" width="22" height="22">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/icon_facebook-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icon_facebook-tablet.svg">
+                  <img src="img/icon_facebook.svg" alt="Фейсбук">
+                </picture>
               </a>
             </li>
           </ul>

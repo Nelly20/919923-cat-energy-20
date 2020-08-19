@@ -9,7 +9,11 @@
   <body class="page__body page__body--index">
     <header class="page-header container">
       <a class="page-header__logo-link" aria-label="Cat Energy Функциональное питание для котов">
-      <img class="page-header__logo" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo" src="img/logo-mobile.svg" alt="Cat Energy">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">
@@ -37,7 +41,8 @@
             питание для котов
           </h1>
           <p class="main-screen__subtitle">Занялся собой? Займись котом!</p>
-          <img class="main-screen__img" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Cat Energy">
+          <div>
+          </div>
           <p class="main-screen__button-wrapper">
             <button type="button" class="main-screen__button">Подобрать программу</button>
           </p>
@@ -46,12 +51,12 @@
       <section class="main-services container">
         <h2 class="visually-hidden">Список услуг</h2>
         <ul class="main-services__list services-list">
-          <li class="services-list__item">
+          <li class="services-list__item services-list__item--weightloss">
             <h3 class="services-list__title">Похудение</h3>
             <p class="services-list__subtitle">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a href="#" class="services-list__link">каталог slim</a>
           </li>
-          <li class="services-list__item">
+          <li class="services-list__item services-list__item--weightgain">
             <h3 class="services-list__title">Набор массы</h3>
             <p class="services-list__subtitle">Заработать авторитет среди дворовых котов<br> и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые<br> мышцы!</p>
             <a href="#" class="services-list__link">каталог pro</a>
@@ -144,7 +149,13 @@
               <address class="page-footer__address">Санкт-Петербург</address>
             </div>
           </div>
-          <img class="footer-address__img" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <div>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="footer-address__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            </picture>
+          </div>
         </div>
       </div>
       <div>
@@ -155,17 +166,29 @@
           <ul class="footer-icons footer-icons__list">
             <li class="footer-icons__item">
               <a class="footer-icons__link" href="#" aria-label="Вконтакте">
-              <img src="img/icon_vk.svg" alt="Вконтакте" width="23" height="16">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/icon_vk-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icon_vk-tablet.svg">
+                  <img src="img/icon_vk.svg" alt="Вконтакте">
+                </picture>
               </a>
             </li>
             <li class="footer-icons__item">
               <a class="footer-icons__link" href="#" aria-label="Инстаграм">
-              <img src="img/icon_instagram.svg" alt="Инстаграм" width="16" height="16">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/icon_instagram-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icon_instagram-tablet.svg">
+                  <img src="img/icon_instagram.svg" alt="Инстаграм">
+                </picture>
               </a>
             </li>
             <li class="footer-icons__item">
               <a class="footer-icons__link" href="#" aria-label="Фейсбук">
-              <img src="img/icon_facebook.svg" alt="Фейсбук" width="22" height="22">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/icon_facebook-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icon_facebook-tablet.svg">
+                  <img src="img/icon_facebook.svg" alt="Фейсбук">
+                </picture>
               </a>
             </li>
           </ul>

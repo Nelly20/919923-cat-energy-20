@@ -38,6 +38,10 @@
   @include main-text;
 }
 
+.form__input--error {
+  border: 1px solid $basic-red;
+}
+
 @media (min-width: $tablet-width) {
   .form {
     margin-top: 50px;
@@ -73,6 +77,7 @@
   .form__small-text {
     margin-top: 0;
     margin-left: 2px;
+
     text-transform: none;
 
     @include catalog__item-text;
@@ -85,8 +90,8 @@
   }
 
   .form__subtitle {
-    margin-left: 0;
     margin-top: 56px;
+    margin-left: 0;
   }
 
   .form__wrapper {
