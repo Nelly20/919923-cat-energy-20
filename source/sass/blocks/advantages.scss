@@ -29,24 +29,40 @@
     background-image: url("../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
   }
 
   &.advantages__icon--powder::before {
     background-image: url("../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
   }
 
   &.advantages__icon--dinning::before {
     background-image: url("../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
-    background-position: 3px center;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
   }
 
   &.advantages__icon--clock::before {
     background-image: url("../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
   }
 }
 
@@ -65,6 +81,7 @@
   .advantages {
     margin-top: 18px;
     padding-bottom: 28px;
+
     border-bottom: 1px solid $special-border-color;
   }
 
@@ -83,14 +100,16 @@
 
   .advantages__item {
     position: relative;
+
     padding-top: 100px;
     padding-bottom: 57px;
 
     &::before {
       content: "";
       position: absolute;
-      left: 0;
       top: 0;
+      left: 0;
+
       width: 80px;
       height: 80px;
 
@@ -128,8 +147,8 @@
 
   .advantages__description {
     max-width: 245px;
-    margin-left: 0;
     margin-top: 13px;
+    margin-left: 0;
 
     @include tablet-main-text;
 
@@ -146,8 +165,8 @@
 
   .advantages__title {
     margin-top: 74px;
-    margin-left: 1px;
     margin-bottom: 63px;
+    margin-left: 1px;
   }
 
   .advantages__list {
@@ -158,14 +177,16 @@
 
   .advantages__item {
     position: relative;
+
     padding-top: 100px;
     padding-bottom: 57px;
 
     &::before {
       content: "";
       position: absolute;
-      left: 0;
       top: 0;
+      left: 0;
+
       width: 80px;
       height: 80px;
 

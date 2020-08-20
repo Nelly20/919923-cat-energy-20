@@ -3,8 +3,6 @@
   padding: 0;
 
   border: none;
-
-  @include underline-grey;
 }
 
 .personal-info__list {
@@ -19,6 +17,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+
+  @include underline-grey;
 }
 
 .personal-info__label {
@@ -77,6 +77,8 @@
 
   .personal-info__item {
     margin-bottom: 19px;
+
+    @include underline-none;
   }
 
   .personal-info__label {
