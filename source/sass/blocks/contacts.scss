@@ -5,18 +5,6 @@
   padding: 0;
 
   border: none;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 13px;
-    right: -22px;
-
-    width: 99px;
-    height: 2px;
-
-    background-color: $basic-green;
-  }
 }
 
 .contacts__title {
@@ -29,6 +17,11 @@
   text-transform: none;
 
   @include small-header;
+  @include underline-green-mobile;
+
+  &::after {
+    left: 221px;
+  }
 }
 
 .contacts__list {
@@ -75,10 +68,6 @@
   &:focus {
     border: 1px solid $basic-dark-grey;
   }
-
-  &:required:invalid {
-    border: 1px solid $basic-red;
-  }
 }
 
 .contacts__input--email {
@@ -88,10 +77,6 @@
 
   &:focus {
     background-image: url("../img/email-hover.svg");
-  }
-
-  &:required:invalid {
-    background-image: url("../img/email-error.svg");
   }
 }
 
@@ -106,31 +91,21 @@
     @include container-form;
 
     margin-top: 72px;
-
-    &::after {
-      top: 21px;
-      right: -70px;
-
-      width: 145px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 21px;
-      left: -70px;
-
-      width: 30px;
-      height: 2px;
-
-      background-color: $basic-green;
-    }
   }
 
   .contacts__title {
     margin-left: 1px;
 
     @include big-header;
+    @include underline-green;
+
+    &::after {
+      left: 550px;
+    }
+
+    &::before {
+      right: 700px;
+    }
   }
 
   .contacts__list {
@@ -169,24 +144,15 @@
 
     width: auto;
     margin-top: 55px;
+  }
 
+  .contacts__title {
     &::after {
-      top: 23px;
-      right: -110px;
-
-      width: 778px;
+      left: 662px;
     }
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 23px;
-      left: -112px;
-
-      width: 70px;
-      height: 2px;
-
-      background-color: $basic-green;
+      right: 1300px;
     }
   }
 

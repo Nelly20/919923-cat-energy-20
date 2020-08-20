@@ -7,36 +7,18 @@
 
   border: none;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-
-    width: 320px;
-    height: 1px;
-
-    background-color: $basic-grey;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -20px;
-
-    width: 320px;
-    height: 1px;
-
-    background-color: $basic-grey;
-  }
+  @include underline-grey;
 }
 
 .radio__list {
+  display: flex;
+  flex-direction: column;
+
   @include reset-list;
 }
 
 .radio__item {
+  align-self: flex-start;
   margin-bottom: 23px;
   margin-left: 30px;
 }
@@ -99,13 +81,7 @@
 
     border: none;
 
-    &::before {
-      display: none;
-    }
-
-    &::after {
-      display: none;
-    }
+    @include underline-none;
   }
 
   .radio__list {

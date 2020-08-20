@@ -5,18 +5,6 @@
   padding: 0;
 
   border: none;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 13px;
-    right: 0;
-
-    width: auto;
-    height: 2px;
-
-    background-color: $basic-green;
-  }
 }
 
 .additional__title {
@@ -26,6 +14,11 @@
   text-align: left;
 
   @include small-header;
+  @include underline-green-mobile;
+
+  &::after {
+    left: 184px;
+  }
 }
 
 .additional__list {
@@ -37,6 +30,7 @@
 }
 
 .additional__item {
+  align-self: flex-start;
   margin-bottom: 22px;
   margin-left: 43px;
 }
@@ -90,43 +84,31 @@
     @include container-form;
 
     margin-top: 65px;
-
-    &::after {
-      top: 21px;
-      right: -70px;
-
-      width: 446px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 21px;
-      left: -70px;
-
-      width: 30px;
-      height: 2px;
-
-      background-color: $basic-green;
-    }
   }
 
   .additional__title {
     margin-left: 1px;
 
     @include big-header;
+    @include underline-green;
+
+    &::after {
+      left: 362px;
+    }
+
+    &::before {
+      right: 1300px;
+    }
   }
 
   .additional__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 120px;
     margin-top: 41px;
   }
 
   .additional__item {
-    min-width: 245px;
     margin-bottom: 48px;
   }
 
@@ -168,25 +150,6 @@
   .additional {
     width: auto;
     margin-top: 65px;
-
-    &::after {
-      top: 23px;
-      right: -110px;
-
-      width: 1078px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 23px;
-      left: -112px;
-
-      width: 70px;
-      height: 2px;
-
-      background-color: $basic-green;
-    }
   }
 
   .additional__list {

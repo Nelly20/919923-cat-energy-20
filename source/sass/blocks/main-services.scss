@@ -13,19 +13,23 @@
   padding: 0 33px 18px 21px;
 
   background-color: $special-light-grey;
+}
 
-  &:first-child {
-    margin-bottom: 20px;
+.services-list__item--weightloss {
+  margin-bottom: 20px;
 
-    background-image: url("../img/cat_back.svg");
-    background-repeat: no-repeat;
-    background-position: 22px 21px;
-  }
+  background-image: url("../img/cat_back.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 21px;
+}
 
-  &:last-child {
-    background-image: url("../img/cat.svg");
-    background-repeat: no-repeat;
-    background-position: 13px 24px;
+.services-list__item--weightgain {
+  background-image: url("../img/cat.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
+
+  .services-list__title {
+    margin-left: 36px;
   }
 }
 
@@ -76,21 +80,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-services {
-    margin-top: 502px;
-  }
-
   .services-list__item {
     padding: 58px 62px 56px 52px;
+  }
 
-    &:first-child {
-      margin-bottom: 30px;
+  .services-list__item--weightloss {
+    margin-bottom: 20px;
 
-      background-position: 446px 81px;
-    }
+    background-image: url("../img/cat_back-tablet.svg");
+    background-position: 446px 81px;
+  }
 
-    &:last-child {
-      background-position: 448px 91px;
+  .services-list__item--weightgain {
+    background-image: url("../img/cat-tablet.svg");
+    background-position: 412px 91px;
+
+    .services-list__title {
+      margin-left: 0;
     }
   }
 
@@ -132,22 +138,27 @@
 
   .services-list__item {
     padding: 41px 52px 55px 52px;
+  }
 
-    &:first-child {
-      margin-bottom: 0;
+  .services-list__item--weightloss {
+    margin-bottom: 0;
 
-      background-position: 52px 41px;
-    }
+    background-image: url("../img/cat_back-desktop.svg");
+    background-position: 52px 41px;
+    background-size: 100px;
+  }
 
-    &:last-child {
-      background-position: 33px 47px;
-    }
+  .services-list__item--weightgain {
+    background-image: url("../img/cat-desktop.svg");
+    background-position: 33px 47px;
+    background-size: 134px 100px;
   }
 
   .services-list__title {
-    text-align: center;
     margin-top: 37px;
     margin-left: 26px;
+
+    text-align: center;
 
     &:last-child {
       margin-left: 64px;

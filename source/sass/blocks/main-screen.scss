@@ -1,13 +1,20 @@
 .main-screen {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+  min-height: 480px;
   padding-top: 27px;
   padding-bottom: 22px;
 
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 320px;
+  background-position: center 167px, center top;
+  background-size: 280px 270px, 320px 305px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("img/index-background-mobile@2x.jpg");
+  }
 }
 
 .main-screen__title {
@@ -34,13 +41,22 @@
 
 .main-screen__button-wrapper {
   margin: 0;
+  margin-top: 300px;
 }
 
 @media (min-width: $tablet-width) {
   .main-screen {
-    position: relative;
+    min-height: 826px;
 
-    background-image: none;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: center 240px;
+    background-size: 709px 609px;
+
+    @include underline-none;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+    }
   }
 
   .main-screen__title {
@@ -63,54 +79,53 @@
     color: $basic-black;
   }
 
-  .main-screen__img {
-    position: absolute;
-    top: 240px;
-    left: 50%;
-    z-index: -1;
+  .main-screen__button-wrapper {
+    margin: 0;
+
+    text-align: left;
   }
 
   .main-screen__button {
     width: 244px;
     height: 54px;
-    margin-top: 30px;
     margin-left: 82px;
 
     font-size: 20px;
-  }
-
-  .main-screen__button-wrapper {
-    text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-screen {
     position: relative;
+
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-position: 62% 0;
+    background-size: 552px 499px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-desktop@2x.png");
+    }
   }
 
   .main-screen__title {
-    margin-top: 61px;
-    margin-left: 125px;
+    margin-top: 57px;
+    margin-left: 70px;
   }
 
   .main-screen__subtitle {
     margin-top: 40px;
-    margin-left: 125px;
+    margin-left: 70px;
   }
 
   .main-screen__img {
     position: absolute;
-    top: 143px;
-    right: 330px;
+    top: 0;
+    left: 40%;
     z-index: 2;
-
-    width: 552px;
-    height: 499px;
   }
 
   .main-screen__button {
     margin-top: 32px;
-    margin-left: 125px;
+    margin-left: 70px;
   }
 }
