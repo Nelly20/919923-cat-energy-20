@@ -113,8 +113,12 @@
             </ul>
           </div>
         </div>
-        <div class="example__first-slide">
-          <img class="example__first-slide-img" src="img/before-mobile@1x.png" height="232" width="311" alt="Кот Борис">
+        <div class="example__first-slide visually-hidden">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <img class="example__first-slide-img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот Борис">
+          </picture>
           <div class="example__buttons-wrapper">
             <button type="button" class="button example__button">Было</button>
             <button type="button" class="button example__button">Стало</button>
@@ -125,8 +129,13 @@
             </div>
           </div>
         </div>
-        <div class="example__second-slide visually-hidden">
-          <img class="example__second-slide-img" src="img/after-mobile@1x.png" height="240" width="251" alt="Кот Борис">
+        <div class="example__second-slide">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+            <img class="example__second-slide-img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот Борис">
+          </picture>
+
           <div class="example__buttons-wrapper">
             <button type="button" class="button example__button">Было</button>
             <button type="button" class="button example__button">Стало</button>
@@ -142,13 +151,15 @@
     <footer class="page-footer">
       <div>
         <div class="footer-address">
-          <div class="footer-address__wrapper container">
+          <div class="container">
+          <div class="footer-address__wrapper">
             <h2 class="footer-address__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
             <div>
               <address class="page-footer__address">ул. Большая<br> Конюшенная, д. 19/8</address>
               <address class="page-footer__address">Санкт-Петербург</address>
             </div>
           </div>
+        </div>
           <picture>
             <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
