@@ -1,4 +1,5 @@
 const gulp = require("gulp");
+const webp = require('gulp-webp');
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
@@ -7,6 +8,12 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
 // Styles
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+ .pipe(webp({quality: 90}))
+ .pipe(gulp.dest("source/img"))
+}
+exports.webp = createWebp;
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
