@@ -130,46 +130,41 @@
               <address class="page-footer__address">Санкт-Петербург</address>
             </div>
           </div>
-          <div>
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-              <img class="footer-address__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-            </picture>
-          </div>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="footer-address__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
         </div>
       </div>
       <div>
         <div class="footer container">
-          <a href="index.html">
+          <a href="index.html" class="footer__logo">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
           </a>
           <ul class="footer-icons footer-icons__list">
             <li class="footer-icons__item">
               <a class="footer-icons__link" href="#" aria-label="Вконтакте">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/icon_vk-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/icon_vk-tablet.svg">
-                  <img src="img/icon_vk.svg" alt="Вконтакте">
-                </picture>
+                <svg class="icon__vk">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="footer-icons__item">
               <a class="footer-icons__link" href="#" aria-label="Инстаграм">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/icon_instagram-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/icon_instagram-tablet.svg">
-                  <img src="img/icon_instagram.svg" alt="Инстаграм">
-                </picture>
+                <svg class="icon__insta">
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
               </a>
             </li>
             <li class="footer-icons__item">
               <a class="footer-icons__link" href="#" aria-label="Фейсбук">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/icon_facebook-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/icon_facebook-tablet.svg">
-                  <img src="img/icon_facebook.svg" alt="Фейсбук">
-                </picture>
+                <svg class="icon__facebook">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -178,7 +173,9 @@
               <p class="copyright__text">HTML Academy</p>
             </a>
             <a class="copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+              <svg class="copyright__logo icon-htmlacademy" width="27" height="34">
+                <use xlink:href="#icon-htmlacademy"></use>
+              </svg>
             </a>
           </div>
         </div>

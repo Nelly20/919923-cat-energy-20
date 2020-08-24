@@ -10,6 +10,16 @@
   padding: 35px 0 22px 0;
 }
 
+.footer__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .footer-icons__list {
   @include reset-list;
 
@@ -54,6 +64,16 @@
 
   &:first-child {
     margin-right: 108px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.icon-htmlacademy {
+  &:hover {
+    stroke: $basic-green;
   }
 }
 
