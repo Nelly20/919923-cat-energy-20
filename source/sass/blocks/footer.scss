@@ -36,9 +36,32 @@
   text-decoration: none;
 }
 
-.icon-insta {
+.icon__vk {
+  width: 23px;
+  height: 16px;
+
+  &:hover {
+    stroke: $basic-green;
+  }
+}
+
+.icon__insta {
   width: 16px;
   height: 16px;
+
+  &:hover {
+    stroke: $basic-green;
+  }
+}
+
+.icon__facebook {
+  fill: none;
+  width: 22px;
+  height: 22px;
+
+  &:hover {
+    stroke: $basic-green;
+  }
 }
 
 .copyright {
@@ -85,9 +108,19 @@
     }
   }
 
-  .icon-insta {
+  .icon__vk {
+    width: 30px;
+    height: 22px;
+  }
+
+  .icon__insta {
     width: 23px;
     height: 23px;
+  }
+
+  .icon__facebook {
+    width: 28px;
+    height: 33px;
   }
 }
 
