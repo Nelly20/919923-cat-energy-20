@@ -32,6 +32,7 @@
 }
 
 .contacts__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 14px;
@@ -68,20 +69,31 @@
   &:focus {
     border: 1px solid $basic-dark-grey;
   }
-}
 
-.contacts__input--email {
-  background-image: url("../img/email.svg");
-  background-repeat: no-repeat;
-  background-position: 184px center;
+  &:focus + .icon-email {
+    stroke: $basic-green;
+  }
 
-  &:focus {
-    background-image: url("../img/email-hover.svg");
+  &:focus + .icon-phone {
+    fill: $basic-green;
   }
 }
 
+.icon-email {
+  position: absolute;
+  top: 20px;
+  left: 600px;
+  stroke: $special-dark-grey;
+}
+
+.icon-phone {
+  position: absolute;
+  top: 15px;
+  left: 600px;
+  fill: $special-dark-grey;
+}
+
 .contacts__input--phone-number {
-  background-image: url("../img/phone-number.svg");
   background-repeat: no-repeat;
   background-position: 171px center;
 }

@@ -10,6 +10,16 @@
   padding: 35px 0 22px 0;
 }
 
+.footer__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .footer-icons__list {
   @include reset-list;
 
@@ -37,8 +47,34 @@
 }
 
 .icon-insta {
+  fill: $icons-color;
   width: 16px;
   height: 16px;
+
+  &:hover {
+    fill: $basic-green;
+  }
+}
+
+.icon-vk {
+  fill: $icons-color;
+  width: 23px;
+  height: 16px;
+
+  &:hover {
+    fill: $basic-green;
+  }
+}
+
+.icon-facebook {
+  stroke: $icons-color;
+  fill: none;
+  width: 22px;
+  height: 22px;
+
+  &:hover {
+    stroke: $basic-green;
+  }
 }
 
 .copyright {
@@ -54,6 +90,18 @@
 
   &:first-child {
     margin-right: 108px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.icon-htmlacademy {
+  fill: $icons-color;
+
+  &:hover {
+    fill: $basic-green;
   }
 }
 
@@ -88,6 +136,16 @@
   .icon-insta {
     width: 23px;
     height: 23px;
+  }
+
+  .icon-vk {
+    width: 30px;
+    height: 22px;
+  }
+
+  .icon-facebook {
+    width: 28px;
+    height: 33px;
   }
 }
 
