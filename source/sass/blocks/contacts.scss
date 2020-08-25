@@ -74,6 +74,7 @@
   background-image: url("../img/email.svg");
   background-repeat: no-repeat;
   background-position: 184px center;
+  stroke: $special-dark-grey;
 
   &:focus {
     background-image: url("../img/email-hover.svg");
@@ -81,7 +82,6 @@
 }
 
 .contacts__input--phone-number {
-  background-image: url("../img/phone-number.svg");
   background-repeat: no-repeat;
   background-position: 171px center;
 }
