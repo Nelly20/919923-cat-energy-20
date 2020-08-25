@@ -70,26 +70,27 @@
     border: 1px solid $basic-dark-grey;
   }
 
+  &:focus .icon-email{
+    stroke: $basic-green;
+  }
+
+  &:focus .icon-phone{
+    fill: $basic-green;
+  }
+}
+
 .icon-email {
   position: absolute;
   top: 20px;
   left: 600px;
   stroke: $special-dark-grey;
-
-  &:focus {
-    stroke: $basic-green;
-  }
 }
 
 .icon-phone {
   position: absolute;
   top: 15px;
   left: 600px;
-  fill: $basic-green;
-
-  &:focus {
-    fill: $basic-green;
-  }
+  fill: $special-dark-grey;
 }
 
 .contacts__input--phone-number {
