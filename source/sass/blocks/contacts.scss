@@ -70,11 +70,11 @@
     border: 1px solid $basic-dark-grey;
   }
 
-  &:focus .icon-email{
+  &:focus + .icon-email {
     stroke: $basic-green;
   }
 
-  &:focus .icon-phone{
+  &:focus + .icon-phone {
     fill: $basic-green;
   }
 }
