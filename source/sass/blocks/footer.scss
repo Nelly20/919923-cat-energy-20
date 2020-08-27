@@ -44,26 +44,27 @@
 
 .footer-icons__link {
   text-decoration: none;
+
+  &:hover .icon-insta,
+  &:hover .icon-vk {
+    fill: $basic-green;
+  }
+
+  &:hover .icon-facebook {
+    stroke: $basic-green;
+  }
 }
 
 .icon-insta {
   fill: $icons-color;
   width: 16px;
   height: 16px;
-
-  &:hover {
-    fill: $basic-green;
-  }
 }
 
 .icon-vk {
   fill: $icons-color;
   width: 23px;
   height: 16px;
-
-  &:hover {
-    fill: $basic-green;
-  }
 }
 
 .icon-facebook {
@@ -71,10 +72,6 @@
   fill: none;
   width: 22px;
   height: 22px;
-
-  &:hover {
-    stroke: $basic-green;
-  }
 }
 
 .copyright {
@@ -95,14 +92,14 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:hover .icon-htmlacademy {
+    fill: $basic-green;
+  }
 }
 
 .icon-htmlacademy {
   fill: $icons-color;
-
-  &:hover {
-    fill: $basic-green;
-  }
 }
 
 .copyright__text {

@@ -6,14 +6,52 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const csso = require("csso");
+const csso = require("gulp-csso");
 const rename = require("gulp-rename");
+const imagemin = require("gulp-imagemin");
+const svgstore = require("gulp-svgstore");
+const del = require("del");
+
+const clean = () => {
+return del("build");
+};
+exports.clean = clean;
+
+const copy = () => {
+return gulp.src([
+"source/fonts/**/*.{woff,woff2}",
+ "source/img/**",
+ "source/js/**",
+ "source/*.ico"
+ ], {
+ base: "source"
+ })
+.pipe(gulp.dest("build"));
+};
+exports.copy = copy;
+
+const sprite = () => {
+  return gulp.src("source/img/**/icon-*.svg")
+  .pipe(svgstore())
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("source/img"))
+}
+exports.sprite = sprite;
+
+
+const images = () => {
+return gulp.src("source/img/**/*.{jpg,png,svg}")
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    ]))
+}
+exports.images = images;
 
 // Styles
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
- .pipe(webp({quality: 90}))
- .pipe(gulp.dest("source/img"))
+.pipe(webp({quality: 90}))
+.pipe(gulp.dest("source/img"))
 }
 exports.webp = createWebp;
 
