@@ -1,5 +1,5 @@
 const gulp = require("gulp");
-const webp = require('gulp-webp');
+const webp = require("gulp-webp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
@@ -11,6 +11,15 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+
+const build = gulp.series(
+"clean",
+"copy",
+"css",
+"sprite",
+"html"
+);
+exports.build = build;
 
 const clean = () => {
 return del("build");
@@ -34,7 +43,7 @@ const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("source/img"))
+  .pipe(gulp.dest("build/img"))
 }
 exports.sprite = sprite;
 
@@ -66,7 +75,7 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -77,7 +86,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -96,5 +105,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  styles, copy, server, watcher
 );

@@ -44,6 +44,11 @@
   margin-top: 300px;
 }
 
+.main-screen__button {
+  width: 280px;
+  height: 40px;
+}
+
 @media (min-width: $tablet-width) {
   .main-screen {
     min-height: 826px;
