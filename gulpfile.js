@@ -54,7 +54,7 @@ exports.sprite = sprite;
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
 .pipe(webp({quality: 90}))
-.pipe(gulp.dest("source/img"))
+.pipe(gulp.dest("build/img"))
 };
 exports.webp = createWebp;
 
@@ -65,6 +65,7 @@ imagemin.optipng({optimizationLevel: 3}),
 imagemin.mozjpeg({progressive: true}),
 imagemin.svgo()
 ]))
+.pipe(gulp.dest("build/img"))
 }
 exports.images = images;
 
@@ -102,11 +103,12 @@ exports.server = server;
 
 const copy = () => {
 return gulp.src([
-"source/fonts/**/*.{woff,woff2}",
-"source/img/**",
-"source/css/**",
-"source/js/**",
-"source/*.ico"
+"source/fonts//*.{woff,woff2}",
+"source/img/",
+"source/css/",
+"source/js/",
+"source/*.ico",
+"source/*.html"
 ], {
 base: "source"
 })
@@ -126,29 +128,18 @@ const watcher = () => {
 }
 
 const build = gulp.series(
-copy,
-clean,
-styles,
-sprite,
-createWebp,
-images
+ clean,
+ copy,
+ styles,
+ sprite,
+ createWebp,
+ images
 );
 exports.build = build;
 
-const start = gulp.series(
-copy,
-clean,
-styles,
-sprite,
-createWebp,
-images
-);
-exports.start = start;
-
 gulp.task('build', gulp.series(build));
-gulp.task('start', gulp.series(copy, clean, sprite, styles));
-gulp.task("default", gulp.series(build, server, watcher));
+gulp.task("start", gulp.series(build, server, watcher));
 
 exports.default = gulp.series(
-  copy, clean, sprite, server, watcher, html
+  copy, clean, sprite, server, watcher
 );
