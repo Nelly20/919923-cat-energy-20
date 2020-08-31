@@ -135,6 +135,16 @@ images
 );
 exports.build = build;
 
+const start = gulp.series(
+copy,
+clean,
+styles,
+sprite,
+createWebp,
+images
+);
+exports.start = start;
+
 gulp.task('build', gulp.series(build));
 gulp.task('start', gulp.series(copy, clean, sprite, styles));
 gulp.task("default", gulp.series(build, server, watcher));
