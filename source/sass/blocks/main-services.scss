@@ -18,13 +18,12 @@
 .services-list__item--weightloss {
   margin-bottom: 20px;
 
-  background-image: url("../img/cat_back.svg");
-  background-repeat: no-repeat;
+  background-image: url("../img/sprite.svg#icon-cat-slim");
   background-position: 22px 21px;
 }
 
 .services-list__item--weightgain {
-  background-image: url("../img/cat.svg");
+  background-image: url("../img/sprite.svg#icon-cat-pro");
   background-repeat: no-repeat;
   background-position: 13px 24px;
 
@@ -87,12 +86,12 @@
   .services-list__item--weightloss {
     margin-bottom: 20px;
 
-    background-image: url("../img/cat_back-tablet.svg");
+    background-size: 200px 211px;
     background-position: 446px 81px;
   }
 
   .services-list__item--weightgain {
-    background-image: url("../img/cat-tablet.svg");
+    background-size: 268px 200px;
     background-position: 412px 91px;
 
     .services-list__title {
