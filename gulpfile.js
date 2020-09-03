@@ -139,7 +139,3 @@ exports.build = build;
 
 gulp.task('build', gulp.series(build));
 gulp.task("start", gulp.series(build, server, watcher));
-
-exports.default = gulp.series(
-  copy, clean, sprite, server, watcher
-);

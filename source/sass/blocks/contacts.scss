@@ -93,9 +93,16 @@
   fill: $special-dark-grey;
 }
 
-.contacts__input--phone-number {
-  background-repeat: no-repeat;
-  background-position: 171px center;
+.form__input--error {
+  border: 1px solid $basic-red;
+
+  & + .icon-email {
+    stroke: $basic-red;
+  }
+
+  & + .icon-phone {
+    fill: $basic-red;
+  }
 }
 
 @media (min-width: $tablet-width) {

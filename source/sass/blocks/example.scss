@@ -283,8 +283,18 @@
   }
 
   .example__first-slide-img {
+    position: relative;
+    padding-right: 400px;
     margin-top: 43px;
     margin-left: -7px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      right: 40px;
+      background-image: url("../img/after-desktop.png");
+    }
   }
 
   .example__second-slide-img {
@@ -483,5 +493,18 @@
   .example__first-slide,
   .example__second-slide {
     background-color: transparent;
+  }
+
+  .example__first-slide-img {
+    position: relative;
+    padding-right: 400px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      right: 40px;
+      background-image: url("../img/after-desktop.png");
+    }
   }
 }

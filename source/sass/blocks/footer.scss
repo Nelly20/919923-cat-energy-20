@@ -53,6 +53,12 @@
   &:hover .icon-facebook {
     stroke: $basic-green;
   }
+
+  &:active .icon-insta,
+  &:active .icon-vk,
+  &:active .icon-facebook {
+    opacity: 0.4;
+  }
 }
 
 .icon-insta {

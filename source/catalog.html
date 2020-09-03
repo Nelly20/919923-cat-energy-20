@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <link rel="preload" href="/css/styles.min.css" as="style">
+    <link rel="preload" href="/img/index-background-mobile@1x.jpg" as="image">
+    <link rel="preload" href="/fonts/oswald-v35-latin_cyrillic-regular.woff2" as="font">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy Каталог</title>
     <link rel="stylesheet" href="css/styles.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   </head>
   <body class="page__body">
     <div style="display: none">
@@ -312,14 +314,15 @@
               <address class="page-footer__address">Санкт-Петербург</address>
             </div>
           </div>
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <iframe class="footer-address__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1599133579805!5m2!1sru!2sua"></iframe>
+          <!-- <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
             <img class="footer-address__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-          </picture>
+            </picture> -->
         </div>
       </div>
       <div>
@@ -330,21 +333,21 @@
           <ul class="footer-icons footer-icons__list">
             <li class="footer-icons__item">
               <a class="footer-icons__link" href="#" aria-label="Вконтакте">
-                <svg class="icon-vk">
+                <svg class="icon-vk" width="100%" height="auto">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-icons__item">
               <a class="footer-icons__link" href="#" aria-label="Инстаграм">
-                <svg class="icon-insta">
+                <svg class="icon-insta" width="100%" height="auto">
                   <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-icons__item">
               <a class="footer-icons__link" href="#" aria-label="Фейсбук">
-                <svg class="icon-facebook">
+                <svg class="icon-facebook" width="100%" height="auto">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>

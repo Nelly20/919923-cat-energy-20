@@ -63,6 +63,18 @@
   @include product-header;
 }
 
+.form__input--error {
+  border: 1px solid $basic-red;
+
+  & + .icon-email {
+    stroke: $basic-red;
+  }
+
+  & + .icon-phone {
+    fill: $basic-red;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .personal-info {
     @include container-form;
