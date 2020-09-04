@@ -144,25 +144,28 @@
     &:active {
       color: $special-light-black;
     }
+  }
 
-    &:focus {
-      color: $basic-black;
+  .site-list__item--active {
+    color: $basic-black;
 
-      border-bottom: 2px solid $basic-green;
-    }
+    border-bottom: 2px solid $basic-green;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page__body--index {
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 95% top;
-    background-size: 720px 696px;
-    border-bottom: none;
+    position: relative;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 696px;
+      background-color: $special-green;
+      z-index: -1;
     }
   }
 
@@ -191,6 +194,7 @@
     height: 59px;
     margin-top: 43px;
     margin-left: 0;
+    z-index: 2;
   }
 
   .main-nav__list {
@@ -213,11 +217,11 @@
     &:active {
       color: $special-white;
     }
+  }
 
-    &:focus {
-      color: $basic-white;
+  .site-list__link--white-active {
+    color: $basic-white;
 
-      border-bottom: 2px solid $basic-white;
-    }
+    border-bottom: 2px solid $basic-white;
   }
 }

@@ -93,7 +93,7 @@
   fill: $special-dark-grey;
 }
 
-.form__input--error {
+.form__input-error {
   border: 1px solid $basic-red;
 
   & + .icon-email {
@@ -194,11 +194,11 @@
     margin-right: 20px;
   }
 
-  .contacts__input--email {
-    background-position: 438px center;
+  .icon-email {
+    left: 500px;
   }
 
-  .contacts__input--phone-number {
-    background-position: 435px center;
+  .icon-phone {
+    left: 500px;
   }
 }

@@ -48,7 +48,7 @@
   @include product-header;
 }
 
-.more-products__item-describtion {
+.more-products__item-description {
   display: flex;
   justify-content: space-between;
   margin-top: -6px;
@@ -67,12 +67,17 @@
   margin-bottom: 35px;
 
   background-color: $basic-green;
-  background-image: url("../img/icon_gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 58px, center center;
+  background-size: 78px 80px, auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
-.sale__describtion {
+.sale__description {
   margin-top: 187px;
 
   font-weight: 400;
@@ -153,10 +158,15 @@
     height: 200px;
     margin-top: 67px;
 
-    background-position: 79px center;
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
+    background-position: 79px center, center center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
-  .sale__describtion {
+  .sale__description {
     margin-top: 74px;
     padding-top: 0;
     padding-left: 423px;
@@ -203,7 +213,7 @@
     margin-top: 10px;
   }
 
-  .more-products__item-describtion {
+  .more-products__item-description {
     margin-top: 5px;
   }
 
@@ -219,10 +229,16 @@
     min-height: 289px;
     margin-top: 175px;
 
-    background-position: center 56px;
+
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
+    background-position: center 56px, center center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
-  .sale__describtion {
+  .sale__description {
     padding-top: 106px;
     padding-left: 0;
 

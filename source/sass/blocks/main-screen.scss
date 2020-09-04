@@ -47,6 +47,8 @@
 .main-screen__button {
   width: 280px;
   height: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 @media (min-width: $tablet-width) {
@@ -94,6 +96,8 @@
     width: 244px;
     height: 54px;
     margin-left: 82px;
+    padding-left: 26px;
+    padding-right: 26px;
 
     font-size: 20px;
   }
@@ -102,18 +106,20 @@
 @media (min-width: $desktop-width) {
   .main-screen {
     position: relative;
+    top: -137px;
 
-    background-image: url("../img/index-can-desktop@1x.png");
-    background-position: 62% 0;
-    background-size: 552px 499px;
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
+    background-position: 62% 150px, 95% top;
+    background-size: 552px 499px, 720px 696px;
+    z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-can-desktop@2x.png");
+      background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg");
     }
   }
 
   .main-screen__title {
-    margin-top: 57px;
+    margin-top: 157px;
     margin-left: 70px;
   }
 

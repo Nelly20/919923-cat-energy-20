@@ -63,7 +63,7 @@
   @include product-header;
 }
 
-.form__input--error {
+.form__input-error {
   border: 1px solid $basic-red;
 
   & + .icon-email {

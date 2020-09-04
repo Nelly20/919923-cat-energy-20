@@ -18,12 +18,13 @@
 .services-list__item--weightloss {
   margin-bottom: 20px;
 
-  background-image: url("../img/sprite.svg#icon-cat-slim");
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
   background-position: 22px 21px;
 }
 
 .services-list__item--weightgain {
-  background-image: url("../img/sprite.svg#icon-cat-pro");
+  background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
   background-position: 13px 24px;
 
@@ -142,13 +143,11 @@
   .services-list__item--weightloss {
     margin-bottom: 0;
 
-    background-image: url("../img/cat_back-desktop.svg");
     background-position: 52px 41px;
     background-size: 100px;
   }
 
   .services-list__item--weightgain {
-    background-image: url("../img/cat-desktop.svg");
     background-position: 33px 47px;
     background-size: 134px 100px;
   }

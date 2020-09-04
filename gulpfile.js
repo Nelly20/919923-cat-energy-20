@@ -13,29 +13,24 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const terser = require("gulp-terser");
 const posthtml = require("gulp-posthtml");
-const include = require("posthtml-include");
+const include = require('gulp-include');
 const htmlmin = require("gulp-htmlmin");
+const uglify = require('gulp-uglify');
+const pipeline = require('readable-stream').pipeline;
 
-
-const html = () => {
-  return gulp.src("source/*.html")
-    .pipe(plumber())
-    .pipe(sourcemaps.init())
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(htmlmin({
-      minifyJS: true,
-      minifyURLs: true,
-      collapseWhitespace: true,
-      removeComments: true,
-      sortAttributes: true,
-      sortClassName: true
-    }))
-    .pipe(gulp.dest("build"))
-    .pipe(sourcemaps.write());
+const jsminify = () =>  {
+  return pipeline(
+        gulp.src('source/*.js'),
+        uglify(),
+        gulp.dest('build/')
+  );
 };
 
+const htmlminify = () => {
+return gulp.src('source/*.html')
+.pipe(htmlmin())
+.pipe(gulp.dest('build/'));
+};
 
 // Styles
 const clean = () => {
@@ -85,7 +80,6 @@ const styles = () => {
 }
 
 exports.styles = styles;
-
 // Server
 
 const server = (done) => {
@@ -128,12 +122,14 @@ const watcher = () => {
 }
 
 const build = gulp.series(
- clean,
- copy,
- styles,
- sprite,
- createWebp,
- images
+clean,
+copy,
+styles,
+sprite,
+createWebp,
+images,
+jsminify,
+htmlminify
 );
 exports.build = build;
 
