@@ -1,13 +1,14 @@
 .comment {
   position: relative;
 
-  margin-top: 15px;
+  margin-top: 12px;
   padding: 0;
 
   border: none;
 }
 
 .comment__title {
+  margin-top: 0;
   margin-left: -4px;
 
   text-align: left;
@@ -17,20 +18,20 @@
   @include underline-green-mobile;
 
   &::after {
-    left: 162px;
+    left: 140px;
   }
 }
 
 .comment__text {
   width: 262px;
   min-height: 135px;
-  margin-top: 34px;
+  margin-top: 36px;
   padding-top: 11px;
   padding-left: 12px;
 
   font-family: "Oswald", "Arial", sans-serif;
   color: $special-dark-grey;
-
+  background-color: $basic-white;
   border: 1px solid $special-grey;
 
   resize: none;
@@ -42,7 +43,7 @@
   .comment {
     @include container-form;
 
-    margin-top: 45px;
+    margin-top: 47px;
   }
 
   .comment__title {
@@ -52,19 +53,20 @@
     @include underline-green;
 
     &::after {
-      left: 289px;
+      left: 230px;
     }
 
     &::before {
-      right: 700px;
+      right: 675px;
     }
   }
 
   .comment__text {
     width: 616px;
     min-height: 160px;
-    margin-top: 72px;
+    margin-top: 75px;
     margin-left: 8px;
+    padding-top: 10px;
     padding-left: 19px;
 
     line-height: 30px;

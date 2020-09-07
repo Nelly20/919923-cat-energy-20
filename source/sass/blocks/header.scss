@@ -7,6 +7,8 @@
 
 .page-header__logo-link {
   position: relative;
+  height: 38px;
+  width: 190px;
 
   @include underline-grey;
 }
@@ -22,6 +24,10 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.page-header__logo--form {
+  margin-top: 3px;
 }
 
 .page-header__logo--index {
@@ -96,10 +102,14 @@
 
   .page-header__logo-link {
     width: 174px;
-    height: 52px;
-    margin-top: 22px;
+    height: 51px;
+    margin-top: 12px;
 
     @include underline-none;
+  }
+
+  .page-header__logo--form {
+    margin-top: 12px;
   }
 
   .main-nav__toggle--open {
@@ -118,6 +128,7 @@
 
   .site-list__item {
     margin-right: 35px;
+    padding-bottom: 7px;
 
     border-top: none;
 
@@ -125,8 +136,6 @@
 
     &:last-child {
       margin-right: 0;
-
-      border: none;
     }
 
     .site-list__link {
@@ -135,8 +144,6 @@
   }
 
   .site-list__link {
-    padding-bottom: 8px;
-
     &:hover {
       color: $special-black;
     }
@@ -163,7 +170,7 @@
       top: 0;
       right: 0;
       width: 50%;
-      height: 696px;
+      height: 694px;
       background-color: $special-green;
       z-index: -1;
     }
@@ -223,5 +230,13 @@
     color: $basic-white;
 
     border-bottom: 2px solid $basic-white;
+
+    &:hover {
+      color: $special-light-white;
+    }
+
+    &:active {
+      color: $special-white;
+    }
   }
 }

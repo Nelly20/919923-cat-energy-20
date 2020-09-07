@@ -2,7 +2,7 @@
   position: relative;
   margin: 0;
   margin-top: 27px;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 
   @include big-header;
   @include underline-grey;
@@ -40,7 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 8px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 
   @include underline-grey;
 }
@@ -75,7 +75,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 26px;
+    top: 15px;
     left: 125px;
 
     width: 30px;
@@ -87,7 +87,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 26px;
+    top: 15px;
     left: 125px;
 
     width: 30px;
@@ -129,12 +129,12 @@
 }
 
 .catalog__button {
-  margin-top: -8px;
+  margin-top: -12px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__title {
-    margin-top: 55px;
+    margin-top: 65px;
 
     @include big-tablet-header;
     @include underline-none;
@@ -143,7 +143,7 @@
   .catalog__list {
     @include reset-list;
 
-    margin-top: 165px;
+    margin-top: 122px;
 
     column-gap: 60px;
 
@@ -233,13 +233,15 @@
     border: 2px solid $special-light-grey;
 
     &::before {
-      top: 62px;
+      top: 82px;
+      left: 132px;
 
       width: 60px;
     }
 
     &::after {
-      top: 62px;
+      top: 82px;
+      left: 132px;
 
       width: 60px;
     }

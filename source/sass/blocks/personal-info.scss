@@ -42,6 +42,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   text-align: left;
   color: $basic-dark-grey;
+  background-color: $basic-white;
 
   border: 1px solid $special-grey;
 
@@ -91,6 +92,10 @@
     margin-bottom: 19px;
 
     @include underline-none;
+  }
+
+  .personal-info__input {
+    padding-bottom: 9px;
   }
 
   .personal-info__label {

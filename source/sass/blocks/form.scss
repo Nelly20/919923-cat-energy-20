@@ -1,5 +1,5 @@
 .form {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .form__wrapper {
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 17px;
 }
 
 .form__small-text {
@@ -44,7 +44,8 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    margin-top: 50px;
+    margin-top: 66px;
+    margin-bottom: 70px;
   }
 
   .form__title {
@@ -64,6 +65,7 @@
   .form__button-wrapper {
     flex-direction: row;
     margin-left: 40px;
+    margin-top: 15px;
   }
 
   .form__button {

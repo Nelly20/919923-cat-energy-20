@@ -1,7 +1,7 @@
 .contacts {
   position: relative;
 
-  margin-top: 30px;
+  margin-top: 27px;
   padding: 0;
 
   border: none;
@@ -9,7 +9,7 @@
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
   margin-left: -2px;
   padding: 0;
 
@@ -20,7 +20,7 @@
   @include underline-green-mobile;
 
   &::after {
-    left: 221px;
+    left: 200px;
   }
 }
 
@@ -61,6 +61,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   text-align: left;
   color: $basic-dark-grey;
+  background-color: $basic-white;
 
   border: 1px solid $special-grey;
 
@@ -109,7 +110,7 @@
   .contacts {
     @include container-form;
 
-    margin-top: 72px;
+    margin-top: 68px;
   }
 
   .contacts__title {
@@ -119,16 +120,16 @@
     @include underline-green;
 
     &::after {
-      left: 550px;
+      left: 555px;
     }
 
     &::before {
-      right: 700px;
+      right: 670px;
     }
   }
 
   .contacts__list {
-    margin-top: 44px;
+    margin-top: 40px;
   }
 
   .contacts__item {
@@ -136,6 +137,7 @@
   }
 
   .contacts__label {
+    margin-top: 16px;
     margin-right: 20px;
   }
 

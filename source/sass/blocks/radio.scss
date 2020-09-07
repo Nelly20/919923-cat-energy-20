@@ -1,9 +1,9 @@
 .radio {
   position: relative;
 
-  margin-top: 15px;
+  margin-top: 0;
   padding-top: 20px;
-  padding-bottom: 1px;
+  padding-bottom: 8px;
 
   border: none;
 
@@ -19,7 +19,7 @@
 
 .radio__item {
   align-self: flex-start;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
   margin-left: 30px;
 }
 
@@ -76,7 +76,7 @@
 
 @media (min-width: $tablet-width) {
   .radio {
-    margin-top: 40px;
+    margin-top: 25px;
     margin-left: 30px;
 
     border: none;
@@ -85,13 +85,18 @@
   }
 
   .radio__list {
-    padding-top: 36px;
+    padding-top: 28px;
+    width: 628px;
 
     border: 1px solid $special-grey;
   }
 
   .radio__item {
-    margin-bottom: 34px;
+    margin-bottom: 28px;
+
+    &:last-child {
+      margin-bottom: 34px;
+    }
   }
 
   .radio__label {
@@ -102,7 +107,7 @@
 
   .radio__input + .radio__label::before {
     top: -11px;
-    left: -63px;
+    left: -60px;
 
     width: 40px;
     height: 40px;

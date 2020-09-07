@@ -17,6 +17,7 @@ const include = require('gulp-include');
 const htmlmin = require("gulp-htmlmin");
 const uglify = require('gulp-uglify');
 const pipeline = require('readable-stream').pipeline;
+const cleanCSS = require('gulp-clean-css');
 
 const jsminify = () =>  {
   return pipeline(
@@ -72,6 +73,7 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))

@@ -18,7 +18,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="page-header__logo" src="img/logo-mobile.svg" alt="Cat Energy">
+          <img class="page-header__logo page-header__logo--form" src="img/logo-mobile.svg" alt="Cat Energy" height="38" width="190">
         </picture>
       </a>
       <nav class="main-nav">
@@ -48,7 +48,7 @@
         </p>
         <div class="form__wrapper">
           <fieldset class="personal-info">
-            <legend class="visually-hidden">Персональные данные</legend>
+            <h2 class="visually-hidden">Персональные данные</h2>
             <ul class="personal-info__list">
               <li class="personal-info__item">
                 <label class="personal-info__label" for="name">Имя:*</label>
@@ -65,7 +65,7 @@
             </ul>
           </fieldset>
           <fieldset class="radio">
-            <legend class="visually-hidden">Выбрать программу</legend>
+            <h2 class="visually-hidden">Выбрать программу</h2>
             <ul class="radio__list">
               <li class="radio__item" tabindex="0">
                 <input class="radio__input visually-hidden" type="radio" name="supply-type" id="first-program" checked>
@@ -83,7 +83,7 @@
           </fieldset>
         </div>
         <fieldset class="contacts">
-          <legend class="contacts__title">Контактные данные (владельца кота)</legend>
+          <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
               <label class="contacts__label" for="email">E-mail:*</label>
@@ -102,12 +102,12 @@
           </ul>
         </fieldset>
         <fieldset class="comment">
-          <legend class="comment__title">Комментарий</legend>
+          <h2 class="comment__title">Комментарий</h2>
           <label class="visually-hidden" for="comment-text">Комментарий</label>
           <textarea class="comment__text" id="comment-text" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </fieldset>
         <fieldset class="additional">
-          <legend class="additional__title">Дополнительно</legend>
+          <h2 class="additional__title">Дополнительно</h2>
           <ul class="additional__list">
             <li class="additional__item" tabindex="0">
               <input class="additional__input visually-hidden" type="checkbox" id="sugar" checked>
@@ -135,7 +135,7 @@
     </main>
     <footer class="page-footer">
       <div>
-        <div class="footer-address">
+        <div class="footer-address footer-address--form">
           <div class="footer-address__wrapper container">
             <h2 class="footer-address__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
             <div>
