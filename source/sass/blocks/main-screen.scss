@@ -53,10 +53,10 @@
 
 @media (min-width: $tablet-width) {
   .main-screen {
-    min-height: 848px;
+    min-height: 833px;
 
     background-image: url("../img/index-can-tablet@1x.jpg");
-    background-position: center 265px;
+    background-position: center 250px;
     background-size: 709px 609px;
 
     @include underline-none;
@@ -67,7 +67,7 @@
   }
 
   .main-screen__title {
-    margin-top: 38px;
+    margin-top: 23px;
     margin-left: 86px;
 
     text-align: left;

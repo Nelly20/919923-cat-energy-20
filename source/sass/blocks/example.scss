@@ -290,9 +290,11 @@
   .example__first-slide--preview,
   .example__second-slide--preview {
     position: relative;
+    width: 620px;
+    margin: 0 auto;
     background-image: url("../img/after-tablet.png"), url("../img/before-tablet.png");
     background-repeat: no-repeat;
-    background-position: 67.5% 50px, 32% 40px;
+    background-position: 117% 50px, -16% 40px;
     z-index: 1;
 
     .example__first-slide-img,
@@ -309,7 +311,7 @@
 
   .example__first-slide,
   .example__second-slide {
-    padding-bottom: 64px;
+    padding-bottom: 32px;
   }
 
   .example__button {
@@ -349,6 +351,10 @@
 
   .example__img {
     position: absolute;
+  }
+
+  .example__buttons-wrapper {
+    margin-top: 48px;
   }
 
   .example__range-filter {
