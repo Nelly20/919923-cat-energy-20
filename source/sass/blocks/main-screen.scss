@@ -107,10 +107,10 @@
 @media (min-width: $desktop-width) {
   .main-screen {
     position: relative;
-    top: -127px;
+    top: -130px;
 
     background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
-    background-position: 64% 142px, 107% top;
+    background-position: 64% 142px, 100% top;
     background-size: 552px 499px, 720px 696px;
     z-index: -1;
 
