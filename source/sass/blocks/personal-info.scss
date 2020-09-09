@@ -112,12 +112,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .personal-info {
-    margin-top: 45px;
-  }
-
   .personal-info__list {
     border-bottom: none;
+  }
+
+  .personal-info__item {
+    margin-bottom: 15px;
   }
 
   .personal-info__label {

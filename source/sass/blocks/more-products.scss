@@ -183,19 +183,24 @@
   }
 
   .more-products__title {
+    padding-left: 0;
+    margin-top: 67px;
+
     &::after {
-      left: 483px;
+      top: 23px;
+      left: 370px;
     }
 
     &::before {
-      right: 1050px;
+      top: 23px;
+      right: 1055px;
     }
   }
 
   .more-products__list {
-    width: 896px;
-    margin-right: 80px;
-    margin-left: 36px;
+    width: 894px;
+    margin-right: 78px;
+    margin-top: 82px;
   }
 
   .more-products__item {
@@ -229,7 +234,8 @@
   .sale {
     width: 245px;
     min-height: 289px;
-    margin-top: 175px;
+    margin-top: 184px;
+    margin-bottom: 85px;
 
 
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");

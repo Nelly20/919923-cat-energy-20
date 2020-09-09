@@ -110,7 +110,7 @@
     top: -127px;
 
     background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
-    background-position: 62% 150px, 95% top;
+    background-position: 64% 142px, 107% top;
     background-size: 552px 499px, 720px 696px;
     z-index: -1;
 
@@ -120,13 +120,13 @@
   }
 
   .main-screen__title {
-    margin-top: 157px;
-    margin-left: 70px;
+    margin-top: 197px;
+    margin-left: 80px;
   }
 
   .main-screen__subtitle {
     margin-top: 40px;
-    margin-left: 70px;
+    margin-left: 80px;
   }
 
   .main-screen__img {
@@ -136,8 +136,8 @@
     z-index: 2;
   }
 
-  .main-screen__button {
-    margin-top: 32px;
-    margin-left: 70px;
+  .main-screen__button-wrapper {
+    margin-top: 64px;
+    margin-left: 0;
   }
 }

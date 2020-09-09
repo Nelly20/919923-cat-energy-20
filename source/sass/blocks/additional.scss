@@ -150,12 +150,24 @@
 @media (min-width: $desktop-width) {
   .additional {
     width: auto;
-    margin-top: 65px;
+    margin-top: 63px;
+  }
+
+  .additional__title {
+    &::before {
+      top: 22px;
+      right: 1260px;
+    }
+
+    &::after {
+      top: 22px;
+    }
   }
 
   .additional__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 40px;
+    column-gap: 80px;
+    margin-top: 68px;
   }
 
   .additional__item {
@@ -169,7 +181,7 @@
   .additional__input + .additional__label::before {
     content: "";
     position: absolute;
-    top: -3px;
+    top: -5px;
     left: -60px;
 
     width: 40px;

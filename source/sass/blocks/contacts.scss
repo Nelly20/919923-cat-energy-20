@@ -164,31 +164,32 @@
     position: relative;
 
     width: auto;
-    margin-top: 55px;
+    margin-top: 45px;
+    margin-left: 0;
   }
 
   .contacts__title {
     &::after {
-      left: 662px;
+      left: 550px;
     }
 
     &::before {
-      right: 1300px;
+      right: 1260px;
     }
   }
 
   .contacts__list {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 44px;
+    margin-top: 74px;
   }
 
-  .contacts__item {
-    flex-grow: 1;
+  .contacts__input--email {
+    width: 466px;
+  }
 
-    &:first-child {
-      margin-right: 95px;
-    }
+  .contacts__input--phone-number {
+    width: 452px;
   }
 
   .contacts__label {
@@ -197,10 +198,10 @@
   }
 
   .icon-email {
-    left: 500px;
+    left: 530px;
   }
 
   .icon-phone {
-    left: 500px;
+    left: 535px;
   }
 }

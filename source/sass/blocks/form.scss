@@ -87,12 +87,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    margin-bottom: 80px;
+  }
+
   .form__title {
-    margin-top: 51px;
+    margin-top: -9px;
   }
 
   .form__subtitle {
-    margin-top: 56px;
+    margin-top: 57px;
     margin-left: 0;
   }
 
@@ -103,7 +107,8 @@
   }
 
   .form__button-wrapper {
-    margin-top: 48px;
+    margin-top: 20px;
+    margin-left: 0;
   }
 
   .form__button {

@@ -98,25 +98,30 @@
   .footer-address,
   .footer__address--grey {
     position: relative;
+    padding-top: 0;
+  }
+
+  .footer-address--index {
+    margin-top: -180px;
   }
 
   .footer-address__wrapper {
     position: absolute;
-    top: 104px;
-    left: 100px;
+    top: 95px;
+    left: 65px;
 
     box-sizing: border-box;
     width: 570px;
     padding-top: 50px;
-    padding-right: 89px;
+    padding-right: 49px;
     padding-bottom: 55px;
-    padding-left: 76px;
+    padding-left: 36px;
 
     background-color: $basic-white;
   }
 
   .footer-address__title {
-    margin-right: 87px;
+    margin-bottom: 0;
   }
 
   .page-footer__address {

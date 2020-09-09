@@ -7,13 +7,14 @@
 
 .page-header__logo-link {
   position: relative;
-  height: 38px;
-  width: 190px;
+
 
   @include underline-grey;
 }
 
 .page-header__logo {
+  height: 38px;
+  width: 190px;
   margin-top: 11px;
   margin-bottom: 12px;
 
@@ -101,11 +102,14 @@
   }
 
   .page-header__logo-link {
-    width: 174px;
-    height: 51px;
     margin-top: 12px;
 
     @include underline-none;
+  }
+
+  .page-header__logo {
+    width: 174px;
+    height: 51px;
   }
 
   .page-header__logo--form {
@@ -169,8 +173,8 @@
       content: "";
       top: 0;
       right: 0;
-      width: 50%;
-      height: 694px;
+      width: 51%;
+      height: 700px;
       background-color: $special-green;
       z-index: -1;
     }
@@ -198,15 +202,22 @@
   }
 
   .page-header__logo-link {
-    height: 59px;
     margin-top: 43px;
     margin-left: 0;
     z-index: 2;
   }
 
+  .page-header__logo {
+    width: 202px;
+    height: 59px;
+  }
+
+  .page-header__logo--index {
+    margin-top: 43px;
+  }
+
   .main-nav__list {
-    margin-top: 48px;
-    margin-right: 8px;
+    margin-top: 52px;
     padding-bottom: 20px;
 
     font-size: 20px;
