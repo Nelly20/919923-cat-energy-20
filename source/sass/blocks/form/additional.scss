@@ -8,14 +8,14 @@
 }
 
 .additional__title {
+  @include small-header;
+  @include underline-green-mobile;
+
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 42px;
   margin-left: -4px;
 
   text-align: left;
-
-  @include small-header;
-  @include underline-green-mobile;
 
   &::after {
     left: 163px;
@@ -37,11 +37,11 @@
 }
 
 .additional__label {
+  @include product-header;
+
   position: relative;
 
   margin-left: 2px;
-
-  @include product-header;
 }
 
 .additional__input + .additional__label::before {
@@ -75,6 +75,7 @@
   cursor: pointer;
 }
 
+.additional__input:active + .additional__label,
 .additional__input:disabled + .additional__label {
   cursor: auto;
   opacity: 0.3;
@@ -88,10 +89,10 @@
   }
 
   .additional__title {
-    margin-left: 0;
-
     @include big-header;
     @include underline-green;
+
+    margin-left: 0;
 
     &::after {
       left: 252px;
@@ -106,7 +107,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    margin-top: 42px;
+    margin-top: 66px;
   }
 
   .additional__item {
@@ -114,9 +115,9 @@
   }
 
   .additional__label {
-    margin-left: 18px;
-
     @include product-tablet-header;
+
+    margin-left: 18px;
   }
 
   .additional__input + .additional__label::before {
@@ -125,8 +126,8 @@
     top: -5px;
     left: -60px;
 
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
 
     border: 1px solid $border-color;
     cursor: pointer;
@@ -135,8 +136,8 @@
   .additional__input:checked + .additional__label::after {
     content: "";
     position: absolute;
-    top: 9px;
-    left: -48px;
+    top: 8px;
+    left: -50px;
 
     width: 26px;
     height: 26px;

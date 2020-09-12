@@ -8,13 +8,13 @@
 }
 
 .more-products__title {
+  @include small-header;
+  @include underline-green-mobile;
+
   position: relative;
   margin-top: 21px;
 
   text-transform: none;
-
-  @include small-header;
-  @include underline-green-mobile;
 
   &::after {
     left: 248px;
@@ -40,21 +40,21 @@
 }
 
 .more-products__header {
+  @include product-header;
+
   margin-top: 11px;
   margin-bottom: 0;
   margin-left: 2px;
 
   color: $special-dark-grey;
-
-  @include product-header;
 }
 
 .more-products__item-description {
+  @include main-text;
+
   display: flex;
   justify-content: space-between;
   margin-top: -6px;
-
-  @include main-text;
 }
 
 .more-products__button {
@@ -110,38 +110,41 @@
   }
 
   .more-products__title {
-    margin-top: 63px;
+    @include big-header;
+    @include underline-green;
+
+    margin-top: 70px;
+    margin-bottom: 90px;
     padding-left: 37px;
 
     line-height: 20px;
 
-    @include big-header;
-    @include underline-green;
-
     &::after {
+      top: 15px;
       left: 410px;
     }
 
     &::before {
+      top: 15px;
       right: 710px;
     }
   }
 
   .more-products__header {
+    @include product-tablet-header;
+
     margin: 0;
     margin-left: 1px;
 
     line-height: 20px;
-
-    @include product-tablet-header;
   }
 
   .more-products__text {
+    @include catalog__item-text;
+
     margin-top: 9px;
 
     line-height: 20px;
-
-    @include catalog__item-text;
 
     &:first-child {
       margin-right: 51px;
@@ -184,22 +187,22 @@
 
   .more-products__title {
     padding-left: 0;
-    margin-top: 67px;
+    margin-top: 74px;
 
     &::after {
-      top: 23px;
+      top: 17px;
       left: 370px;
     }
 
     &::before {
-      top: 23px;
-      right: 1055px;
+      top: 17px;
+      right: 1010px;
     }
   }
 
   .more-products__list {
     width: 894px;
-    margin-right: 78px;
+    margin-right: 80px;
     margin-top: 82px;
   }
 
@@ -239,7 +242,7 @@
 
 
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
-    background-position: center 56px, center center;
+    background-position: 86px 56px, center center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@2x.jpg");
@@ -247,7 +250,7 @@
   }
 
   .sale__description {
-    padding-top: 106px;
+    padding-top: 112px;
     padding-left: 0;
 
     font-weight: 400;

@@ -1,16 +1,16 @@
 .advantages__title {
+  @include big-header;
+
   margin-top: 28px;
   margin-bottom: 31px;
-
-  @include big-header;
 }
 
 .advantages__list {
+  @include reset-list;
+
   display: grid;
 
   grid-template-columns: 1fr;
-
-  @include reset-list;
 }
 
 .advantages__item {
@@ -33,6 +33,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/advantage-leaf@2x.png");
+      background-size: 50px 52px;
     }
   }
 
@@ -43,6 +44,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/advantage-powder@2x.png");
+      background-size: 49px 51px;
     }
   }
 
@@ -53,6 +55,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/advantage-dining@2x.png");
+      background-size: 41px 50px;
     }
   }
 
@@ -63,15 +66,16 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/advantage-clock@2x.png");
+      background-size: 52px 53px;
     }
   }
 }
 
 .advantages__description {
+  @include main-text;
+
   margin-top: 3px;
   margin-left: 80px;
-
-  @include main-text;
 
   & br {
     display: none;
@@ -87,9 +91,9 @@
   }
 
   .advantages__title {
-    margin-bottom: 62px;
-
     @include big-tablet-header;
+
+    margin-bottom: 62px;
   }
 
   .advantages__list {
@@ -143,11 +147,11 @@
   }
 
   .advantages__description {
+    @include tablet-main-text;
+
     max-width: 245px;
     margin-top: 13px;
     margin-left: 0;
-
-    @include tablet-main-text;
 
     & br {
       display: block;

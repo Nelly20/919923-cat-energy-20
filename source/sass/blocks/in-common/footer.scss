@@ -81,7 +81,7 @@
 }
 
 .copyright {
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .copyright__link {
@@ -125,22 +125,33 @@
   }
 
   .footer__logo {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   .footer-icons__list {
     padding: 0;
-    margin-top: 6px;
-    margin-left: 50px;
-
+    margin-top: 9px;
+    margin-left: 30px;
 
     border: none;
+  }
+
+  .footer-icons__item {
+    margin-right: 25px;
+  }
+
+  .copyright {
+    margin-top: 5px;
   }
 
   .copyright__link {
     &:first-child {
       margin-right: 22px;
     }
+  }
+
+  .copyright__logo {
+    margin-top: 4px;
   }
 
   .icon-insta {
@@ -161,7 +172,7 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 47px 100px 20px 65px;
+    padding: 45px 100px 20px 65px;
   }
 
   .copyright {

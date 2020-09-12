@@ -19,7 +19,11 @@
         </picture>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">
+        <!-- кнопка для открытия и закрытия меню
+          main-nav__toggle-open открывает меню
+          main-nav__toggle-close закрывает меню
+          visually-hidden прячет меню -->
+        <button class="main-nav__toggle main-nav__toggle--open" type="button">
         <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -31,7 +35,7 @@
               <a class="site-list__link">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">подбор программы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -44,7 +48,7 @@
           <li class="catalog__item">
             <a href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1220px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
                 <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
@@ -71,7 +75,7 @@
                 </li>
               </ul>
             </section>
-            <a href="#" class="catalog__button">заказать</a>
+            <a href="#" class="catalog__button">Заказать</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -103,7 +107,7 @@
                 </li>
               </ul>
             </section>
-            <a href="#" class="catalog__button">заказать</a>
+            <a href="#" class="catalog__button">Заказать</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -135,7 +139,7 @@
                 </li>
               </ul>
             </section>
-            <a href="#" class="catalog__button">заказать</a>
+            <a href="#" class="catalog__button">Заказать</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -167,7 +171,7 @@
                 </li>
               </ul>
             </section>
-            <a href="#" class="catalog__button">заказать</a>
+            <a href="#" class="catalog__button">Заказать</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -199,7 +203,7 @@
                 </li>
               </ul>
             </section>
-            <a href="#" class="catalog__button">заказать</a>
+            <a href="#" class="catalog__button">Заказать</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -231,7 +235,7 @@
                 </li>
               </ul>
             </section>
-            <a href="#" class="catalog__button">заказать</a>
+            <a href="#" class="catalog__button">Заказать</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -263,7 +267,7 @@
                 </li>
               </ul>
             </section>
-            <a href="#" class="catalog__button">заказать</a>
+            <a href="#" class="catalog__button">Заказать</a>
           </li>
           <li class="catalog__more-products">
             <p class="catalog__more-products-title">Показать еще<br> 100500 товаров</p>
@@ -282,7 +286,7 @@
                 <p class="more-products__text">1 упаковка (100 г)</p>
                 <p class="more-products__text">200 Р</p>
               </div>
-              <button type="button" class="more-products__button">заказать</button>
+              <button type="button" class="more-products__button">Заказать</button>
             </li>
             <li class="more-products__item">
               <h3 class="more-products__header">Питьевая вода</h3>
@@ -290,7 +294,7 @@
                 <p class="more-products__text">5 литров</p>
                 <p class="more-products__text">50 Р</p>
               </div>
-              <button type="button" class="more-products__button">заказать</button>
+              <button type="button" class="more-products__button">Заказать</button>
             </li>
             <li class="more-products__item">
               <h3 class="more-products__header">Молоко</h3>
@@ -298,7 +302,7 @@
                 <p class="more-products__text">1 литр</p>
                 <p class="more-products__text">100 Р</p>
               </div>
-              <button type="button" class="more-products__button">заказать</button>
+              <button type="button" class="more-products__button">Заказать</button>
             </li>
             <li class="more-products__item">
               <h3 class="more-products__header">Витамины</h3>
@@ -306,7 +310,7 @@
                 <p class="more-products__text">1 упаковка (30 г)</p>
                 <p class="more-products__text">300 Р</p>
               </div>
-              <button type="button" class="more-products__button">заказать</button>
+              <button type="button" class="more-products__button">Заказать</button>
             </li>
           </ul>
         </div>
@@ -320,10 +324,7 @@
         <div class="footer-address footer-address--catalog">
           <div class="footer-address__wrapper container">
             <h2 class="footer-address__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
-            <div>
-              <address class="page-footer__address">ул. Большая<br> Конюшенная, д. 19/8</address>
-              <address class="page-footer__address">Санкт-Петербург</address>
-            </div>
+            <address class="page-footer__address">ул. Большая<br> Конюшенная, д. 19/8Б<br><span>Санкт-Петербург</span></address>
           </div>
           <iframe class="footer-address__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1599133579805!5m2!1sru!2sua"></iframe>
         </div>

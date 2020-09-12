@@ -16,12 +16,12 @@
 }
 
 .footer-address__title {
+  @include product-header;
+
   margin-bottom: 27px;
 
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
-
-  @include product-header;
 }
 
 .page-footer__address-wrapper {
@@ -29,20 +29,13 @@
 }
 
 .page-footer__address {
-  margin-right: 4px;
+  @include main-text;
+
+  margin-top: 15px;
 
   font-style: normal;
   line-height: 20px;
-
-  @include main-text;
-
-  &:first-child {
-    margin-top: 16px;
-  }
-
-  &:last-child {
-    margin-top: 5px;
-  }
+  text-align: left;
 }
 
 .footer-address__img {
@@ -57,6 +50,10 @@
 @media (min-width: $tablet-width) {
   .footer-address {
     padding-top: 50px;
+  }
+
+  .footer-address--catalog {
+    padding-top: 45px;
   }
 
   .footer-address--grey {
@@ -76,8 +73,9 @@
     text-align: right;
     margin-right: 42px;
 
-    &:first-child {
-      margin-bottom: 24px;
+    span {
+      display: block;
+      margin-top: 20px;
     }
   }
 
@@ -112,8 +110,8 @@
 
     box-sizing: border-box;
     width: 570px;
-    padding-top: 50px;
-    padding-right: 49px;
+    padding-top: 48px;
+    padding-right: 37px;
     padding-bottom: 55px;
     padding-left: 36px;
 
@@ -125,7 +123,7 @@
   }
 
   .page-footer__address {
-    margin-top: 2px;
+    margin-top: 15px;
 
     text-align: left;
   }

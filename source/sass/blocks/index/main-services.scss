@@ -15,7 +15,7 @@
   background-color: $special-light-grey;
 }
 
-.services-list__item--weightloss {
+.services-list__item--weight-loss {
   margin-bottom: 18px;
 
   background-image: url("../img/icon-cat-slim.svg");
@@ -23,7 +23,7 @@
   background-position: 22px 21px;
 }
 
-.services-list__item--weightgain {
+.services-list__item--weight-gain {
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
   background-position: 13px 24px;
@@ -84,14 +84,14 @@
     padding: 58px 62px 56px 52px;
   }
 
-  .services-list__item--weightloss {
+  .services-list__item--weight-loss {
     margin-bottom: 30px;
 
     background-size: 200px 211px;
     background-position: 446px 81px;
   }
 
-  .services-list__item--weightgain {
+  .services-list__item--weight-gain {
     background-size: 268px 200px;
     background-position: 412px 91px;
 
@@ -135,7 +135,7 @@
 
 @media (min-width: $desktop-width) {
   .main-services {
-    margin-top: -225px;
+    margin-top: -215px;
   }
 
   .main-services__list {
@@ -148,7 +148,7 @@
     padding: 41px 52px 58px 52px;
   }
 
-  .services-list__item--weightloss {
+  .services-list__item--weight-loss {
     margin-bottom: 0;
 
     background-position: 52px 40px;
@@ -159,7 +159,7 @@
     }
   }
 
-  .services-list__item--weightgain {
+  .services-list__item--weight-gain {
     background-position: 33px 46px;
     background-size: 134px 100px;
 

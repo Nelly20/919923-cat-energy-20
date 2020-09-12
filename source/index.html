@@ -19,7 +19,11 @@
         </picture>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">
+        <!-- кнопка для открытия и закрытия меню
+          main-nav__toggle-open открывает меню
+          main-nav__toggle-close закрывает меню
+          visually-hidden прячет меню -->
+        <button class="main-nav__toggle main-nav__toggle--open" type="button">
         <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -31,7 +35,7 @@
               <a class="site-list__link site-list__link--white" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--white" href="form.html">подбор программы</a>
+              <a class="site-list__link site-list__link--white" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -40,12 +44,9 @@
     <main class="page-main content">
       <section class="main-screen">
         <div class="container">
-          <h1 class="main-screen__title">Функциональное<br>
-            питание для котов
+          <h1 class="main-screen__title">Функциональное<br>питание для котов
           </h1>
           <p class="main-screen__subtitle">Занялся собой? Займись котом!</p>
-          <div>
-          </div>
           <p class="main-screen__button-wrapper">
             <a href="form.html" class="button main-screen__button">Подобрать программу</a>
           </p>
@@ -54,12 +55,12 @@
       <section class="main-services container">
         <h2 class="visually-hidden">Список услуг</h2>
         <ul class="main-services__list services-list">
-          <li class="services-list__item services-list__item--weightloss">
+          <li class="services-list__item services-list__item--weight-loss">
             <h3 class="services-list__title">Похудение</h3>
             <p class="services-list__subtitle">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a href="catalog.html" class="services-list__link">каталог slim</a>
           </li>
-          <li class="services-list__item services-list__item--weightgain">
+          <li class="services-list__item services-list__item--weight-gain">
             <h3 class="services-list__title">Набор массы</h3>
             <p class="services-list__subtitle">Заработать авторитет среди дворовых котов<br> и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые<br> мышцы!</p>
             <a href="catalog.html" class="services-list__link">каталог pro</a>
@@ -70,27 +71,19 @@
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--leaf">
-            <p class="advantages__description">Функциональное питание
-              содержит только полезные
-              питательные вещества
+            <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества
             </p>
           </li>
           <li class="advantages__item advantages__item--powder">
-            <p class="advantages__description">Выпускается в виде порошка,
-              который нужно лишь залить
-              кипятком и готово.
+            <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
           <li class="advantages__item advantages__item--dinning">
-            <p class="advantages__description">Замените один-два приема
-              обычной еды на наше
-              функциональное питание.
+            <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
           <li class="advantages__item advantages__item--clock">
-            <p class="advantages__description">Уже через месяц наслаждайтесь
-              изменениями к лучшему <br>
-              вашего питомца!
+            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему <br>вашего питомца!
             </p>
           </li>
         </ul>
@@ -102,16 +95,16 @@
             <p class="example__describtion">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat<br> Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <ul class="example__list">
               <li class="example__item">
-                <h3 class="example__header">5 КГ</h3>
+                <h3 class="example__header">5 кг</h3>
                 <p class="example__subtitle">снижение<br> веса</p>
               </li>
               <li class="example__item">
-                <h3 class="example__header">60 ДНЕЙ</h3>
+                <h3 class="example__header">60 дней</h3>
                 <p class="example__subtitle">затрачено<br> времени</p>
               </li>
               <li>
                 <p class="example__price">Затраты на питание:</p>
-                <p class="example__price">15 000 РУБ.</p>
+                <p class="example__price">15 000 руб.</p>
               </li>
             </ul>
           </div>
@@ -161,10 +154,7 @@
         <div class="footer-address footer-address--index">
           <div class="footer-address__wrapper container">
             <h2 class="footer-address__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
-            <div>
-              <address class="page-footer__address">ул. Большая<br> Конюшенная, д. 19/8</address>
-              <address class="page-footer__address">Санкт-Петербург</address>
-            </div>
+            <address class="page-footer__address">ул. Большая<br> Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></address>
           </div>
           <iframe class="footer-address__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1599133579805!5m2!1sru!2sua"></iframe>
         </div>

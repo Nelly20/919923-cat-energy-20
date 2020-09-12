@@ -8,6 +8,9 @@
 }
 
 .contacts__title {
+  @include small-header;
+  @include underline-green-mobile;
+
   margin: 0;
   margin-bottom: 34px;
   margin-left: -2px;
@@ -16,19 +19,16 @@
   text-align: left;
   text-transform: none;
 
-  @include small-header;
-  @include underline-green-mobile;
-
   &::after {
     left: 200px;
   }
 }
 
 .contacts__list {
+  @include reset-list;
+
   display: flex;
   flex-direction: column;
-
-  @include reset-list;
 }
 
 .contacts__item {
@@ -39,6 +39,8 @@
 }
 
 .contacts__label {
+  @include product-header;
+
   display: inline;
   flex-grow: 0;
   margin-top: 14px;
@@ -46,11 +48,11 @@
   margin-left: 0;
 
   color: $basic-dark-grey;
-
-  @include product-header;
 }
 
 .contacts__input {
+  @include product-header;
+
   display: inline;
   flex-grow: 1;
   width: auto;
@@ -64,8 +66,6 @@
   background-color: $basic-white;
 
   border: 1px solid $special-grey;
-
-  @include product-header;
 
   &:focus {
     border: 1px solid $basic-dark-grey;
@@ -110,26 +110,28 @@
   .contacts {
     @include container-form;
 
-    margin-top: 68px;
+    margin-top: 66px;
   }
 
   .contacts__title {
-    margin-left: 1px;
-
     @include big-header;
     @include underline-green;
 
+    margin-left: 1px;
+
     &::after {
+      top: 22px;
       left: 555px;
     }
 
     &::before {
+      top: 22px;
       right: 670px;
     }
   }
 
   .contacts__list {
-    margin-top: 40px;
+    margin-top: 75px;
   }
 
   .contacts__item {

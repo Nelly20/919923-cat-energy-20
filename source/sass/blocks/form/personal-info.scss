@@ -13,25 +13,27 @@
 }
 
 .personal-info__item {
+  @include underline-grey;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
-
-  @include underline-grey;
 }
 
 .personal-info__label {
+  @include product-header;
+
   display: inline;
   flex-grow: 0;
   margin-right: 12px;
 
   color: $basic-dark-grey;
-
-  @include product-header;
 }
 
 .personal-info__input {
+  @include product-header;
+
   display: inline;
   flex-grow: 1;
   width: auto;
@@ -46,8 +48,6 @@
 
   border: 1px solid $special-grey;
 
-  @include product-header;
-
   &:hover {
     border: 1px solid $border-color;
   }
@@ -58,10 +58,10 @@
 }
 
 .personal-info__input::placeholder {
+  @include product-header;
+
   text-align: left;
   color: $basic-dark-grey;
-
-  @include product-header;
 }
 
 .form__input-error {
@@ -89,9 +89,9 @@
   }
 
   .personal-info__item {
-    margin-bottom: 19px;
-
     @include underline-none;
+
+    margin-bottom: 19px;
   }
 
   .personal-info__input {
@@ -105,9 +105,9 @@
   .personal-info__label,
   .personal-info__input,
   .personal-info__input::placeholder {
-    color: $basic-dark-grey;
-
     @include product-tablet-header;
+
+    color: $basic-dark-grey;
   }
 }
 

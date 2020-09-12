@@ -9,17 +9,17 @@
 }
 
 .form__title {
-  margin-top: 28px;
-
   @include big-header;
+
+  margin-top: 28px;
 }
 
 .form__subtitle {
+  @include subtitle;
+
   margin-top: 37px;
 
   text-align: left;
-
-  @include subtitle;
 }
 
 .form__button-wrapper {
@@ -30,12 +30,12 @@
 }
 
 .form__small-text {
+  @include main-text;
+
   margin-top: 20px;
 
   text-align: center;
   color: $basic-black;
-
-  @include main-text;
 }
 
 .form__input--error {
@@ -44,22 +44,22 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    margin-top: 66px;
+    margin-top: 50px;
     margin-bottom: 70px;
   }
 
   .form__title {
-    margin-bottom: 55px;
-
     @include big-tablet-header;
+
+    margin-bottom: 55px;
   }
 
   .form__subtitle {
+    @include product-tablet-header;
+
     margin-left: 40px;
 
     line-height: 30px;
-
-    @include product-tablet-header;
   }
 
   .form__button-wrapper {
@@ -69,20 +69,20 @@
   }
 
   .form__button {
+    @include product-tablet-header;
+
     width: 282px;
     height: 52px;
     margin-right: 61px;
-
-    @include product-tablet-header;
   }
 
   .form__small-text {
-    margin-top: 0;
+    @include catalog__item-text;
+
+    margin-top: -4px;
     margin-left: 2px;
 
     text-transform: none;
-
-    @include catalog__item-text;
   }
 }
 
@@ -92,7 +92,7 @@
   }
 
   .form__title {
-    margin-top: -9px;
+    margin-top: 56px;
   }
 
   .form__subtitle {

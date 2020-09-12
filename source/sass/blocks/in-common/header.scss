@@ -6,10 +6,9 @@
 }
 
 .page-header__logo-link {
-  position: relative;
-
-
   @include underline-grey;
+
+  position: relative;
 }
 
 .page-header__logo {
@@ -41,6 +40,7 @@
   }
 }
 
+// кнопка открытия главного меню
 .main-nav__toggle--open {
   position: absolute;
   top: 21px;
@@ -54,6 +54,11 @@
   border: none;
 }
 
+.main-nav__toggle--open-form {
+  top: 13px;
+}
+
+// кнопка закрытия главного меню
 .main-nav__toggle--close {
   position: absolute;
   top: 23px;
@@ -68,6 +73,8 @@
 }
 
 .main-nav__list {
+  @include reset-list;
+
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -75,17 +82,15 @@
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
-
-  @include reset-list;
 }
 
 .site-list__item {
+  @include underline-grey;
+
   position: relative;
 
   padding-top: 18px;
   padding-bottom: 18px;
-
-  @include underline-grey;
 }
 
 .site-list__link {
@@ -102,9 +107,9 @@
   }
 
   .page-header__logo-link {
-    margin-top: 12px;
-
     @include underline-none;
+
+    margin-top: 12px;
   }
 
   .page-header__logo {
@@ -116,7 +121,8 @@
     margin-top: 12px;
   }
 
-  .main-nav__toggle--open {
+  .main-nav__toggle--open,
+  .main-nav__toggle--close {
     position: absolute;
 
     opacity: 0;
@@ -131,12 +137,12 @@
   }
 
   .site-list__item {
+    @include underline-none;
+
     margin-right: 35px;
-    padding-bottom: 7px;
+    padding-bottom: 6px;
 
     border-top: none;
-
-    @include underline-none;
 
     &:last-child {
       margin-right: 0;
@@ -173,7 +179,7 @@
       content: "";
       top: 0;
       right: 0;
-      width: 50%;
+      width: 40%;
       height: 696px;
       background-color: $special-green;
       z-index: -1;
@@ -212,7 +218,7 @@
     height: 59px;
   }
 
-  .page-header__logo--index {
+  .page-header__logo {
     margin-top: 43px;
   }
 
@@ -224,8 +230,6 @@
   }
 
   .site-list__link--white {
-    // padding-bottom: 4px;
-
     color: $basic-white;
 
     &:hover {

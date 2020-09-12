@@ -1,6 +1,6 @@
 .example {
   margin-top: 60px;
-  padding-bottom: 31px;
+  padding-bottom: 34px;
 }
 
 .example__mobile-wrapper {
@@ -9,23 +9,23 @@
 }
 
 .example__title {
-  margin-bottom: 35px;
-
   @include big-header;
+
+  margin-bottom: 35px;
 }
 
 .example__describtion {
-  margin-bottom: 10px;
-
   @include main-text;
+
+  margin-bottom: 10px;
 }
 
 .example__list {
+  @include reset-list;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  @include reset-list;
 }
 
 .example__item {
@@ -36,29 +36,29 @@
 }
 
 .example__header {
+  @include small-header;
+
   margin: 0;
   padding-top: 13px;
   padding-bottom: 17px;
 
   text-align: center;
+  text-transform: uppercase;
 
   border-top: 1px solid $border-color;
   border-right: 1px solid $border-color;
   border-left: 1px solid $border-color;
   border-radius: 3px;
-
-  @include small-header;
 }
 
 .example__subtitle {
+  @include small-text;
+
   position: relative;
 
   margin-top: -7px;
   margin-bottom: 18px;
   padding: 0;
-
-  @include small-text;
-
 
   &::before {
     content: "";
@@ -86,11 +86,11 @@
 }
 
 .example__price {
+  @include subtitle;
+
   display: inline;
 
   text-align: center;
-
-  @include subtitle;
 
   &:first-child {
     margin-left: 47px;
@@ -122,9 +122,11 @@
 }
 
 .example__button {
+  @include product-header;
+
   position: relative;
 
-  margin-top: 32px;
+  margin-top: 30px;
 
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
@@ -132,8 +134,6 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-
-  @include product-header;
 
   &:first-child {
     margin-right: 100px;
@@ -147,7 +147,7 @@
 .example__range-filter {
   position: relative;
   top: -18px;
-  left: 58px;
+  left: 62px;
 
   width: 84px;
   height: 14px;
@@ -198,9 +198,9 @@
   }
 
   .example__title {
-    margin-bottom: 65px;
-
     @include big-tablet-header;
+
+    margin-bottom: 65px;
   }
 
   .example__describtion {
@@ -232,9 +232,9 @@
   }
 
   .example__subtitle {
-    margin-top: -10px;
-
     @include main-text;
+
+    margin-top: -10px;
 
     &::before {
       content: "";
@@ -266,14 +266,14 @@
   }
 
   .example__price {
+    @include product-tablet-header;
+
     display: block;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 250px;
 
     text-align: right;
-
-    @include product-tablet-header;
 
     &:first-child {
       margin-top: 26px;
@@ -290,11 +290,9 @@
   .example__first-slide--preview,
   .example__second-slide--preview {
     position: relative;
-    width: 620px;
-    margin: 0 auto;
-    background-image: url("../img/after-tablet.png"), url("../img/before-tablet.png");
+    background-image: url("../img/image-cat-tablet.png");
     background-repeat: no-repeat;
-    background-position: 117% 50px, -16% 40px;
+    background-position: center 40px;
     z-index: 1;
 
     .example__first-slide-img,
@@ -315,12 +313,12 @@
   }
 
   .example__button {
+    @include product-tablet-header;
+
     position: relative;
 
     margin-top: 40px;
     padding-bottom: 8px;
-
-    @include product-tablet-header;
 
     &::before {
       content: "";
@@ -354,7 +352,7 @@
   }
 
   .example__buttons-wrapper {
-    margin-top: 48px;
+    margin-top: 0;
   }
 
   .example__range-filter {
@@ -414,7 +412,8 @@
     display: flex;
     justify-content: center;
 
-    background-image: linear-gradient(to top, $basic-light-grey 78.5%, $basic-white 30%);
+    padding-bottom: 35px;
+    background-image: linear-gradient(to top, $basic-light-grey 78%, $basic-white 30%);
   }
 
   .example__mobile-wrapper {
@@ -509,9 +508,9 @@
   .example__second-slide--preview {
     position: relative;
     top: -180px;
-    background-image: url("../img/after-desktop.png"), url("../img/before-desktop.png");
+    background-image: url("../img/image-cat-desktop.png");
     background-repeat: no-repeat;
-    background-position: 397px 2px, 28px 0;
+    background-position: 30px 0;
     z-index: 1;
 
     .example__first-slide-img,
@@ -522,5 +521,6 @@
 
   .example__buttons-wrapper {
     margin-top: -37px;
+    margin-right: -115px;
   }
 }
