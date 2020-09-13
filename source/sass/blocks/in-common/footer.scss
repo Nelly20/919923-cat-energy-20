@@ -121,7 +121,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 45px 30px 31px 30px;
+    padding: 45px 30px 40px 30px;
   }
 
   .footer__logo {
@@ -172,7 +172,7 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 45px 100px 20px 65px;
+    padding: 45px 100px 40px 65px;
   }
 
   .copyright {

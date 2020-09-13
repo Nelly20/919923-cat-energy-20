@@ -69,10 +69,25 @@
 }
 
 .main-screen__button {
+  @include button-green;
+  @include button;
+
   width: 280px;
   height: 40px;
   padding-left: 73px;
   padding-right: 73px;
+
+  text-decoration: none;
+
+  &:hover {
+    background-color: $basic-dark-green;
+  }
+
+  &:focus {
+    color: $special-white;
+
+    background-color: $basic-dark-green;
+  }
 }
 
 @media (min-width: $tablet-width) {

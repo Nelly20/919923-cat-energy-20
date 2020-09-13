@@ -10,14 +10,13 @@
   display: flex;
   flex-direction: column;
   margin-top: 0;
+  margin-bottom: 18px;
   padding: 0 33px 18px 21px;
 
   background-color: $special-light-grey;
 }
 
 .services-list__item--weight-loss {
-  margin-bottom: 18px;
-
   background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
   background-position: 22px 21px;

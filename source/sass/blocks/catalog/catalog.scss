@@ -123,13 +123,38 @@
 }
 
 .catalog__more-products-button {
+  @include button-grey;
+  @include button;
   @include underline-grey;
 
   margin-top: 10px;
+
+  &:hover {
+    background-color: $special-border-color;
+  }
+
+  &:active {
+    color: $border-color;
+  }
 }
 
 .catalog__button {
+  @include button-green;
+  @include button;
+
   margin-top: -12px;
+
+  text-decoration: none;
+
+  &:hover {
+    background-color: $basic-dark-green;
+  }
+
+  &:focus {
+    color: $special-white;
+
+    background-color: $basic-dark-green;
+  }
 }
 
 @media (min-width: $tablet-width) {
