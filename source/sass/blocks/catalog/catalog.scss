@@ -4,7 +4,7 @@
 
   position: relative;
   margin: 0;
-  margin-top: 27px;
+  margin-top: 28px;
   padding-bottom: 42px;
 }
 
@@ -30,7 +30,7 @@
 
 .catalog__item-data {
   margin: 0;
-  margin-top: 3px;
+  margin-top: 4px;
   padding: 0;
 }
 
@@ -42,15 +42,19 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 8px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
 }
 
 .catalog__img {
-  margin: auto;
+  position: relative;
+  bottom: 5px;
+  z-index: -1;
 }
 
 .catalog__item-header {
   @include product-header;
+
+  margin-top: 11px;
 
   color: $special-dark-grey;
 }
@@ -70,7 +74,7 @@
   position: relative;
 
   margin-top: 26px;
-  padding-bottom: 21px;
+  padding-bottom: 22px;
 
   &::before {
     content: "";
@@ -101,7 +105,7 @@
 .catalog__more-products-title {
   @include product-header;
 
-  margin-top: 53px;
+  margin-top: 54px;
   margin-bottom: 0;
   margin-left: 1px;
 
@@ -162,7 +166,7 @@
     @include big-tablet-header;
     @include underline-none;
 
-    margin-top: 50px;
+    margin-top: 48px;
   }
 
   .catalog__list {
@@ -173,7 +177,7 @@
     column-gap: 60px;
 
     grid-template-columns: 1fr 1fr;
-    row-gap: 140px;
+    row-gap: 141px;
   }
 
   .catalog__item-list {
@@ -195,24 +199,25 @@
     min-height: 430px;
     padding-right: 37px;
     padding-bottom: 34px;
-    padding-left: 39px;
+    padding-left: 38px;
 
     background-color: $special-light-grey;
   }
 
   .catalog__img {
     position: absolute;
-    bottom: 303px;
+    bottom: 300px;
     left: 0;
     right: 0;
     margin: auto;
+    z-index: 1;
   }
 
   .catalog__item-header {
     @include product-tablet-header;
 
     max-width: 150px;
-    margin: 0 auto;
+    margin-left: 50px;
     margin-top: 153px;
     margin-bottom: 8px;
 
@@ -231,7 +236,7 @@
     justify-content: space-between;
     width: 248px;
     margin: 0;
-    margin-top: 7px;
+    margin-top: 6px;
     padding: 0;
     padding-bottom: 9px;
 
@@ -251,21 +256,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 324px;
+    width: 320px;
     margin-top: 0;
     padding-bottom: 0;
 
     border: 2px solid $special-light-grey;
 
     &::before {
-      top: 82px;
+      top: 79px;
       left: 132px;
 
       width: 60px;
     }
 
     &::after {
-      top: 82px;
+      top: 79px;
       left: 132px;
 
       width: 60px;
@@ -275,7 +280,7 @@
   .catalog__more-products-title {
     @include product-tablet-header;
 
-    margin-top: 161px;
+    margin-top: 159px;
 
     line-height: 22px;
   }

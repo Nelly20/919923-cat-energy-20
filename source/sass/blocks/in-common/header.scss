@@ -15,7 +15,7 @@
   height: 38px;
   width: 190px;
   margin-top: 11px;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   &:hover {
     opacity: 0.8;
@@ -90,7 +90,7 @@
   position: relative;
 
   padding-top: 18px;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
 }
 
 .site-list__link {
@@ -109,7 +109,7 @@
   .page-header__logo-link {
     @include underline-none;
 
-    margin-top: 12px;
+    margin-top: 14px;
   }
 
   .page-header__logo {
@@ -180,7 +180,7 @@
       top: 0;
       right: 0;
       width: 50%;
-      height: 696px;
+      height: 693px;
       background-color: $special-green;
       z-index: -1;
     }
@@ -216,9 +216,6 @@
   .page-header__logo {
     width: 202px;
     height: 59px;
-  }
-
-  .page-header__logo {
     margin-top: 43px;
   }
 

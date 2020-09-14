@@ -1,7 +1,7 @@
 .comment {
   position: relative;
 
-  margin-top: 12px;
+  margin-top: 14px;
   padding: 0;
 
   border: none;
@@ -12,12 +12,13 @@
   @include underline-green-mobile;
 
   margin-top: 0;
-  margin-left: -4px;
+  margin-left: -3px;
 
   text-align: left;
   text-transform: none;
 
   &::after {
+    top: 13px;
     left: 140px;
   }
 }
@@ -28,8 +29,9 @@
   width: 262px;
   min-height: 135px;
   margin-top: 16px;
+  margin-left: -1px;
   padding-top: 11px;
-  padding-left: 12px;
+  padding-left: 13px;
 
   font-family: "Oswald", "Arial", sans-serif;
   color: $special-dark-grey;
@@ -43,20 +45,22 @@
   .comment {
     @include container-form;
 
-    margin-top: 47px;
+    margin-top: 45px;
   }
 
   .comment__title {
     @include big-header;
     @include underline-green;
 
-    margin-left: 8px;
+    margin-left: 3px;
 
     &::after {
+      top: 21px;
       left: 230px;
     }
 
     &::before {
+      top: 21px;
       right: 675px;
     }
   }
@@ -64,12 +68,12 @@
   .comment__text {
     @include product-tablet-header;
 
-    width: 616px;
+    width: 611px;
     min-height: 160px;
     margin-top: 45px;
-    margin-left: 8px;
+    margin-left: 0;
     padding-top: 10px;
-    padding-left: 19px;
+    padding-left: 22px;
 
     line-height: 30px;
   }
@@ -97,9 +101,9 @@
   .comment__text {
     width: 1200px;
     min-height: 161px;
-    margin-top: 47px;
+    margin-top: 46px;
     margin-left: 0;
-    padding-top: 8px;
-    padding-left: 15px;
+    padding-top: 9px;
+    padding-left: 18px;
   }
 }

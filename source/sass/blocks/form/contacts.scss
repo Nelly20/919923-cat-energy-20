@@ -18,6 +18,7 @@
 
   text-align: left;
   text-transform: none;
+  line-height: 25px;
 
   &::after {
     left: 200px;
@@ -36,6 +37,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 14px;
+  margin-right: -3px;
 }
 
 .contacts__label {
@@ -43,9 +45,9 @@
 
   display: inline;
   flex-grow: 0;
-  margin-top: 14px;
-  margin-right: 10px;
-  margin-left: 0;
+  margin-top: 11px;
+  margin-right: 12px;
+  margin-left: -3px;
 
   color: $basic-dark-grey;
 }
@@ -57,7 +59,7 @@
   flex-grow: 1;
   width: auto;
   padding-top: 11px;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
   padding-left: 15px;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -82,15 +84,15 @@
 
 .icon-email {
   position: absolute;
-  top: 20px;
-  left: 600px;
+  top: 16px;
+  left: 245px;
   stroke: $special-dark-grey;
 }
 
 .icon-phone {
   position: absolute;
-  top: 15px;
-  left: 600px;
+  top: 13px;
+  left: 245px;
   fill: $special-dark-grey;
 }
 
@@ -120,27 +122,36 @@
     margin-left: 1px;
 
     &::after {
-      top: 22px;
+      top: 21px;
       left: 555px;
     }
 
     &::before {
-      top: 22px;
+      top: 21px;
       right: 670px;
     }
   }
 
   .contacts__list {
-    margin-top: 75px;
+    margin-top: 76px;
   }
 
   .contacts__item {
     margin-bottom: 20px;
+
+    &:last-child .contacts__label {
+      margin-right: 16px;
+      margin-left: -1px;
+    }
+
+    &:first-child .contacts__label {
+      margin-left: 2px;
+    }
   }
 
   .contacts__label {
-    margin-top: 16px;
-    margin-right: 20px;
+    margin-top: 15px;
+    margin-right: 19px;
   }
 
   .contacts__input {
@@ -153,11 +164,25 @@
   }
 
   .contacts__input--email {
-    background-position: 514px center;
+    padding-left: 20px;
+    padding-top: 9px;
+    padding-bottom: 12px;
   }
 
   .contacts__input--phone-number {
-    background-position: 498px center;
+    padding-left: 19px;
+    padding-top: 9px;
+    padding-bottom: 12px;
+  }
+
+  .icon-email {
+    top: 18px;
+    left: 598px;
+  }
+
+  .icon-phone {
+    top: 16px;
+    left: 596px;
   }
 }
 
@@ -166,7 +191,7 @@
     position: relative;
 
     width: auto;
-    margin-top: 45px;
+    margin-top: 41px;
     margin-left: 0;
   }
 
@@ -187,23 +212,28 @@
   }
 
   .contacts__input--email {
-    width: 466px;
+    width: 463px;
+    padding-top: 10px;
+    padding-left: 18px;
   }
 
   .contacts__input--phone-number {
-    width: 452px;
+    width: 453px;
+    padding-top: 10px;
+    padding-left: 18px;
   }
 
   .contacts__label {
-    margin-top: 15px;
+    margin-top: 16px;
     margin-right: 20px;
   }
 
   .icon-email {
-    left: 530px;
+    top: 20px;
+    left: 533px;
   }
 
   .icon-phone {
-    left: 535px;
+    left: 534px;
   }
 }

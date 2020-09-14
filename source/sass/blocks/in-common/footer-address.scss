@@ -4,7 +4,7 @@
 
 .footer-address--catalog,
 .footer-address--form {
-  padding-top: 15px;
+  padding-top: 14px;
 
   background-color: $special-light-grey;
 }
@@ -18,9 +18,9 @@
 .footer-address__title {
   @include product-header;
 
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 
-  line-height: 20px;
+  line-height: 21px;
   text-transform: uppercase;
 }
 
@@ -32,6 +32,7 @@
   @include main-text;
 
   margin-top: 15px;
+  margin-right: 4px;
 
   font-style: normal;
   line-height: 20px;
@@ -54,17 +55,16 @@
 
   .footer-address--catalog {
     padding-top: 45px;
-  }
 
-  .footer-address--grey {
     & .footer-address__title {
-      margin-bottom: 67px;
-      margin-left: 40px;
+      margin-bottom: 60px;
+      margin-left: 41px;
+      line-height: 26px;
     }
 
     & .page-footer__address {
-      margin-top: 1px;
-      margin-right: 40px;
+      margin-top: 18px;
+      margin-right: 42px;
     }
   }
 
@@ -95,7 +95,6 @@
 @media (min-width: $desktop-width) {
   .footer-address,
   .footer__address--grey {
-    position: relative;
     padding-top: 0;
   }
 
@@ -103,7 +102,8 @@
     margin-top: -180px;
   }
 
-  .footer-address__wrapper-desktop {
+  .footer-address__main-wrapper {
+    position: relative;
     width: 1220px;
     margin: 0 auto;
   }
@@ -111,7 +111,7 @@
   .footer-address__wrapper {
     position: absolute;
     top: 95px;
-    left: 65px;
+    left: 0;
 
     box-sizing: border-box;
     width: 570px;
@@ -121,6 +121,12 @@
     padding-left: 36px;
 
     background-color: $basic-white;
+  }
+
+  .footer-address--catalog {
+    & .footer-address__title {
+      margin-bottom: 0;
+    }
   }
 
   .footer-address__title {

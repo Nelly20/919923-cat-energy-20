@@ -94,10 +94,10 @@
   .main-screen {
     @include underline-none;
 
-    min-height: 833px;
+    min-height: 830px;
 
     background-image: url("../img/index-can-tablet@1x.jpg");
-    background-position: center 250px;
+    background-position: center 248px;
     background-size: 709px 609px;
 
     @media (min-resolution: 2dppx) {
@@ -108,7 +108,7 @@
   .main-screen__title {
     @include big-tablet-header;
 
-    margin-top: 23px;
+    margin-top: 21px;
     margin-left: 86px;
 
     text-align: left;
@@ -127,15 +127,16 @@
 
   .main-screen__button-wrapper {
     margin: 0;
-    margin-top: 60px;
+    margin-top: 62px;
 
     text-align: left;
   }
 
   .main-screen__button {
     width: 244px;
-    height: 54px;
     margin-left: 82px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 26px;
     padding-right: 26px;
 
@@ -146,7 +147,7 @@
 @media (min-width: $desktop-width) {
   .main-screen {
     position: relative;
-    top: -130px;
+    top: -134px;
 
     background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
     background-position: 64% 142px, 107.5% top;
@@ -159,7 +160,7 @@
   }
 
   .main-screen__title {
-    margin-top: 197px;
+    margin-top: 200px;
     margin-left: 80px;
   }
 

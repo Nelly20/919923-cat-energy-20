@@ -1,5 +1,5 @@
 .example {
-  margin-top: 60px;
+  margin-top: 53px;
   padding-bottom: 34px;
 }
 
@@ -18,6 +18,12 @@
   @include main-text;
 
   margin-bottom: 10px;
+
+  line-height: 19px;
+
+  & br:last-child {
+    display: none;
+  }
 }
 
 .example__list {
@@ -40,7 +46,7 @@
 
   margin: 0;
   padding-top: 13px;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
 
   text-align: center;
   text-transform: uppercase;
@@ -126,7 +132,7 @@
 
   position: relative;
 
-  margin-top: 30px;
+  margin-top: 33px;
 
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
@@ -138,10 +144,6 @@
   &:first-child {
     margin-right: 100px;
   }
-
-  &:last-child {
-    margin-left: 100px;
-  }
 }
 
 .example__range-filter {
@@ -149,8 +151,8 @@
   top: -18px;
   left: 62px;
 
-  width: 84px;
-  height: 14px;
+  width: 82px;
+  height: 12px;
   margin-top: 0;
 
   background-color: $basic-white;
@@ -160,7 +162,7 @@
 
 .example__range-toggle-before {
   position: relative;
-  top: 4px;
+  top: 3px;
   left: 4px;
 
   width: 35px;
@@ -186,7 +188,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    margin-top: -8px;
+    margin-top: -7px;
     padding-bottom: 0;
 
     background-image: linear-gradient(to top, #eaeaea 44.5%, #ffffff 40%);
@@ -206,14 +208,14 @@
   .example__describtion {
     @include tablet-main-text;
 
-    & br {
+    & br:first-child {
       display: none;
     }
   }
 
   .example__list {
     justify-content: flex-start;
-    margin-top: 38px;
+    margin-top: 40px;
   }
 
   .example__item {
@@ -372,7 +374,7 @@
   .example__range-toggle-after {
     position: relative;
     top: -15px;
-    left: 200px;
+    left: 193px;
     z-index: 0;
 
     width: 34px;
@@ -412,7 +414,7 @@
     display: flex;
     justify-content: center;
 
-    padding-bottom: 35px;
+    padding-bottom: 40px;
     background-image: linear-gradient(to top, $basic-light-grey 78%, $basic-white 30%);
   }
 
@@ -429,17 +431,18 @@
   }
 
   .example__title {
-    margin-top: 47px;
+    margin-top: 53px;
   }
 
   .example__header {
+    padding-top: 15px;
     padding-bottom: 20px;
   }
 
   .example__describtion {
     width: 436px;
     margin-bottom: 52px;
-    margin-top: 18px;
+    margin-top: 17px;
   }
 
   .example__describtion br {
@@ -507,7 +510,7 @@
   .example__first-slide--preview,
   .example__second-slide--preview {
     position: relative;
-    top: -180px;
+    top: -175px;
     background-image: url("../img/image-cat-desktop.png");
     background-repeat: no-repeat;
     background-position: 30px 0;
