@@ -62,6 +62,10 @@
   border: 1px solid $radio-button-grey;
 }
 
+.additional__input:focus + .additional__label {
+  outline: 2px solid $basic-black;
+}
+
 .additional__input:checked + .additional__label::after {
   content: "";
   position: absolute;
@@ -152,7 +156,7 @@
 @media (min-width: $desktop-width) {
   .additional {
     width: auto;
-    margin-top: 64px;
+    margin-top: 62px;
   }
 
   .additional__title {

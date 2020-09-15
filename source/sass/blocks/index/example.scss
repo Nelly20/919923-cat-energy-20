@@ -133,6 +133,7 @@
   position: relative;
 
   margin-top: 33px;
+  padding: 0;
 
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-black;
@@ -142,7 +143,8 @@
   cursor: pointer;
 
   &:first-child {
-    margin-right: 100px;
+    margin-right: 115px;
+    margin-left: 6px;
   }
 }
 
@@ -189,7 +191,7 @@
 @media (min-width: $tablet-width) {
   .example {
     margin-top: -7px;
-    padding-bottom: 0;
+    padding-bottom: 3px;
 
     background-image: linear-gradient(to top, #eaeaea 44.5%, #ffffff 40%);
   }
@@ -341,7 +343,8 @@
     }
 
     &:first-child {
-      margin-right: 460px;
+      margin-right: 470px;
+      margin-left: 0;
     }
 
     &:last-child {
@@ -360,7 +363,7 @@
   .example__range-filter {
     position: absolute;
     top: 47px;
-    left: 80px;
+    left: 70px;
 
     width: 428px;
     height: 6px;
@@ -374,11 +377,11 @@
   .example__range-toggle-after {
     position: relative;
     top: -15px;
-    left: 193px;
+    left: 198px;
     z-index: 0;
 
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
 
     background-color: $basic-white;
     border: 1px solid $border-color;
@@ -396,8 +399,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 13px;
-      left: 13px;
+      top: 12px;
+      left: 12px;
       z-index: 1;
 
       width: 8px;
@@ -442,7 +445,7 @@
   .example__describtion {
     width: 436px;
     margin-bottom: 52px;
-    margin-top: 17px;
+    margin-top: 16px;
   }
 
   .example__describtion br {
@@ -524,6 +527,6 @@
 
   .example__buttons-wrapper {
     margin-top: -37px;
-    margin-right: -115px;
+    margin-right: -116px;
   }
 }

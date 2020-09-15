@@ -7,6 +7,10 @@
   padding-top: 14px;
 
   background-color: $special-light-grey;
+
+  .footer-address__title {
+    line-height: 20px;
+  }
 }
 
 .footer-address__wrapper {
@@ -50,7 +54,7 @@
 
 @media (min-width: $tablet-width) {
   .footer-address {
-    padding-top: 50px;
+    padding-top: 48px;
   }
 
   .footer-address--catalog {
@@ -81,7 +85,7 @@
 
   .footer-address__title {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 25px;
     margin-top: 18px;
     margin-left: 40px;
     margin-bottom: 60px;
@@ -116,7 +120,7 @@
     box-sizing: border-box;
     width: 570px;
     padding-top: 48px;
-    padding-right: 37px;
+    padding-right: 46px;
     padding-bottom: 55px;
     padding-left: 36px;
 
@@ -126,6 +130,10 @@
   .footer-address--catalog {
     & .footer-address__title {
       margin-bottom: 0;
+    }
+
+    & .page-footer__address {
+      margin-top: 13px;
     }
   }
 

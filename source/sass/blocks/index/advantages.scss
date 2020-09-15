@@ -170,7 +170,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    margin-top: 43px;
+    margin-top: 40px;
 
     border: none;
   }
@@ -226,6 +226,10 @@
       background-image: url("../img/icon-four.svg");
       background-repeat: no-repeat;
       background-position: 124px top;
+
+      & br {
+        display: none;
+      }
     }
   }
 
