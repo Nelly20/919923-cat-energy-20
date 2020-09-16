@@ -1,0 +1,18 @@
+# pack-refs with: peeled fully-peeled sorted 
+58faf16ff3d03ec39d2f9707d475d96df8038443 refs/heads/master
+49f0468a23387e55cce40ea17c4f77104ca59b85 refs/heads/module1-task1
+a185873b04aad8fa371ba357e5627cf51a53fa30 refs/heads/module10-task1
+f4fa9adbe17a0adf43c8f5c44e6b018b4fec4f96 refs/heads/module2-task1
+c720b7e4e08b1ae8b52648c3d9203cf418feed78 refs/heads/module2-task2
+957f18aac8f788416c5993797f49f0aa49788f55 refs/heads/module3-task1
+ccca24d379a88f2f2bcacdcb2a35eea4a2622f82 refs/heads/module3-task2
+6f5bee29b165a628b0409ae0f10933d7ea1dc2dd refs/heads/module4-task1
+b0beb2f95b5a7fba3d9194598fe27ab9e23ca3c5 refs/heads/module4-task2
+c4a777932ce2ec014a67583186807294d35506e6 refs/heads/module5-task1
+8d17fde3678c03d20f740754a59ccb561bdaf95b refs/heads/module5-task2
+850e8da4d4e9048dbbbe6dd5128398ce91879c24 refs/heads/module6-task1
+aaec7a6b63b22ac05732afef45532d872230db66 refs/heads/module6-task2
+bd7fb50698ba3d7c0b08597afe2701574dcb9f5d refs/heads/module7-task1
+5aabe010deffc56aadd5b652d692b97e64c364a7 refs/heads/module7-task2
+66d1d6708c5cf004daad5e05256b01e7e5b1b34c refs/heads/module8-task1
+5a6bfc43f93876e02b6b06f51c0fcdcd083768f0 refs/heads/module9-task1
