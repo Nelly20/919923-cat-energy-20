@@ -1,0 +1,152 @@
+
+.page-footer {
+  background-color: $special-white;
+  border-top: 1px solid $basic-dark-grey;
+}
+
+.footer {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    width: calc((1000vw - 337px) / 2);
+    height: 1px;
+
+    background-color: $basic-dark-grey;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: calc((1000vw - 337px) / 2);
+    height: 1px;
+
+    background-color: $basic-dark-grey;
+  }
+}
+
+.footer-services {
+  border-right: 1px solid $basic-dark-grey;
+}
+
+.services-list {
+  @include reset-list;
+  @include white-simple-text;
+
+  margin: 50px 0;
+  margin-bottom: 50px;
+
+  font-weight: 500;
+  color: $basic-brown;
+}
+
+.services-list__item {
+  margin-bottom: 10px;
+
+  &:hover {
+    color: $basic-grey;
+  }
+}
+
+.catalog-list {
+  @include reset-list;
+  @include white-simple-text;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 160px;
+  margin: 50px 0;
+  margin-left: 50px;
+
+  font-weight: 500;
+  color: $basic-black;
+}
+
+.catalog-list__item {
+  margin-bottom: 10px;
+}
+
+.catalog-list__item-link {
+  border-bottom: 1px solid $basic-grey;
+
+  &:hover {
+    border-bottom: 1px solid $basic-brown;
+  }
+}
+
+.contacts {
+  @include main-text;
+
+  padding: 30px 0;
+  padding-left: 50px;
+
+  border-left: 1px solid $basic-dark-grey;
+}
+
+.page-footer__copyright {
+  font-size: 12px;
+  color: $basic-grey;
+}
+
+.contacts__title {
+  @include catalog-menu-link;
+}
+
+.contacts__phone-link {
+  @include catalog-menu-link;
+
+  &:hover {
+    color: $basic-grey;
+  }
+}
+
+.contacts__email-link {
+  color: $basic-brown;
+  text-decoration: underline;
+
+  &:hover {
+    color: $basic-grey;
+  }
+}
+
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .footer {
+    grid-template-columns: 200px 290px 1fr;
+  }
+
+  .contacts {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-services {
+    border-right: none;
+  }
+
+  .catalog-list {
+    margin: 0;
+  }
+
+  .contacts {
+    padding-left: 0;
+
+    border-left: none;
+  }
+}

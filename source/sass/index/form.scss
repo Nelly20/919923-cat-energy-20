@@ -1,0 +1,206 @@
+
+.form {
+  padding-bottom: 70px;
+
+  background-color: $basic-light-grey;
+  background-image: url("../img/form-bg.png");
+  background-repeat: no-repeat;
+  background-position: center -190px;
+  background-size: 100% -200px;
+}
+
+.form__title {
+  @include product-header;
+
+  margin-top: 0;
+  padding-top: 60px;
+
+  color: $basic-black;
+}
+
+.form__subtitle {
+  @include simple-text;
+
+  position: relative;
+
+  padding-bottom: 30px;
+
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 200px;
+    height: 2px;
+    margin: 0 auto;
+
+    background-color: $basic-black;
+  }
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 50px 150px;
+
+  background-color: $basic-white;
+  border: 2px solid $basic-black;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form__item-label {
+  @include simple-text;
+
+  margin-bottom: 10px;
+
+  font-style: italic;
+  font-size: 14px;
+}
+
+.form__item-input {
+  @include simple-text;
+
+  box-sizing: border-box;
+  height: 40px;
+  padding: 8px 10px 8px 30px;
+
+  font-size: 14px;
+
+  background-color: transparent;
+  border: 2px solid $basic-black;
+}
+
+.form__item-input--date {
+  width: 165px;
+
+  background-image: url("../img/icon-calandar.png");
+  background-repeat: no-repeat;
+  background-position: 7px center;
+
+  &:hover {
+    color: $basic-grey;
+  }
+}
+
+.form__item-input--time {
+  width: 120px;
+
+  color: $basic-brown;
+
+  background-image: url("../img/icon-clock.png");
+  background-repeat: no-repeat;
+  background-position: 7px center;
+
+  &:hover {
+    color: $basic-grey;
+  }
+}
+
+.form__item-input--address {
+  width: 275px;
+
+  color: $basic-brown;
+
+  background-image: url("../img/icon-geo.png"), url("../img/icon-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 10px center, 250px center;
+  background-size: auto, 12px;
+
+  appearance: none;
+
+  &:hover {
+    color: $basic-dark-grey;
+  }
+}
+
+.form__item-input--name {
+  width: 350px;
+
+  background-image: url("../img/icon-user.png");
+  background-repeat: no-repeat;
+  background-position: 7px center;
+
+  &::placeholder {
+    color: $basic-brown;
+  }
+
+  &:hover::placeholder {
+    color: $basic-grey;
+  }
+}
+
+.form__item-input--number {
+  width: 275px;
+
+  background-image: url("../img/icon-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 7px center;
+
+  &::placeholder {
+    color: $basic-brown;
+  }
+
+  &:hover::placeholder {
+    color: $basic-grey;
+  }
+}
+
+.form__button {
+  @include form-button;
+
+  margin-top: 10px;
+}
+
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field {
+  color: $basic-brown;
+}
+
+::-webkit-calendar-picker-indicator {
+  color: transparent;
+
+  background: url("../img/icon-arrow.png") no-repeat center;
+  background-size: 12px;
+  opacity: 1;
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .form-wrapper {
+    flex-direction: column;
+    width: 700px;
+  }
+
+  .form__item-input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .form-wrapper {
+    width: 280px;
+    padding: 20px;
+  }
+
+  .form__item-input {
+    width: 240px;
+
+    background-color: transparent;
+  }
+}
