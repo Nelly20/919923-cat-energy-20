@@ -21,7 +21,7 @@ const cleanCSS = require('gulp-clean-css');
 
 const jsminify = () => {
   return pipeline(
-    gulp.src('source/*.js'),
+    gulp.src("source/js/*.js"),
     uglify(),
     gulp.dest('build/')
   );
@@ -108,7 +108,7 @@ const copy = () => {
       "source/fonts//*.{woff,woff2}",
       "source/img/",
       "source/css/",
-      "source/js/",
+      "source/js/*.js",
       "source/*.ico",
       "source/*.html"
     ], {
@@ -136,8 +136,8 @@ const build = gulp.series(
   sprite,
   createWebp,
   images,
-  jsminify,
-  htmlminify
+  htmlminify,
+  jsminify
 );
 exports.build = build;
 
